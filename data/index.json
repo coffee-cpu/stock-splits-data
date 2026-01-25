@@ -2,7 +2,7 @@
   "$schema": "../schema/index.schema.json",
   "version": "1.0.0",
   "updated": "2026-01-25",
-  "totalSplits": 50,
+  "totalSplits": 55,
   "years": [
     1971,
     1975,
@@ -332,14 +332,70 @@
         }
       ]
     },
+    "CBSH": {
+      "name": "Commerce Bancshares, Inc.",
+      "isin": "US2005251036",
+      "exchange": "NASDAQ",
+      "splits": [
+        {
+          "date": "2025-12-02",
+          "ratio": "21:20",
+          "notes": "5% stock dividend (1.05-for-1)"
+        }
+      ]
+    },
+    "FAST": {
+      "name": "Fastenal Company",
+      "isin": "US3119001044",
+      "exchange": "NASDAQ",
+      "splits": [
+        {
+          "date": "2025-05-21",
+          "ratio": "2:1"
+        }
+      ]
+    },
+    "IBKR": {
+      "name": "Interactive Brokers Group, Inc.",
+      "isin": "US45841N1072",
+      "exchange": "NASDAQ",
+      "splits": [
+        {
+          "date": "2025-06-17",
+          "ratio": "4:1"
+        }
+      ]
+    },
     "NOW": {
       "name": "ServiceNow, Inc.",
       "isin": "US81762P1021",
       "exchange": "NYSE",
       "splits": [
         {
-          "date": "2025-12-16",
+          "date": "2025-12-17",
           "ratio": "5:1"
+        }
+      ]
+    },
+    "ORLY": {
+      "name": "O'Reilly Automotive, Inc.",
+      "isin": "US67103H1077",
+      "exchange": "NASDAQ",
+      "splits": [
+        {
+          "date": "2025-06-09",
+          "ratio": "15:1"
+        }
+      ]
+    },
+    "TPL": {
+      "name": "Texas Pacific Land Corporation",
+      "isin": "US88262P1021",
+      "exchange": "NYSE",
+      "splits": [
+        {
+          "date": "2025-12-22",
+          "ratio": "3:1"
         }
       ]
     }
@@ -359,6 +415,11 @@
     "US11135F1012": "AVGO",
     "US86800U1043": "SMCI",
     "US6974351057": "PANW",
-    "US81762P1021": "NOW"
+    "US2005251036": "CBSH",
+    "US3119001044": "FAST",
+    "US45841N1072": "IBKR",
+    "US81762P1021": "NOW",
+    "US67103H1077": "ORLY",
+    "US88262P1021": "TPL"
   }
 }

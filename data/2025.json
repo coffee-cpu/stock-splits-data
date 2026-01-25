@@ -1,8 +1,33 @@
 {
   "$schema": "../schema/year-file.schema.json",
   "year": 2025,
-  "updated": "2025-01-25",
+  "updated": "2026-01-25",
   "splits": [
+    {
+      "symbol": "CBSH",
+      "name": "Commerce Bancshares, Inc.",
+      "date": "2025-12-02",
+      "ratio": "21:20",
+      "isin": "US2005251036",
+      "exchange": "NASDAQ",
+      "notes": "5% stock dividend (1.05-for-1)"
+    },
+    {
+      "symbol": "FAST",
+      "name": "Fastenal Company",
+      "date": "2025-05-21",
+      "ratio": "2:1",
+      "isin": "US3119001044",
+      "exchange": "NASDAQ"
+    },
+    {
+      "symbol": "IBKR",
+      "name": "Interactive Brokers Group, Inc.",
+      "date": "2025-06-17",
+      "ratio": "4:1",
+      "isin": "US45841N1072",
+      "exchange": "NASDAQ"
+    },
     {
       "symbol": "NFLX",
       "name": "Netflix, Inc.",
@@ -14,9 +39,25 @@
     {
       "symbol": "NOW",
       "name": "ServiceNow, Inc.",
-      "date": "2025-12-16",
+      "date": "2025-12-17",
       "ratio": "5:1",
       "isin": "US81762P1021",
+      "exchange": "NYSE"
+    },
+    {
+      "symbol": "ORLY",
+      "name": "O'Reilly Automotive, Inc.",
+      "date": "2025-06-09",
+      "ratio": "15:1",
+      "isin": "US67103H1077",
+      "exchange": "NASDAQ"
+    },
+    {
+      "symbol": "TPL",
+      "name": "Texas Pacific Land Corporation",
+      "date": "2025-12-22",
+      "ratio": "3:1",
+      "isin": "US88262P1021",
       "exchange": "NYSE"
     }
   ]
