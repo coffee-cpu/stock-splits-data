@@ -144,14 +144,57 @@ If you need to add a split for a year that doesn't have a file yet:
 2. Replace placeholders with actual values
 3. Run validation
 
+## Acceptable Data Sources
+
+**IMPORTANT**: Only use publicly available sources that do not require API access or paid subscriptions. This ensures legal compliance and data quality.
+
+### ✅ Acceptable Sources (Public Record Only)
+
+All contributions must be verifiable through one of these public sources:
+
+- **SEC EDGAR filings**: 8-K forms, proxy statements (public domain)
+- **Company investor relations pages**: Official press releases and announcements
+- **Exchange announcements**: NYSE, NASDAQ corporate action notices
+- **Company official websites**: Investor relations sections
+
+### ❌ Prohibited Sources
+
+Do NOT submit data from:
+
+- **Financial data APIs** (Polygon.io, Massive, Alpha Vantage, etc.) - violates their terms of service
+- **Paid data services** (Bloomberg Terminal, FactSet, etc.) - redistribution not permitted
+- **Aggregator websites** without original source verification
+- **Third-party databases** that restrict redistribution
+
+### Why These Restrictions?
+
+Most financial data APIs and paid services explicitly prohibit:
+- Redistribution of their data to third parties
+- Creating public datasets or derivative databases
+- Commercial or public use beyond personal consumption
+
+Using only original public records (SEC filings, company announcements) ensures:
+- No terms of service violations
+- Highest data accuracy (primary sources)
+- Legal compliance for all contributors and users
+
 ## Finding Split Information
 
-Reliable sources for stock split data:
+Reliable methods to find stock split data:
 
-- **Company IR pages**: Most companies announce splits via press release
-- **SEC EDGAR**: Search for 8-K filings mentioning "stock split"
-- **Exchange websites**: NYSE, NASDAQ corporate actions
-- **Financial news**: Reuters, Bloomberg, Yahoo Finance
+1. **SEC EDGAR Search**: [https://www.sec.gov/edgar/search/](https://www.sec.gov/edgar/search/)
+   - Search for company name + "8-K" + "stock split"
+   - Look for Form 8-K Item 5.03 (Amendments to Articles of Incorporation or Bylaws)
+
+2. **Company IR pages**: Most companies announce splits via press release
+   - Google: `[Company Name] investor relations stock split`
+   - Example: `NVIDIA investor relations stock split 2024`
+
+3. **Exchange websites**: NYSE and NASDAQ publish corporate action calendars
+   - [NASDAQ Corporate Actions](https://listingcenter.nasdaq.com/)
+   - [NYSE Corporate Actions](https://www.nyse.com/publicdocs/Corporate_Actions_Guidance.pdf)
+
+4. **Financial news verification**: Use Reuters, Bloomberg, Yahoo Finance to verify, but always link to the original source (SEC filing or company press release) in your PR
 
 ## Questions?
 

@@ -2,6 +2,18 @@
 
 Community-maintained catalog of stock split data, optimized for client-side fetching via CDN.
 
+## ⚠️ Disclaimer
+
+**This data is provided for informational purposes only.**
+
+- **Not Financial Advice**: This data should not be used as the sole basis for tax calculations, investment decisions, or financial planning.
+- **Community-Maintained**: Data is contributed by the community and may contain errors or omissions.
+- **Verify Before Use**: Always verify split information against official sources (SEC filings, company announcements) before relying on it for important decisions.
+- **No Warranty**: We make no guarantees about the accuracy, completeness, or timeliness of this data.
+- **Tax Guidance**: For capital gains tax calculations, consult a qualified tax professional and verify all split data with official records.
+
+**Use at your own risk.**
+
 ## Overview
 
 This repository provides historical stock split data in a structured JSON format, designed for:
@@ -190,10 +202,14 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding or correcting sp
 
 ## Data Sources
 
-- Company investor relations announcements
-- SEC filings
-- Exchange notices
-- Financial data providers
+All data is sourced exclusively from publicly available records:
+
+- **SEC EDGAR filings**: Form 8-K corporate action announcements (public domain)
+- **Company investor relations**: Official press releases and announcements
+- **Exchange notices**: NYSE and NASDAQ corporate action calendars
+- **Verification**: All entries must link to verifiable public sources
+
+**Note**: We do not use financial data APIs or paid services to ensure legal compliance and data integrity. See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed source requirements.
 
 ## License
 
