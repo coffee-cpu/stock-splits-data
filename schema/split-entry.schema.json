@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cdn.jsdelivr.net/gh/coffee-cpu/stock-splits-data@main/schema/split-entry.schema.json",
+  "title": "Stock Split Entry",
+  "description": "Schema for a single stock split entry in yearly files",
+  "type": "object",
+  "required": ["symbol", "name", "date", "ratio"],
+  "properties": {
+    "symbol": {
+      "type": "string",
+      "description": "Stock ticker symbol",
+      "pattern": "^[A-Z0-9.]+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Company name"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Split effective date (YYYY-MM-DD)",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "ratio": {
+      "type": "string",
+      "description": "Split ratio (e.g., '4:1' means 4 new shares for 1 old share)",
+      "pattern": "^\\d+:\\d+$"
+    },
+    "isin": {
+      "type": "string",
+      "description": "International Securities Identification Number",
+      "pattern": "^[A-Z]{2}[A-Z0-9]{10}$"
+    },
+    "exchange": {
+      "type": "string",
+      "description": "Primary exchange (e.g., NASDAQ, NYSE)"
+    },
+    "source": {
+      "type": "string",
+      "description": "Data source URL or reference"
+    },
+    "verified": {
+      "type": "boolean",
+      "description": "Whether this split has been verified against official sources"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional notes about the split"
+    }
+  },
+  "additionalProperties": false
+}

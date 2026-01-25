@@ -1,0 +1,16 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 1985,
+  "updated": "2025-01-25",
+  "count": 1,
+  "splits": [
+    {
+      "symbol": "WMT",
+      "name": "Walmart Inc.",
+      "date": "1985-09-03",
+      "ratio": "2:1",
+      "isin": "US9311421039",
+      "exchange": "NYSE"
+    }
+  ]
+}

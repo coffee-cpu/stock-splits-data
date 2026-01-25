@@ -1,0 +1,32 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 1987,
+  "updated": "2025-01-25",
+  "count": 3,
+  "splits": [
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "date": "1987-06-16",
+      "ratio": "2:1",
+      "isin": "US0378331005",
+      "exchange": "NASDAQ"
+    },
+    {
+      "symbol": "WMT",
+      "name": "Walmart Inc.",
+      "date": "1987-06-19",
+      "ratio": "2:1",
+      "isin": "US9311421039",
+      "exchange": "NYSE"
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "date": "1987-09-21",
+      "ratio": "2:1",
+      "isin": "US5949181045",
+      "exchange": "NASDAQ"
+    }
+  ]
+}
