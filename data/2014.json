@@ -1,0 +1,33 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2014,
+  "updated": "2025-01-25",
+  "splits": [
+    {
+      "symbol": "GOOG",
+      "name": "Alphabet Inc. (Class C)",
+      "date": "2014-04-03",
+      "ratio": "2:1",
+      "isin": "US02079K1079",
+      "exchange": "NASDAQ",
+      "notes": "Stock split created Class C shares"
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc. (Class A)",
+      "date": "2014-04-03",
+      "ratio": "2:1",
+      "isin": "US02079K3059",
+      "exchange": "NASDAQ",
+      "notes": "Stock split created Class C shares"
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "date": "2014-06-09",
+      "ratio": "7:1",
+      "isin": "US0378331005",
+      "exchange": "NASDAQ"
+    }
+  ]
+}

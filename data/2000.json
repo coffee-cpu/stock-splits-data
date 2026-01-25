@@ -1,0 +1,23 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2000,
+  "updated": "2025-01-25",
+  "splits": [
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "date": "2000-06-21",
+      "ratio": "2:1",
+      "isin": "US0378331005",
+      "exchange": "NASDAQ"
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "date": "2000-06-27",
+      "ratio": "2:1",
+      "isin": "US67066G1040",
+      "exchange": "NASDAQ"
+    }
+  ]
+}

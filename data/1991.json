@@ -1,0 +1,15 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 1991,
+  "updated": "2025-01-25",
+  "splits": [
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "date": "1991-06-27",
+      "ratio": "3:2",
+      "isin": "US5949181045",
+      "exchange": "NASDAQ"
+    }
+  ]
+}

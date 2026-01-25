@@ -1,0 +1,15 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2007,
+  "updated": "2025-01-25",
+  "splits": [
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "date": "2007-09-11",
+      "ratio": "3:2",
+      "isin": "US67066G1040",
+      "exchange": "NASDAQ"
+    }
+  ]
+}

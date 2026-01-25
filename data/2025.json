@@ -1,0 +1,23 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2025,
+  "updated": "2025-01-25",
+  "splits": [
+    {
+      "symbol": "NFLX",
+      "name": "Netflix, Inc.",
+      "date": "2025-11-14",
+      "ratio": "10:1",
+      "isin": "US64110L1061",
+      "exchange": "NASDAQ"
+    },
+    {
+      "symbol": "NOW",
+      "name": "ServiceNow, Inc.",
+      "date": "2025-12-16",
+      "ratio": "5:1",
+      "isin": "US81762P1021",
+      "exchange": "NYSE"
+    }
+  ]
+}

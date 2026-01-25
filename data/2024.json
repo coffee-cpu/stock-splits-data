@@ -1,0 +1,64 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2024,
+  "updated": "2025-01-25",
+  "splits": [
+    {
+      "symbol": "COST",
+      "name": "Costco Wholesale Corporation",
+      "date": "2024-01-12",
+      "ratio": "1:1",
+      "isin": "US22160K1051",
+      "exchange": "NASDAQ",
+      "notes": "Special dividend, not a split"
+    },
+    {
+      "symbol": "WMT",
+      "name": "Walmart Inc.",
+      "date": "2024-02-26",
+      "ratio": "3:1",
+      "isin": "US9311421039",
+      "exchange": "NYSE"
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "date": "2024-06-10",
+      "ratio": "10:1",
+      "isin": "US67066G1040",
+      "exchange": "NASDAQ"
+    },
+    {
+      "symbol": "CMG",
+      "name": "Chipotle Mexican Grill, Inc.",
+      "date": "2024-06-26",
+      "ratio": "50:1",
+      "isin": "US1696561059",
+      "exchange": "NYSE"
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom Inc.",
+      "date": "2024-07-15",
+      "ratio": "10:1",
+      "isin": "US11135F1012",
+      "exchange": "NASDAQ"
+    },
+    {
+      "symbol": "SMCI",
+      "name": "Super Micro Computer, Inc.",
+      "date": "2024-10-01",
+      "ratio": "10:1",
+      "isin": "US86800U1043",
+      "exchange": "NASDAQ"
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "date": "2024-12-16",
+      "ratio": "2:1",
+      "isin": "US6974351057",
+      "exchange": "NASDAQ"
+    }
+  ]
+}

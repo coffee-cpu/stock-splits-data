@@ -1,0 +1,23 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2020,
+  "updated": "2025-01-25",
+  "splits": [
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "date": "2020-08-31",
+      "ratio": "4:1",
+      "isin": "US0378331005",
+      "exchange": "NASDAQ"
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla, Inc.",
+      "date": "2020-08-31",
+      "ratio": "5:1",
+      "isin": "US88160R1014",
+      "exchange": "NASDAQ"
+    }
+  ]
+}

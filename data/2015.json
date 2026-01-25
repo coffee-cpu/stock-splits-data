@@ -1,0 +1,15 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2015,
+  "updated": "2025-01-25",
+  "splits": [
+    {
+      "symbol": "NFLX",
+      "name": "Netflix, Inc.",
+      "date": "2015-07-15",
+      "ratio": "7:1",
+      "isin": "US64110L1061",
+      "exchange": "NASDAQ"
+    }
+  ]
+}
