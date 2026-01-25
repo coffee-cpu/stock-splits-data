@@ -16,9 +16,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "build": "npx ts-node scripts/build-index.ts",
-    "validate": "npx ts-node scripts/validate.ts",
-    "precommit": "npm run validate && npm run build"
+    "validate": "npx ts-node scripts/validate.ts"
   },
   "devDependencies": {
     "@types/node": "^20.19.30",

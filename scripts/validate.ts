@@ -128,46 +128,6 @@ function validateYearFiles(): ValidationResult[] {
   return results;
 }
 
-function validateIndex(): ValidationResult | null {
-  const indexPath = path.join(DATA_DIR, 'index.json');
-  if (!fs.existsSync(indexPath)) {
-    return null;
-  }
-
-  const ajv = new Ajv({ allErrors: true, strict: false });
-  addFormats(ajv);
-
-  const indexSchema = loadSchema('index.schema.json');
-  const validate = ajv.compile(indexSchema);
-
-  const content = fs.readFileSync(indexPath, 'utf-8');
-  const errors: string[] = [];
-
-  let data: any;
-  try {
-    data = JSON.parse(content);
-  } catch (e) {
-    return {
-      file: 'index.json',
-      valid: false,
-      errors: [`Invalid JSON: ${(e as Error).message}`]
-    };
-  }
-
-  const valid = validate(data);
-  if (!valid && validate.errors) {
-    for (const err of validate.errors) {
-      errors.push(`${err.instancePath} ${err.message}`);
-    }
-  }
-
-  return {
-    file: 'index.json',
-    valid: errors.length === 0,
-    errors
-  };
-}
-
 function main(): void {
   console.log('Validating stock splits data...\n');
 
@@ -184,21 +144,6 @@ function main(): void {
         console.log(`      ${error}`);
       }
     }
-  }
-
-  const indexResult = validateIndex();
-  if (indexResult) {
-    console.log('\nIndex file:');
-    const status = indexResult.valid ? '✓' : '✗';
-    console.log(`  ${status} ${indexResult.file}`);
-    if (!indexResult.valid) {
-      hasErrors = true;
-      for (const error of indexResult.errors) {
-        console.log(`      ${error}`);
-      }
-    }
-  } else {
-    console.log('\nIndex file: not found (run build-index first)');
   }
 
   console.log('');

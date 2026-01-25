@@ -4,31 +4,25 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-Community-maintained catalog of stock split data, optimized for client-side fetching via CDN (jsDelivr). Data is organized by year in JSON files and compiled into a combined index for efficient lookups.
+Community-maintained catalog of stock split data, optimized for client-side fetching via CDN (jsDelivr). Data is organized by year in individual JSON files.
 
 ## Development Commands
 
-### Build and Validation
+### Validation
 ```bash
 npm install              # Install dependencies
 npm run validate         # Validate all data files against JSON schemas
-npm run build            # Generate data/index.json from year files
-npm run precommit        # Run validation + build (recommended before commits)
 ```
 
 ### Running Scripts Directly
 ```bash
 npx ts-node scripts/validate.ts           # Validate data integrity
-npx ts-node scripts/build-index.ts        # Build combined index
 ```
 
 ## Architecture
 
 ### Data Organization
 - **Year files** (`data/YYYY.json`): Annual split data, validated against `schema/year-file.schema.json`
-- **Index file** (`data/index.json`): Auto-generated combined lookup optimized for CDN delivery
-  - `bySymbol`: Maps ticker symbols to company info and split history
-  - `byIsin`: Maps ISINs to ticker symbols
 - **Schemas** (`schema/`): JSON schemas for validation using AJV
 
 ### Key Scripts
@@ -38,13 +32,6 @@ npx ts-node scripts/build-index.ts        # Build combined index
 - Checks date consistency (splits must be in correct year file)
 - Detects duplicate splits across files (same symbol + date)
 - Validates ISIN format (`/^[A-Z]{2}[A-Z0-9]{10}$/`) and ratio format (`/^\d+:\d+$/`)
-- Validates index.json structure if it exists
-
-**scripts/build-index.ts**
-- Aggregates all year files into a single index.json
-- Groups splits by symbol with chronological sorting (most recent first)
-- Creates ISIN-to-symbol lookup map
-- Updates version and timestamp metadata
 
 ### Data Validation Rules
 
@@ -69,18 +56,13 @@ Ratios are expressed as `new:old`:
 - Triggers on PRs and pushes to main affecting data/ or schema/
 - Runs `npm run validate` to ensure data integrity
 
-**.github/workflows/build-index.yml**
-- Triggers on pushes to main affecting data/
-- Runs `npm run build` and commits updated index.json
-
 ## Contributing Workflow
 
 When adding or correcting split data:
 1. Edit the appropriate `data/YYYY.json` file
 2. Update the `updated` field to current date (YYYY-MM-DD)
-3. Run `npm run precommit` to validate and rebuild index
-4. Commit changes (validation runs automatically)
-5. Index.json is auto-rebuilt by GitHub Actions on merge to main
+3. Run `npm run validate` to ensure data integrity
+4. Commit changes
 
 Required fields: `symbol`, `name`, `date`, `ratio`
 Recommended fields: `isin`, `exchange`
