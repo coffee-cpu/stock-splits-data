@@ -69,11 +69,6 @@ function validateYearFiles(): ValidationResult[] {
       }
     }
 
-    // Check count matches actual splits
-    if (data.count !== data.splits?.length) {
-      errors.push(`Count mismatch: declared ${data.count}, actual ${data.splits?.length || 0}`);
-    }
-
     // Check year in filename matches year in data
     const filenameYear = parseInt(filename.replace('.json', ''), 10);
     if (data.year !== filenameYear) {

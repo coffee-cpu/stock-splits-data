@@ -30,11 +30,7 @@ Add your entry to the `splits` array, maintaining alphabetical order by symbol:
 }
 ```
 
-### 3. Update the Count
-
-Increment the `count` field at the top of the file to match the new total.
-
-### 4. Update the Date
+### 3. Update the Date
 
 Update the `updated` field to today's date (YYYY-MM-DD format).
 
@@ -81,7 +77,6 @@ npm run validate
 
 The validator checks:
 - JSON schema compliance
-- Count matches actual splits
 - Dates are in the correct year
 - No duplicate entries (same symbol + date)
 - Valid ISIN format (if provided)
@@ -133,7 +128,6 @@ If you need to add a split for a year that doesn't have a file yet:
   "$schema": "../schema/year-file.schema.json",
   "year": YYYY,
   "updated": "2025-01-25",
-  "count": 1,
   "splits": [
     {
       "symbol": "TICKER",

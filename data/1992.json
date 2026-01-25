@@ -2,7 +2,6 @@
   "$schema": "../schema/year-file.schema.json",
   "year": 1992,
   "updated": "2025-01-25",
-  "count": 1,
   "splits": [
     {
       "symbol": "MSFT",

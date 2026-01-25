@@ -4,7 +4,7 @@
   "title": "Yearly Stock Splits File",
   "description": "Schema for yearly stock splits data files",
   "type": "object",
-  "required": ["$schema", "year", "updated", "count", "splits"],
+  "required": ["$schema", "year", "updated", "splits"],
   "properties": {
     "$schema": {
       "type": "string",
@@ -21,11 +21,6 @@
       "format": "date",
       "description": "Last update date (YYYY-MM-DD)",
       "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
-    },
-    "count": {
-      "type": "integer",
-      "description": "Number of splits in this file",
-      "minimum": 0
     },
     "splits": {
       "type": "array",

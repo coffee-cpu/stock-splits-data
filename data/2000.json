@@ -2,7 +2,6 @@
   "$schema": "../schema/year-file.schema.json",
   "year": 2000,
   "updated": "2025-01-25",
-  "count": 2,
   "splits": [
     {
       "symbol": "AAPL",

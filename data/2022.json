@@ -2,7 +2,6 @@
   "$schema": "../schema/year-file.schema.json",
   "year": 2022,
   "updated": "2025-01-25",
-  "count": 4,
   "splits": [
     {
       "symbol": "AMZN",
