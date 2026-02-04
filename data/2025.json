@@ -1,0 +1,94 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2025,
+  "updated": "2026-02-04",
+  "splits": [
+    {
+      "symbol": "CBSH",
+      "name": "Commerce Bancshares, Inc.",
+      "date": "2025-12-16",
+      "ratio": "21:20",
+      "isin": "US2005251036",
+      "exchange": "NASDAQ",
+      "source": "https://investor.commercebank.com/news-info/financial-news-releases/press-release/2025/Commerce-Bancshares-Inc--Declares-Stock-Dividend-and-Quarterly-Cash-Dividend-on-Common-Stock/default.aspx",
+
+      "notes": "5% stock dividend (1.05-for-1). Board declared Oct 31, 2025. Record date Dec 2, 2025. Distributed Dec 16, 2025. 57th consecutive year of dividend increases."
+    },
+    {
+      "symbol": "COKE",
+      "name": "Coca-Cola Consolidated, Inc.",
+      "date": "2025-05-23",
+      "ratio": "10:1",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/317540/000031754025000062/cokepressrelease51625.htm",
+
+      "notes": "Board approved Mar 4, 2025. Stockholders approved May 13, 2025. Record date May 16, 2025. Distributed May 23, 2025. Split-adjusted trading began May 27, 2025. Applies to both Common Stock and Class B Common Stock."
+    },
+    {
+      "symbol": "FAST",
+      "name": "Fastenal Company",
+      "date": "2025-05-21",
+      "ratio": "2:1",
+      "isin": "US3119001044",
+      "exchange": "NASDAQ",
+      "source": "https://investor.fastenal.com/news-releases/news-details/2025/Fastenal-Company-Announces-Two-For-One-Stock-Split/default.aspx",
+
+      "notes": "Board approved Apr 23, 2025. Record date May 5, 2025. Effective after close May 21, 2025. Split-adjusted trading began May 22, 2025. SEC 8-K: https://www.sec.gov/Archives/edgar/data/815556/000081555625000085/fast-20250423.htm"
+    },
+    {
+      "symbol": "IBKR",
+      "name": "Interactive Brokers Group, Inc.",
+      "date": "2025-06-17",
+      "ratio": "4:1",
+      "isin": "US45841N1072",
+      "exchange": "NASDAQ",
+      "source": "https://www.businesswire.com/news/home/20250415584574/en/Interactive-Brokers-Group-Announces-1Q2025-Results",
+
+      "notes": "Announced alongside Q1 2025 earnings on Apr 15, 2025. Record date Jun 16, 2025. Three additional shares distributed after close Jun 17, 2025. Split-adjusted trading began Jun 18, 2025. First split since 2007 IPO."
+    },
+    {
+      "symbol": "NFLX",
+      "name": "Netflix, Inc.",
+      "date": "2025-11-14",
+      "ratio": "10:1",
+      "isin": "US64110L1061",
+      "exchange": "NASDAQ",
+      "source": "https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2025/Netflix-Announces-Ten-For-One-Stock-Split/default.aspx",
+
+      "notes": "Board approved Oct 30, 2025. Record date Nov 10, 2025. Nine additional shares distributed after close Nov 14, 2025. Split-adjusted trading began Nov 17, 2025. SEC 8-K: https://www.sec.gov/Archives/edgar/data/1065280/000106528025000450/nflx-20251114.htm"
+    },
+    {
+      "symbol": "NOW",
+      "name": "ServiceNow, Inc.",
+      "date": "2025-12-17",
+      "ratio": "5:1",
+      "isin": "US81762P1021",
+      "exchange": "NYSE",
+      "source": "https://newsroom.servicenow.com/press-releases/details/2025/ServiceNow-Shareholders-Approve-5-for-1-Stock-Split/default.aspx",
+
+      "notes": "Board authorized with Q3 2025 results. Shareholders approved at special meeting Dec 5, 2025 (182M for, 61K against). Record date Dec 16, 2025. Effective at 4:05pm ET Dec 17, 2025. Split-adjusted trading began Dec 18, 2025. First split in company history."
+    },
+    {
+      "symbol": "ORLY",
+      "name": "O'Reilly Automotive, Inc.",
+      "date": "2025-06-09",
+      "ratio": "15:1",
+      "isin": "US67103H1077",
+      "exchange": "NASDAQ",
+      "source": "https://corporate.oreillyauto.com/2025/03/13/oreilly-automotive-inc-board-of-directors-approves-15-for-1-stock-split-subject-to-shareholder-approval-of-an-increase-in-the-number-of-authorized-shares-of-common-stock/",
+
+      "notes": "Board approved Mar 13, 2025. Shareholders approved May 15, 2025. Record date Jun 2, 2025. 14 additional shares distributed after close Jun 9, 2025. Split-adjusted trading began Jun 10, 2025. SEC 8-K: https://www.sec.gov/Archives/edgar/data/898173/000089817325000033/orly-20250515x8k.htm"
+    },
+    {
+      "symbol": "TPL",
+      "name": "Texas Pacific Land Corporation",
+      "date": "2025-12-22",
+      "ratio": "3:1",
+      "isin": "US88262P1021",
+      "exchange": "NYSE",
+      "source": "https://www.texaspacific.com/investors/news-events/press-releases/detail/175/texas-pacific-land-corporation-announces-effective-date-of",
+
+      "notes": "Announced Nov 5, 2025. Record date Dec 12, 2025. Two additional shares distributed Dec 22, 2025. Split-adjusted trading began Dec 23, 2025. SEC 8-K: https://www.texaspacific.com/investors/sec-filings/all-sec-filings/content/0001104659-25-117726/0001104659-25-117726.pdf"
+    }
+  ]
+}

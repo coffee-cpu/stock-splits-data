@@ -1,0 +1,216 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2026,
+  "updated": "2026-02-04",
+  "splits": [
+    {
+      "symbol": "AKAN",
+      "name": "Akanda Corp.",
+      "date": "2026-01-12",
+      "ratio": "1:5",
+      "isin": "CA00971M6018",
+      "exchange": "NASDAQ",
+      "source": "https://www.newsfilecorp.com/release/279751/Akanda-Corp.-Announces-Reverse-Stock-Split",
+      "notes": "Board approved Dec 23, 2025. Shareholders approved Nov 28, 2025. Effective Jan 12, 2026. Split-adjusted trading began Jan 12, 2026. Reverse split to maintain Nasdaq listing compliance."
+    },
+    {
+      "symbol": "AMCR",
+      "name": "Amcor plc",
+      "date": "2026-01-14",
+      "ratio": "1:5",
+      "exchange": "NYSE",
+      "source": "https://www.amcor.com/media/news/amcor-announces-effective-date-for-reverse-stock-split",
+      "notes": "Shareholders approved Nov 6, 2025 AGM. Amendment filed Jan 14, 2026. Split-adjusted trading began Jan 15, 2026 under new CUSIP G0250X149. Reduced outstanding shares from ~2.3B to ~461M. CDIs also consolidated 1-for-5 on ASX. SEC 8-K: https://www.sec.gov/Archives/edgar/data/1748790/000110465925120321/tm2533112d1_8k.htm"
+    },
+    {
+      "symbol": "AREB",
+      "name": "American Rebel Holdings, Inc.",
+      "date": "2026-02-02",
+      "ratio": "1:20",
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2026/01/28/3228076/0/en/AMERICAN-REBEL-HOLIDNGS-INC-NASDAQ-AREB-AREBW-REANNOUNCES-1-FOR-20-REVERSE-STOCK-SPLIT-OF-ITS-COMMON-STOCK-AND-PUBLICLY-TRADED-WARRANTS-WITH-ROUND-LOT-STOCKHOLDER-PROTECTION-TO-BE-.html",
+      "notes": "Stockholders approved Nov 25, 2025. Record date Jan 30, 2026. Effective 12:00 AM ET Feb 2, 2026. Split-adjusted trading began Feb 2, 2026. Reverse split to regain Nasdaq minimum bid price compliance. Round lot protection: shareholders with 100+ pre-split shares guaranteed 100 post-split shares."
+    },
+    {
+      "symbol": "ATOS",
+      "name": "Atossa Therapeutics, Inc.",
+      "date": "2026-02-02",
+      "ratio": "1:15",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/1488039/000119312526021727/atos-20260120.htm",
+      "notes": "Special meeting Jan 20, 2026. Board approved 15:1 ratio. Effective 12:01 AM ET Feb 2, 2026. Split-adjusted trading began Feb 2, 2026 under new CUSIP 04962H704. Reverse split to regain Nasdaq minimum bid price compliance; deadline Feb 17, 2026."
+    },
+    {
+      "symbol": "BTOG",
+      "name": "Bit Origin Ltd",
+      "date": "2026-01-20",
+      "ratio": "1:60",
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2026/01/15/3219811/0/en/Bit-Origin-Ltd-Announces-1-for-60-Reverse-Stock-Split-Effective-January-20-2026.html",
+      "notes": "Effective Jan 20, 2026. Split-adjusted trading began Jan 20, 2026. Reduced Class A ordinary shares from ~88.6M to ~1.5M and Class B from 768K to 12.8K."
+    },
+    {
+      "symbol": "CCTG",
+      "name": "CCSC Technology International Holdings Limited",
+      "date": "2026-01-23",
+      "ratio": "1:10",
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2026/01/20/3222244/0/en/CCSC-Technology-International-Holdings-Limited-Announces-1-for-10-Reverse-Stock-Split-Effective-January-23-2026.html",
+      "notes": "Split-adjusted trading began Jan 23, 2026 under new CUSIP G1993R118. Reduced outstanding shares from ~39.1M to ~3.9M. Reverse split to maintain Nasdaq Marketplace Rule 5550(a)(2) compliance."
+    },
+    {
+      "symbol": "CISS",
+      "name": "C3is Inc.",
+      "date": "2026-01-25",
+      "ratio": "1:20",
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2026/01/22/3223750/0/en/C3is-Inc-Announces-Reverse-Stock-Split.html",
+      "notes": "Board approved. Effective 11:59 PM ET Jan 25, 2026. Split-adjusted trading began Jan 26, 2026 under new CUSIP Y18284177. Reduced outstanding shares from ~20.5M to ~1.02M. Reverse split to regain Nasdaq minimum bid price compliance."
+    },
+    {
+      "symbol": "ELAB",
+      "name": "PMGC Holdings Inc.",
+      "date": "2026-01-06",
+      "ratio": "1:4",
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2026/01/06/3213298/0/en/PMGC-Holdings-Inc-Announces-Reverse-Stock-Split-Effective-January-6-2026.html",
+      "notes": "Effective 9:00 AM ET Jan 6, 2026 under new CUSIP 73017P409. Reduced outstanding shares from ~2.01M to ~504K."
+    },
+    {
+      "symbol": "FTFT",
+      "name": "Future FinTech Group Inc.",
+      "date": "2026-01-08",
+      "ratio": "1:4",
+      "exchange": "NASDAQ",
+      "source": "https://www.prnewswire.com/news-releases/future-fintech-group-inc-announces-reverse-stock-split-with-marketplace-effective-date-on-january-20-2026-302657868.html",
+      "notes": "Articles of Amendment filed in Florida effective Jan 8, 2026. Marketplace effective date Jan 20, 2026. Reduced authorized common shares from 600M to 150M and outstanding from ~20.2M to ~5.0M. New CUSIP 36117V402. Reverse split to support Nasdaq bid-price compliance."
+    },
+    {
+      "symbol": "ICU",
+      "name": "SeaStar Medical Holding Corporation",
+      "date": "2026-01-05",
+      "ratio": "1:10",
+      "exchange": "NASDAQ",
+      "source": "https://investors.seastarmedical.com/news-releases/news-release-details/seastar-medical-announces-1-10-reverse-split",
+      "notes": "Stockholders approved Dec 18, 2025. Effective 12:01 AM ET Jan 5, 2026. Split-adjusted trading began Jan 5, 2026 under new CUSIP 81256L302. Reverse split to regain Nasdaq minimum bid price compliance."
+    },
+    {
+      "symbol": "ICON",
+      "name": "Icon Energy Corp.",
+      "date": "2026-01-08",
+      "ratio": "1:5",
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2026/01/06/3213579/0/en/Icon-Energy-Corp-Announces-Reverse-Stock-Split.html",
+      "notes": "Board approved. Effective at opening of trading Jan 8, 2026 under new CUSIP Y4001C305. Reduced outstanding shares from ~3.46M to ~692K. Reverse split to support Nasdaq listing compliance."
+    },
+    {
+      "symbol": "KUST",
+      "name": "Kustom Entertainment, Inc.",
+      "date": "2026-01-08",
+      "ratio": "1:3",
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2026/01/05/3213218/10618/en/Digital-Ally-Announces-Name-Change-To-Kustom-Entertainment-Inc-Ticker-Symbol-Change-To-KUST-Reflecting-Strategic-Pivot-To-Live-Events-And-Online-Ticketing-Markets-and-Reverse-Stock.html",
+      "notes": "Board approved Dec 19, 2025. Effective Jan 8, 2026. Formerly Digital Ally, Inc. (DGLY). Concurrent name change to Kustom Entertainment and ticker change to KUST. New CUSIP 25382T507. Reduced outstanding shares from ~1.9M to ~633K."
+    },
+    {
+      "symbol": "LRHC",
+      "name": "La Rosa Holdings Corp.",
+      "date": "2026-01-26",
+      "ratio": "1:10",
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2026/01/22/3223736/0/en/La-Rosa-Holdings-Corp-Announces-1-for-10-Reverse-Stock-Split.html",
+      "notes": "Effective 12:01 AM ET Jan 26, 2026. Split-adjusted trading began Jan 26, 2026 under new CUSIP 50172T301. Reduced outstanding shares from ~5.35M to ~535K. Proactive measure to preserve Nasdaq listing."
+    },
+    {
+      "symbol": "MLEC",
+      "name": "Moolec Science S.A.",
+      "date": "2026-01-05",
+      "ratio": "1:15",
+      "exchange": "NASDAQ",
+      "source": "https://www.accessnewswire.com/newsroom/en/biotechnology/moolec-science-announces-effectiveness-of-share-consolidation-1124313",
+      "notes": "Shareholders approved Dec 16, 2025 EGM. Board approved Dec 19, 2025. Effective 8:00 AM ET Jan 5, 2026. Par value changed from $0.10 to $1.50. Reduced issued shares from ~10.9M to ~726K. Regained Nasdaq bid price compliance Jan 16, 2026."
+    },
+    {
+      "symbol": "MTEN",
+      "name": "Mingteng International Corporation Inc.",
+      "date": "2026-01-26",
+      "ratio": "1:200",
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2026/01/22/3223639/0/en/Mingteng-International-Announces-1-for-200-Reverse-Stock-Split-Effective-January-26-2026.html",
+      "notes": "Effective Jan 26, 2026. Split-adjusted trading began Jan 26, 2026. Reduced Class A ordinary shares from ~242.3M to ~1.2M."
+    },
+    {
+      "symbol": "PBM",
+      "name": "Psyence Biomedical Ltd.",
+      "date": "2026-02-02",
+      "ratio": "4:25",
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2026/01/28/3228135/0/en/Psyence-BioMed-Announces-Effective-Date-for-1-for-6-25-Reverse-Stock-Split.html",
+      "notes": "1-for-6.25 reverse split (4 new shares for every 25 old shares). Originally planned for Jan 20, 2026 but delayed. Effective Feb 2, 2026. Split-adjusted trading began Feb 2, 2026."
+    },
+    {
+      "symbol": "QGEN",
+      "name": "QIAGEN N.V.",
+      "date": "2026-01-07",
+      "ratio": "19:20",
+      "exchange": "NYSE",
+      "source": "https://corporate.qiagen.com/English/newsroom/press-releases/press-release-details/2025/QIAGEN-Announces-Details-for-Completion-of-Synthetic-Share-Repurchase-of-up-to-Approximately-500-Million/default.aspx",
+      "notes": "Shareholders approved Jun 2025 AGM. Part of ~$500M synthetic share repurchase combining capital repayment ($2.29/share) with 20-to-19 share consolidation. Last day pre-split trading Jan 7, 2026. Consolidated shares began trading Jan 8, 2026 on NYSE (QGEN) and Frankfurt (QIA). ~5% reduction in issued shares."
+    },
+    {
+      "symbol": "REVB",
+      "name": "Revelation Biosciences, Inc.",
+      "date": "2026-01-28",
+      "ratio": "1:4",
+      "exchange": "NASDAQ",
+      "source": "https://finance.yahoo.com/news/revelation-biosciences-inc-announces-1-145500000.html",
+      "notes": "Effective morning of Jan 28, 2026. Split-adjusted trading began Jan 28, 2026 under new CUSIP 76135L804. Reverse split to regain Nasdaq minimum bid price compliance. Third reverse split in approximately one year."
+    },
+    {
+      "symbol": "SLE",
+      "name": "Super League Enterprise, Inc.",
+      "date": "2026-01-23",
+      "ratio": "1:12",
+      "exchange": "NASDAQ",
+      "source": "https://ir.superleague.com/news-events/press-releases/detail/286/super-league-announces-1-for-12-reverse-split",
+      "notes": "Amendment filed Jan 16, 2026. Effective 12:01 AM Jan 23, 2026. Split-adjusted trading began Jan 23, 2026 under new CUSIP 86804F509. Reduced outstanding shares from ~14.0M to ~1.16M. Reverse split for Nasdaq listing compliance."
+    },
+    {
+      "symbol": "SF",
+      "name": "Stifel Financial Corp.",
+      "date": "2026-02-26",
+      "ratio": "3:2",
+      "isin": "US8606301021",
+      "exchange": "NYSE",
+      "source": "https://www.globenewswire.com/news-release/2026/01/27/3227118/0/en/Stifel-Announces-a-Three-for-Two-Stock-Split-11-Increase-to-Its-Common-Stock-Dividend-Declares-Preferred-Stock-Cash-Dividend.html",
+      "notes": "ANNOUNCED — needs validation after Feb 26. Board approved Jan 26, 2026. Record date Feb 12, 2026. One additional share for every two held, distributed Feb 26, 2026. Fifth split during CEO Kruszewski's tenure. ~103M shares pre-split, ~155M post-split."
+    },
+    {
+      "symbol": "SXTP",
+      "name": "60 Degrees Pharmaceuticals, Inc.",
+      "date": "2026-01-20",
+      "ratio": "1:4",
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2026/01/15/3219525/0/en/60-Degrees-Pharmaceuticals-Inc-Announces-Approval-of-Reverse-Stock-Split-Ratio.html",
+      "notes": "Board approved Dec 17, 2025. Effective 12:01 AM ET Jan 20, 2026."
+    },
+    {
+      "symbol": "TRT",
+      "name": "Trio-Tech International",
+      "date": "2026-01-02",
+      "ratio": "2:1",
+      "exchange": "NYSE American",
+      "source": "https://www.nasdaq.com/press-release/trio-tech-international-announces-2-1-forward-stock-split-2025-12-19",
+      "notes": "Board approved Dec 19, 2025. Articles of Incorporation amendment effective 12:01 AM ET Jan 1, 2026. Record date Dec 29, 2025. One additional share distributed after close Jan 2, 2026. Split-adjusted trading began Jan 5, 2026. Forward split to improve liquidity and broaden investor base."
+    },
+    {
+      "symbol": "UONE",
+      "name": "Urban One, Inc.",
+      "date": "2026-01-22",
+      "ratio": "1:10",
+      "exchange": "NASDAQ",
+      "source": "https://www.prnewswire.com/news-releases/urban-one-inc-announces-reverse-stock-split-302662994.html",
+      "notes": "Stockholders approved Jun 18, 2025. Board approved 1:10 ratio on Jan 16, 2026. Effective 11:59 PM ET Jan 22, 2026. Split-adjusted trading began Jan 23, 2026. Applies to all classes: Class A (UONE, new CUSIP 91705J303), Class D (UONEK, new CUSIP 91705J402), and Classes B and C. Reverse split to regain Nasdaq minimum bid price compliance for Class D stock."
+    }
+  ]
+}
