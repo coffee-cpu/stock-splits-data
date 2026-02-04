@@ -39,11 +39,7 @@
       "type": "string",
       "description": "Data source URL or reference"
     },
-    "verified": {
-      "type": "boolean",
-      "description": "Whether this split has been verified against official sources"
-    },
-    "notes": {
+"notes": {
       "type": "string",
       "description": "Additional notes about the split"
     }

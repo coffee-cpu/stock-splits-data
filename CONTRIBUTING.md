@@ -55,7 +55,6 @@ Update the `updated` field to today's date (YYYY-MM-DD format).
 | Field | Description | Example |
 |-------|-------------|---------|
 | `source` | Data source URL | `"https://..."` |
-| `verified` | Verified against official source | `true` |
 | `notes` | Additional context | `"Created Class C shares"` |
 
 ## Ratio Format
