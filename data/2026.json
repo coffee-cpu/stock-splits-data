@@ -176,6 +176,16 @@
       "notes": "Amendment filed Jan 16, 2026. Effective 12:01 AM Jan 23, 2026. Split-adjusted trading began Jan 23, 2026 under new CUSIP 86804F509. Reduced outstanding shares from ~14.0M to ~1.16M. Reverse split for Nasdaq listing compliance."
     },
     {
+      "symbol": "SF",
+      "name": "Stifel Financial Corp.",
+      "date": "2026-02-26",
+      "ratio": "3:2",
+      "isin": "US8606301021",
+      "exchange": "NYSE",
+      "source": "https://www.globenewswire.com/news-release/2026/01/27/3227118/0/en/Stifel-Announces-a-Three-for-Two-Stock-Split-11-Increase-to-Its-Common-Stock-Dividend-Declares-Preferred-Stock-Cash-Dividend.html",
+      "notes": "ANNOUNCED — needs validation after Feb 26. Board approved Jan 26, 2026. Record date Feb 12, 2026. One additional share for every two held, distributed Feb 26, 2026. Fifth split during CEO Kruszewski's tenure. ~103M shares pre-split, ~155M post-split."
+    },
+    {
       "symbol": "SXTP",
       "name": "60 Degrees Pharmaceuticals, Inc.",
       "date": "2026-01-20",
