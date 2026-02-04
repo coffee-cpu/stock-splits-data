@@ -62,6 +62,7 @@ interface SplitEntry {
   ratio: string;     // e.g., "4:1"
   isin?: string;
   exchange?: string;
+  source?: string;   // URL to SEC filing or press release
   notes?: string;
 }
 

@@ -66,7 +66,7 @@ When adding or correcting split data:
 
 Required fields: `symbol`, `name`, `date`, `ratio`
 Recommended fields: `isin`, `exchange`
-Optional fields: `source`, `verified`, `notes`
+Optional fields: `source`, `notes`
 
 Always maintain alphabetical ordering of splits within year files and include source documentation in PRs.
 
