@@ -1,0 +1,133 @@
+name: Weekly Splits Update
+
+on:
+  schedule:
+    # Every Monday at 09:00 UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+    inputs:
+      time_range:
+        description: 'Time range to search (e.g., "last 8 days", "January 2026", "2024")'
+        required: false
+        default: 'last 8 days'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-splits:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Create branch
+        run: |
+          BRANCH_NAME="auto/splits-$(date +%Y%m%d)"
+          git checkout -b "$BRANCH_NAME"
+          echo "BRANCH_NAME=$BRANCH_NAME" >> "$GITHUB_ENV"
+
+      - name: Research and add splits
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Research and add stock split data for the following time range: ${{ github.event.inputs.time_range || 'last 8 days' }}
+
+            Follow these steps:
+
+            1. Parse the time range into start/end dates.
+
+            2. Load existing data from the relevant data/YYYY.json file(s). Build a set of SYMBOL:DATE pairs to skip.
+
+            3. Search SEC EDGAR EFTS for 8-K filings mentioning "stock split", "stock dividend", and "reverse stock split" in the date range:
+               - URL pattern: https://efts.sec.gov/LATEST/search-index?q="<term>"&forms=8-K&dateRange=custom&startdt=<start>&enddt=<end>
+               - Handle pagination using the "from" parameter
+               - Also cross-reference with web searches for NASDAQ/NYSE stock split calendars
+
+            4. For each candidate not already in the data, research the filing to extract: symbol, name, date, ratio (new:old format), exchange, isin (if available), source URL, and notes.
+               - Only use publicly available sources (SEC filings, press releases, exchange announcements)
+               - Verify the split actually happened (not just announced)
+
+            5. Deduplicate against existing data.
+
+            6. Add new entries to the appropriate data/YYYY.json files:
+               - Insert alphabetically by symbol
+               - Update the "updated" field to today's date
+               - Create new year files if needed (use schema: "../schema/year-file.schema.json")
+
+            7. Run "npm run validate" and fix any issues.
+
+            8. Output a summary of added/skipped/errored splits.
+
+            Only commit changes to files in the data/ directory.
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet data/; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "$(cat <<'EOF'
+          Add stock splits for ${{ github.event.inputs.time_range || 'last 8 days' }}
+
+          Automated weekly update via SEC EDGAR research.
+
+          Co-Authored-By: Claude <noreply@anthropic.com>
+          EOF
+          )"
+          git push origin "$BRANCH_NAME"
+
+      - name: Create pull request
+        if: steps.changes.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ADDED=$(git diff HEAD~1 --stat data/ | tail -1)
+          gh pr create \
+            --title "Add stock splits for ${{ github.event.inputs.time_range || 'last 8 days' }}" \
+            --body "$(cat <<'EOF'
+          ## Summary
+
+          Automated weekly stock splits update researched from SEC EDGAR 8-K filings and exchange announcements.
+
+          **Changes:** $ADDED
+
+          ## Review Checklist
+
+          - [ ] Verify split ratios are correct (new:old format)
+          - [ ] Verify effective dates match source filings
+          - [ ] Check that source URLs are accessible
+          - [ ] Run `npm run validate` locally if needed
+          - [ ] Spot-check 2-3 entries against their source filings
+
+          ## Data Sources
+
+          - SEC EDGAR full-text search (8-K filings)
+          - NASDAQ/NYSE corporate action calendars
+          - Company investor relations press releases
+
+          🤖 Generated with [Claude Code](https://claude.com/claude-code)
+          EOF
+          )"
