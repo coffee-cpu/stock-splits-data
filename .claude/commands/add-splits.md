@@ -48,22 +48,36 @@ If a progress file already exists for the **same time range**, ask the user whet
 
 ### Step 3 — Discovery via SEC EDGAR Full-Text Search
 
-Search for 8-K filings mentioning stock splits using the SEC EDGAR EFTS API. Run **three separate searches**:
+Search for 8-K filings mentioning stock splits using the SEC EDGAR EFTS API.
 
-1. `"stock split"`
-2. `"stock dividend"`
-3. `"reverse stock split"`
+**IMPORTANT: SEC EDGAR API Requirements**
+- The SEC blocks requests without a proper User-Agent header containing an email address
+- WebFetch will return 403 errors — you MUST use `curl` via Bash instead
+- Format: `curl -s -A "your-app-name/1.0 (your-email@example.com)" "<url>"`
+- Rate limit: max 10 requests per second
 
-For each search term, use WebFetch on:
+Run searches using curl (pipe to `jq` for parsing):
+
+```bash
+# Search for forward stock splits
+curl -s -A "stock-splits-research/1.0 (contact@example.com)" \
+  "https://efts.sec.gov/LATEST/search-index?q=%22forward%20stock%20split%22&forms=8-K&dateRange=custom&startdt=<start>&enddt=<end>" \
+  | jq '.hits.total.value, .hits.hits[]._source.display_names[0], .hits.hits[]._source.file_date'
+
+# Search for specific forward ratios (excludes most reverse splits)
+curl -s -A "stock-splits-research/1.0 (contact@example.com)" \
+  "https://efts.sec.gov/LATEST/search-index?q=%222-for-1%22%20OR%20%223-for-1%22%20OR%20%224-for-1%22%20OR%20%225-for-1%22%20OR%20%2210-for-1%22%20OR%20%2215-for-1%22&forms=8-K&dateRange=custom&startdt=<start>&enddt=<end>"
 ```
-https://efts.sec.gov/LATEST/search-index?q="<term>"&forms=8-K&dateRange=custom&startdt=<start>&enddt=<end>
-```
 
-Handle pagination: check `hits.total.value` in the response. If there are more results than returned, use the `from` parameter to fetch subsequent pages (100 results per page).
+Handle pagination: check `hits.total.value` in the response. If there are more results than returned (default 100), use the `from` parameter to fetch subsequent pages.
 
-Additionally, cross-reference with a WebSearch for NASDAQ/NYSE stock split calendars for the time range to catch any splits not found via EDGAR (some smaller companies may file late or use different terminology).
+Additionally, cross-reference with a WebSearch for NASDAQ/NYSE stock split calendars for the time range to catch any splits not found via EDGAR.
+
+**Note on aggregator sites**: Sites like Yahoo Finance, stockanalysis.com can be used for discovery, but each split must be verified against original sources (SEC filings, company press releases) before adding to the data.
 
 **Deduplicate** candidates by CIK (Central Index Key) — the same company may appear in multiple searches. Update the progress file with all discovered candidates.
+
+**Filtering candidates**: Many SEC filings mentioning "forward stock split" are actually reverse/forward combinations used to eliminate small shareholders. These should be marked as NOT_A_FORWARD_SPLIT. A genuine forward split increases shares for ALL shareholders.
 
 ### Step 4 — Research Each Candidate
 

@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/year-file.schema.json",
   "year": 2025,
-  "updated": "2026-02-04",
+  "updated": "2026-02-05",
   "splits": [
     {
       "symbol": "CBSH",
@@ -13,6 +13,15 @@
       "source": "https://investor.commercebank.com/news-info/financial-news-releases/press-release/2025/Commerce-Bancshares-Inc--Declares-Stock-Dividend-and-Quarterly-Cash-Dividend-on-Common-Stock/default.aspx",
 
       "notes": "5% stock dividend (1.05-for-1). Board declared Oct 31, 2025. Record date Dec 2, 2025. Distributed Dec 16, 2025. 57th consecutive year of dividend increases."
+    },
+    {
+      "symbol": "FTLF",
+      "name": "FitLife Brands, Inc.",
+      "date": "2025-02-06",
+      "ratio": "2:1",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/1374328/000143774925002916/",
+      "notes": "Board approved 2-for-1 forward split. Certificate of Change filed with Nevada Secretary of State effective Feb 6, 2025. Split-adjusted trading began Feb 7, 2025. Shares outstanding doubled from 4,605,108 to 9,210,216."
     },
     {
       "symbol": "COKE",
@@ -69,6 +78,15 @@
       "notes": "Board authorized with Q3 2025 results. Shareholders approved at special meeting Dec 5, 2025 (182M for, 61K against). Record date Dec 16, 2025. Effective at 4:05pm ET Dec 17, 2025. Split-adjusted trading began Dec 18, 2025. First split in company history."
     },
     {
+      "symbol": "OBT",
+      "name": "Orange County Bancorp, Inc.",
+      "date": "2025-01-10",
+      "ratio": "2:1",
+      "exchange": "NASDAQ",
+      "source": "https://investors.orangebanktrust.com/news-releases/news-release-details/orange-county-bancorp-inc-declares-two-one-stock-split/",
+      "notes": "Board declared 2-for-1 forward split. Record date Jan 8, 2025 (adjusted from Jan 9 due to markets closing for President Carter). Effective after close Jan 10, 2025. Split-adjusted trading began Jan 13, 2025. Shares doubled from ~5.7M to ~11.4M."
+    },
+    {
       "symbol": "ORLY",
       "name": "O'Reilly Automotive, Inc.",
       "date": "2025-06-09",
@@ -78,6 +96,24 @@
       "source": "https://corporate.oreillyauto.com/2025/03/13/oreilly-automotive-inc-board-of-directors-approves-15-for-1-stock-split-subject-to-shareholder-approval-of-an-increase-in-the-number-of-authorized-shares-of-common-stock/",
 
       "notes": "Board approved Mar 13, 2025. Shareholders approved May 15, 2025. Record date Jun 2, 2025. 14 additional shares distributed after close Jun 9, 2025. Split-adjusted trading began Jun 10, 2025. SEC 8-K: https://www.sec.gov/Archives/edgar/data/898173/000089817325000033/orly-20250515x8k.htm"
+    },
+    {
+      "symbol": "RLI",
+      "name": "RLI Corp.",
+      "date": "2025-01-15",
+      "ratio": "2:1",
+      "exchange": "NYSE",
+      "source": "https://investors.rlicorp.com/news/news-details/2024/RLI-Declares-Special-Dividend-and-Two-for-One-Stock-Split/default.aspx",
+      "notes": "Board announced Nov 7, 2024. Record date Dec 31, 2024. Shares distributed Jan 15, 2025. Split-adjusted trading began Jan 16, 2025."
+    },
+    {
+      "symbol": "YOSH",
+      "name": "Yoshiharu Global Co.",
+      "date": "2025-07-31",
+      "ratio": "4:1",
+      "exchange": "NASDAQ",
+      "source": "https://ir.yoshiharuramen.com/news-events/press-releases/detail/53/yoshiharu-announces-4-for-1-stock-split",
+      "notes": "Board approved 4-for-1 forward split. Record date Jul 28, 2025. Three additional shares distributed after close Jul 30, 2025. Split-adjusted trading began Jul 31, 2025."
     },
     {
       "symbol": "TPL",
