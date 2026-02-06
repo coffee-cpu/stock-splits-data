@@ -1,0 +1,287 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2024,
+  "updated": "2026-02-06",
+  "splits": [
+    {
+      "symbol": "ANET",
+      "name": "Arista Networks, Inc.",
+      "date": "2024-12-03",
+      "ratio": "4:1",
+      "exchange": "NYSE",
+      "source": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2024/Arista-Networks-Completes-Four-for-One-Stock-Split-2024-UzV4VbnUJu/default.aspx",
+      "notes": "Board declared Nov 7, 2024. Amendment effective at 4:30 PM EST Dec 3, 2024. Split-adjusted trading began Dec 4, 2024. Second 4-for-1 split (first was Nov 2021)."
+    },
+    {
+      "symbol": "APH",
+      "name": "Amphenol Corporation",
+      "date": "2024-06-11",
+      "ratio": "2:1",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/820313/000110465924070695/tm2416925d1_8k.htm",
+      "notes": "Board approved May 20, 2024. Record date May 31, 2024. Shares distributed Jun 11, 2024. Split-adjusted trading began Jun 12, 2024."
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom Inc.",
+      "date": "2024-07-12",
+      "ratio": "10:1",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000077/avgo-20240612.htm",
+      "notes": "Announced Jun 12, 2024. Record date Jul 11, 2024. Amendment effective after close Jul 12, 2024. Split-adjusted trading began Jul 15, 2024. First split in company history."
+    },
+    {
+      "symbol": "BIRD",
+      "name": "Allbirds, Inc.",
+      "date": "2024-09-04",
+      "ratio": "1:20",
+      "exchange": "NASDAQ",
+      "source": "https://ir.allbirds.com/news-releases/news-release-details/allbirds-announces-1-20-reverse-stock-split",
+      "notes": "Reverse split. Stockholders approved Aug 13, 2024. Effective at 5:00 PM EDT Sep 4, 2024. Split-adjusted trading began Sep 5, 2024. CUSIP changed to 01675A208. Intended to regain Nasdaq minimum bid price compliance."
+    },
+    {
+      "symbol": "BZFD",
+      "name": "BuzzFeed, Inc.",
+      "date": "2024-05-06",
+      "ratio": "1:4",
+      "exchange": "NASDAQ",
+      "source": "https://ir.buzzfeed.com/news-releases/news-release-details/buzzfeed-inc-announces-1-4-reverse-stock-split",
+      "notes": "Reverse split. Board and shareholders approved. Effective at 12:01 AM EST May 6, 2024. CUSIP changed to 12430A300. Intended to regain Nasdaq minimum bid price compliance. Applied to Class A and Class B common stock."
+    },
+    {
+      "symbol": "CMG",
+      "name": "Chipotle Mexican Grill, Inc.",
+      "date": "2024-06-25",
+      "ratio": "50:1",
+      "exchange": "NYSE",
+      "source": "https://ir.chipotle.com/2024-03-19-CHIPOTLE-BOARD-OF-DIRECTORS-APPROVES-50-FOR-1-STOCK-SPLIT",
+      "notes": "Board approved Mar 19, 2024. Shareholders approved Jun 6, 2024. Record date Jun 18, 2024. Shares distributed after close Jun 25, 2024. Split-adjusted trading began Jun 26, 2024. First split in company history."
+    },
+    {
+      "symbol": "COO",
+      "name": "The Cooper Companies, Inc.",
+      "date": "2024-02-16",
+      "ratio": "4:1",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/711404/000071140423000068/coo-20231206.htm",
+      "notes": "Board approved Dec 6, 2023. Effective at 5:00 PM ET Feb 16, 2024. Split-adjusted trading began Feb 20, 2024. CUSIP changed to 216648501."
+    },
+    {
+      "symbol": "CTAS",
+      "name": "Cintas Corporation",
+      "date": "2024-09-11",
+      "ratio": "4:1",
+      "exchange": "NASDAQ",
+      "source": "https://www.cintas.com/newsroom/details/news/2024/05/02/cintas-board-of-directors-approves-4-for-1-stock-split/",
+      "notes": "Board approved May 2, 2024. Record date Sep 4, 2024. Shares distributed after close Sep 11, 2024. Split-adjusted trading began Sep 12, 2024. First split since 2000."
+    },
+    {
+      "symbol": "DECK",
+      "name": "Deckers Outdoor Corporation",
+      "date": "2024-09-16",
+      "ratio": "6:1",
+      "isin": "US2435371073",
+      "exchange": "NYSE",
+      "source": "https://ir.deckers.com/news-events/press-releases/press-release/2024/Deckers-Brands-Announces-Stockholder-Approval-of-Six-For-One-Forward-Stock-Split-and-Proportionate-Increase-in-Authorized-Common-Stock/default.aspx",
+      "notes": "Board approved. Record date Sep 6, 2024. Amendment effective Sep 13, 2024. Shares distributed Sep 16, 2024. Split-adjusted trading began Sep 17, 2024. Second split in company history."
+    },
+    {
+      "symbol": "DNA",
+      "name": "Ginkgo Bioworks Holdings, Inc.",
+      "date": "2024-08-19",
+      "ratio": "1:40",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/1830214/000162828024037384/dna-20240814.htm",
+      "notes": "Reverse split. Shareholders approved Aug 14, 2024. Board approved 1-for-40 ratio Aug 15, 2024. Certificate filed Aug 19, 2024. Split-adjusted trading began Aug 20, 2024. CUSIP changed to 37611X209. Intended to regain NYSE minimum bid price compliance."
+    },
+    {
+      "symbol": "FLNT",
+      "name": "Fluent, Inc.",
+      "date": "2024-04-11",
+      "ratio": "1:6",
+      "exchange": "NASDAQ",
+      "source": "https://investors.fluentco.com/news-releases/news-release-details/fluent-announces-reverse-stock-split",
+      "notes": "Reverse split. Effective at 6:00 PM ET Apr 11, 2024. Split-adjusted trading began Apr 12, 2024. Intended to regain Nasdaq minimum bid price compliance."
+    },
+    {
+      "symbol": "FOA",
+      "name": "Finance of America Companies Inc.",
+      "date": "2024-07-25",
+      "ratio": "1:10",
+      "exchange": "NYSE",
+      "source": "https://www.businesswire.com/news/home/20240715407757/en/Finance-of-America-Announces-Expected-Effective-Date-of-July-25-2024-for-Reverse-Stock-Split",
+      "notes": "Reverse split. Effective at 5:00 PM ET Jul 25, 2024. Split-adjusted trading began Jul 26, 2024. CUSIP changed to 31738L206. Intended to regain NYSE minimum bid price compliance."
+    },
+    {
+      "symbol": "HYZN",
+      "name": "Hyzon Motors Inc.",
+      "date": "2024-09-11",
+      "ratio": "1:50",
+      "exchange": "NASDAQ",
+      "source": "https://investors.hyzonfuelcell.com/news/news-details/2024/HYZON-ANNOUNCES-1-FOR-50-REVERSE-STOCK-SPLIT/default.aspx",
+      "notes": "Reverse split. Effective at 12:01 AM ET Sep 11, 2024. Split-adjusted trading began Sep 11, 2024. Intended to regain Nasdaq minimum bid price compliance."
+    },
+    {
+      "symbol": "LRCX",
+      "name": "Lam Research Corporation",
+      "date": "2024-10-02",
+      "ratio": "10:1",
+      "exchange": "NASDAQ",
+      "source": "https://newsroom.lamresearch.com/2024-05-21-Lam-Research-Corporation-Announces-10-Billion-Share-Repurchase-Authorization-and-a-10-for-1-Stock-Split",
+      "notes": "Board approved May 21, 2024. Record date and effective date Oct 2, 2024. Amendment effective at 5:00 PM ET. Split-adjusted trading began Oct 3, 2024. CUSIP changed to 512807306."
+    },
+    {
+      "symbol": "MSTR",
+      "name": "MicroStrategy Incorporated",
+      "date": "2024-08-07",
+      "ratio": "10:1",
+      "exchange": "NASDAQ",
+      "source": "https://www.strategy.com/press/microstrategy-announces-10-for-1-stock-split_07-11-2024",
+      "notes": "Board declared Jul 11, 2024. Record date Aug 1, 2024. Shares distributed after close Aug 7, 2024. Split-adjusted trading began Aug 8, 2024. Applied to both Class A and Class B common stock."
+    },
+    {
+      "symbol": "MULN",
+      "name": "Mullen Automotive, Inc.",
+      "date": "2024-09-17",
+      "ratio": "1:100",
+      "exchange": "NASDAQ",
+      "source": "https://news.bollingerev.com/mullen-automotive-inc-announces-reverse-stock-split-effective-sept-17-2024",
+      "notes": "Reverse split. Effective at 12:01 AM ET Sep 17, 2024. Split-adjusted trading began Sep 17, 2024. Intended to regain Nasdaq minimum bid price compliance. Sixth reverse split for the company."
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "date": "2024-06-07",
+      "ratio": "10:1",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000144/nvda-20240607.htm",
+      "notes": "Announced May 22, 2024. Record date Jun 6, 2024. Amendment effective at 4:01 PM ET Jun 7, 2024. Split-adjusted trading began Jun 10, 2024. Sixth split in company history."
+    },
+    {
+      "symbol": "NYCB",
+      "name": "New York Community Bancorp, Inc.",
+      "date": "2024-07-11",
+      "ratio": "1:3",
+      "exchange": "NYSE",
+      "source": "https://ir.flagstar.com/news-and-events/news-releases/press-release-details/2024/NEW-YORK-COMMUNITY-BANCORP-INC.-ANNOUNCES-EFFECTIVENESS-OF-ONE-FOR-THREE-REVERSE-STOCK-SPLIT/default.aspx",
+      "notes": "Reverse split. Shareholders approved Jun 5, 2024. Board approved Jun 26, 2024. Effective at 5:01 PM ET Jul 11, 2024. Split-adjusted trading began Jul 12, 2024. CUSIP changed to 649445400. Authorized shares reduced from 2B to 666.7M."
+    },
+    {
+      "symbol": "ODFL",
+      "name": "Old Dominion Freight Line, Inc.",
+      "date": "2024-03-27",
+      "ratio": "2:1",
+      "exchange": "NASDAQ",
+      "source": "https://ir.odfl.com/news-events/press-releases/detail/301/old-dominion-freight-line-declares-two-for-one-stock-split",
+      "notes": "Board approved. Record date Mar 13, 2024. Shares distributed Mar 27, 2024. Split-adjusted trading began Mar 28, 2024. Approximately 217,600,000 shares outstanding after split."
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "date": "2024-12-13",
+      "ratio": "2:1",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/1327567/000119312524277082/d817166d8k.htm",
+      "notes": "Board approved Nov 20, 2024. Record date Dec 12, 2024. Shares distributed after close Dec 13, 2024. Split-adjusted trading began Dec 16, 2024. Second split (first was 3-for-1 in Sep 2022)."
+    },
+    {
+      "symbol": "RENT",
+      "name": "Rent the Runway, Inc.",
+      "date": "2024-04-02",
+      "ratio": "1:20",
+      "exchange": "NASDAQ",
+      "source": "https://investors.renttherunway.com/news-releases/news-release-details/rent-runway-announces-1-20-reverse-stock-split",
+      "notes": "Reverse split. Stockholders approved Mar 21, 2024. Effective at 5:00 PM ET Apr 2, 2024. Split-adjusted trading began Apr 3, 2024. CUSIP changed to 76010Y202. Applied to Class A and Class B common stock. Intended to regain Nasdaq minimum bid price compliance."
+    },
+    {
+      "symbol": "SGLY",
+      "name": "Singularity Future Technology Ltd.",
+      "date": "2024-02-09",
+      "ratio": "1:10",
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2024/01/30/2820489/0/en/Singularity-Future-Technology-Announces-1-for-10-Reverse-Stock-Split.html",
+      "notes": "Reverse split. Effective Feb 9, 2024. Split-adjusted trading began Feb 12, 2024. Intended to satisfy Nasdaq $1.00 minimum bid price requirement."
+    },
+    {
+      "symbol": "SIRI",
+      "name": "Sirius XM Holdings Inc.",
+      "date": "2024-09-09",
+      "ratio": "1:10",
+      "exchange": "NASDAQ",
+      "source": "https://investor.siriusxm.com/news-events/press-releases/detail/2104/liberty-media-and-sirius-xm-announce-completion-of",
+      "notes": "Reverse split. Effective at 4:05 PM ET Sep 9, 2024, concurrent with Liberty Media split-off and merger. Split-adjusted trading began Sep 10, 2024. Outstanding shares reduced from ~3.8B to ~339M. Not executed for delisting avoidance but to attract institutional investors."
+    },
+    {
+      "symbol": "SMCI",
+      "name": "Super Micro Computer, Inc.",
+      "date": "2024-09-30",
+      "ratio": "10:1",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/1375365/000137536524000028/smci-20240806.htm",
+      "notes": "Board authorized. Announced Aug 6, 2024. Effective at 5:00 PM ET Sep 30, 2024. Split-adjusted trading began Oct 1, 2024. First split in company history."
+    },
+    {
+      "symbol": "SONY",
+      "name": "Sony Group Corporation",
+      "date": "2024-10-08",
+      "ratio": "5:1",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/313838/000110465924060803/tm2414258d1_6k.htm",
+      "notes": "Board approved May 14, 2024. Japanese common stock record date Sep 30, 2024. ADR payable date Oct 8, 2024. Split-adjusted ADR trading began Oct 9, 2024. ADR ratio remained 1:1."
+    },
+    {
+      "symbol": "SPCE",
+      "name": "Virgin Galactic Holdings, Inc.",
+      "date": "2024-06-14",
+      "ratio": "1:20",
+      "exchange": "NYSE",
+      "source": "https://investors.virgingalactic.com/news/news-details/2024/Virgin-Galactic-to-Effect-a-Reverse-Stock-Split/default.aspx",
+      "notes": "Reverse split. Stockholders approved Jun 12, 2024. Board approved same day. Effective at 5:00 PM ET Jun 14, 2024. Split-adjusted trading began Jun 17, 2024. CUSIP changed to 92766K403. Intended to meet NYSE minimum bid price requirement."
+    },
+    {
+      "symbol": "TCS",
+      "name": "The Container Store Group, Inc.",
+      "date": "2024-09-03",
+      "ratio": "1:15",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/1411688/000162828024038695/tcs-20240828.htm",
+      "notes": "Reverse split. Stockholders approved Aug 28, 2024. Board approved 1-for-15 ratio. Effective at 5:00 PM ET Sep 3, 2024. Split-adjusted trading began Sep 4, 2024. CUSIP changed to 210751202. Intended to regain NYSE minimum bid price compliance."
+    },
+    {
+      "symbol": "TPL",
+      "name": "Texas Pacific Land Corporation",
+      "date": "2024-03-26",
+      "ratio": "3:1",
+      "exchange": "NYSE",
+      "source": "https://www.texaspacific.com/investors/news-events/press-releases/detail/155/texas-pacific-land-corporation-announces-three-for-one",
+      "notes": "Board approved. Certificate of Amendment filed Mar 1, 2024. Record date Mar 18, 2024. Shares distributed Mar 26, 2024. Split-adjusted trading began Mar 27, 2024."
+    },
+    {
+      "symbol": "TSCO",
+      "name": "Tractor Supply Company",
+      "date": "2024-12-19",
+      "ratio": "5:1",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/916365/000091636524000119/0000916365-24-000119-index.htm",
+      "notes": "Board authorized Dec 5, 2024. Record date Dec 16, 2024. Certificate of Amendment filed Dec 19, 2024, effective at 5:00 PM. Split-adjusted trading began Dec 20, 2024. Fifth split since 1994 IPO."
+    },
+    {
+      "symbol": "WMT",
+      "name": "Walmart Inc.",
+      "date": "2024-02-23",
+      "ratio": "3:1",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/104169/000010416924000033/wmt-20240223.htm",
+      "notes": "Announced Jan 30, 2024. Record date Feb 22, 2024. Certificate of Amendment filed after close Feb 23, 2024. Split-adjusted trading began Feb 26, 2024. First split since 1999."
+    },
+    {
+      "symbol": "WSM",
+      "name": "Williams-Sonoma, Inc.",
+      "date": "2024-07-08",
+      "ratio": "2:1",
+      "exchange": "NYSE",
+      "source": "https://ir.williams-sonomainc.com/investor-information/news-releases/news-release-details/2024/Williams-Sonoma-Inc.-Announces-Two-for-One-Stock-Split/default.aspx",
+      "notes": "Board declared 2-for-1 split via stock dividend. Record date Jun 27, 2024. Shares distributed after close Jul 8, 2024. Split-adjusted trading began Jul 9, 2024."
+    }
+  ]
+}
