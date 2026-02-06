@@ -1,0 +1,97 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2023,
+  "updated": "2026-02-06",
+  "splits": [
+    {
+      "symbol": "CELH",
+      "name": "Celsius Holdings, Inc.",
+      "date": "2023-11-15",
+      "ratio": "3:1",
+      "isin": "US15118V2079",
+      "exchange": "NASDAQ",
+      "source": "https://ir.celsiusholdingsinc.com/news/news-details/2023/Celsius-Holdings-Announces-Three-for-One-Stock-Split/default.aspx",
+      "notes": "Board approved Nov 2, 2023. Record date Nov 13, 2023. Distributed Nov 14, 2023. Split-adjusted trading began Nov 15, 2023."
+    },
+    {
+      "symbol": "CHDN",
+      "name": "Churchill Downs, Incorporated",
+      "date": "2023-05-22",
+      "ratio": "2:1",
+      "isin": "US1714841087",
+      "exchange": "NASDAQ",
+      "source": "https://ir.churchilldownsincorporated.com/news-releases/news-release-details/churchill-downs-incorporated-announces-2-1-stock-split",
+      "notes": "Board approved Apr 25, 2023. Record date May 5, 2023. Distributed May 19, 2023. Split-adjusted trading began May 22, 2023."
+    },
+    {
+      "symbol": "CPRT",
+      "name": "Copart, Inc.",
+      "date": "2023-08-22",
+      "ratio": "2:1",
+      "isin": "US2172041061",
+      "exchange": "NASDAQ",
+      "source": "https://www.businesswire.com/news/home/20230804863446/en/Copart-Inc.-Announces-a-Two-for-One-Stock-Split",
+      "notes": "Board approved Aug 4, 2023. Record date Aug 14, 2023. Distributed Aug 21, 2023. Split-adjusted trading began Aug 22, 2023. Shares outstanding increased from ~480M to ~960M."
+    },
+    {
+      "symbol": "MLI",
+      "name": "Mueller Industries, Inc.",
+      "date": "2023-10-23",
+      "ratio": "2:1",
+      "isin": "US6247561029",
+      "exchange": "NYSE",
+      "source": "https://ir.muellerindustries.com/news/press-releases/detail/166/mueller-industries-inc-announces-two-for-one-stock-split",
+      "notes": "Board declared Sep 26, 2023. Record date Oct 6, 2023. Distributed Oct 20, 2023. Split-adjusted trading began Oct 23, 2023."
+    },
+    {
+      "symbol": "MNST",
+      "name": "Monster Beverage Corporation",
+      "date": "2023-03-28",
+      "ratio": "2:1",
+      "isin": "US61174X1090",
+      "exchange": "NASDAQ",
+      "source": "https://investors.monsterbevcorp.com/news-releases/news-release-details/monster-beverage-reports-2022-fourth-quarter-and-full-year",
+      "notes": "Announced Feb 28, 2023 during Q4 2022 earnings. Record date Mar 13, 2023. Distributed Mar 27, 2023. Split-adjusted trading began Mar 28, 2023."
+    },
+    {
+      "symbol": "MRBK",
+      "name": "Meridian Corporation",
+      "date": "2023-03-21",
+      "ratio": "2:1",
+      "isin": "US58958P1049",
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2023/02/28/2617608/0/en/Meridian-Corporation-Declares-Two-for-One-Stock-Split.html",
+      "notes": "Board approved Feb 28, 2023. Record date Mar 14, 2023. Distributed Mar 20, 2023. Split-adjusted trading began Mar 21, 2023. Post-split shares outstanding: 11,405,184."
+    },
+    {
+      "symbol": "NVO",
+      "name": "Novo Nordisk A/S",
+      "date": "2023-09-20",
+      "ratio": "2:1",
+      "isin": "US6701002056",
+      "exchange": "NYSE",
+      "source": "https://www.nasdaq.com/press-release/novo-nordisk-conducts-a-two-for-one-stock-split-2023-09-13",
+      "notes": "Board approved Aug 10, 2023. Copenhagen B shares split effective Sep 13, 2023. NYSE ADR split effective Sep 20, 2023. Maintained 1:1 relationship between B-share and ADR."
+    },
+    {
+      "symbol": "PCAR",
+      "name": "PACCAR Inc",
+      "date": "2023-02-08",
+      "ratio": "3:2",
+      "isin": "US6937181088",
+      "exchange": "NASDAQ",
+      "source": "https://www.businesswire.com/news/home/20221205005852/en/PACCAR-Announces-50-Stock-Dividend-and-Increases-Quarterly-Cash-Dividend",
+      "notes": "Board declared Dec 5, 2022. 50% stock dividend (3-for-2 split). Record date Jan 17, 2023. Distributed Feb 7, 2023. Split-adjusted trading began Feb 8, 2023."
+    },
+    {
+      "symbol": "SRE",
+      "name": "Sempra",
+      "date": "2023-08-22",
+      "ratio": "2:1",
+      "isin": "US8168511090",
+      "exchange": "NYSE",
+      "source": "https://www.sempra.com/investor-announcement",
+      "notes": "Board declared Aug 3, 2023. Record date Aug 14, 2023. Distributed Aug 21, 2023. Split-adjusted trading began Aug 22, 2023."
+    }
+  ]
+}
