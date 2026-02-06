@@ -1,0 +1,104 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2022,
+  "updated": "2026-02-06",
+  "splits": [
+    {
+      "symbol": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "date": "2022-06-03",
+      "ratio": "20:1",
+      "isin": "US0231351067",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000009/amzn-20220309.htm",
+      "notes": "Board approved Mar 9, 2022. Shareholders approved May 25, 2022. Record date May 27, 2022. 19 additional shares reflected in accounts on or about June 3, 2022. Split-adjusted trading began June 6, 2022. First split since 1999."
+    },
+    {
+      "symbol": "CPRT",
+      "name": "Copart, Inc.",
+      "date": "2022-11-03",
+      "ratio": "2:1",
+      "exchange": "NASDAQ",
+      "notes": "Special meeting Oct 3, 2022 approved amendment to Certificate of Incorporation increasing authorized shares from 400M to 1.6B. Certificate filed with Delaware Secretary of State Oct 31, 2022. SEC 8-K filed Nov 2, 2022. One additional share distributed Nov 3, 2022. Split-adjusted trading began Nov 4, 2022."
+    },
+    {
+      "symbol": "DXCM",
+      "name": "DexCom, Inc.",
+      "date": "2022-06-10",
+      "ratio": "4:1",
+      "isin": "US2521311074",
+      "exchange": "NASDAQ",
+      "source": "https://investors.dexcom.com/news/news-details/2022/Dexcom-Announces-Four-for-One-Forward-Stock-Split/default.aspx",
+      "notes": "Board approved Mar 25, 2022. Shareholders approved at annual meeting May 19, 2022. Record date May 19, 2022. Three additional shares distributed; split-adjusted trading began June 10, 2022. First stock split in company history."
+    },
+    {
+      "symbol": "FTNT",
+      "name": "Fortinet, Inc.",
+      "date": "2022-06-22",
+      "ratio": "5:1",
+      "isin": "US34959E1091",
+      "exchange": "NASDAQ",
+      "source": "https://investor.fortinet.com/news-releases/news-release-details/fortinet-announces-five-one-stock-split",
+      "notes": "Disclosed Apr 22, 2022. Shareholders approved at annual meeting June 17, 2022. Effective June 22, 2022. Split-adjusted trading began June 23, 2022. Second split in company history (first was 2:1 in 2011)."
+    },
+    {
+      "symbol": "GME",
+      "name": "GameStop Corp.",
+      "date": "2022-07-21",
+      "ratio": "4:1",
+      "isin": "US36467W1099",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/1326380/000132638022000100/a991-stocksplitannouncement.htm",
+      "notes": "Board approved Jul 6, 2022. Record date Jul 18, 2022. Three additional shares distributed after close Jul 21, 2022. Split-adjusted trading began Jul 22, 2022."
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "date": "2022-07-15",
+      "ratio": "20:1",
+      "isin": "US02079K3059",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000015/googexhibit991q42021.htm",
+      "notes": "Board approved Feb 1, 2022. Shareholders approved June 1, 2022. Record date Jul 1, 2022. 19 additional shares distributed after close Jul 15, 2022. Split-adjusted trading began Jul 18, 2022. Applied to all three share classes (Class A GOOGL, Class B, and Class C GOOG). First split since 2014."
+    },
+    {
+      "symbol": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "date": "2022-08-26",
+      "ratio": "3:1",
+      "isin": "US6311031081",
+      "exchange": "NASDAQ",
+      "source": "https://ir.nasdaq.com/news-releases/news-release-details/nasdaq-announces-3-1-stock-split-and-quarterly-dividend-020",
+      "notes": "Board approved Apr 20, 2022. Shareholders and SEC approved June 2022. Record date Aug 12, 2022. Two additional shares distributed Aug 26, 2022. Split-adjusted trading began Aug 29, 2022. First stock split in company history."
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "date": "2022-09-13",
+      "ratio": "3:1",
+      "exchange": "NASDAQ",
+      "source": "https://investors.paloaltonetworks.com/static-files/2655de46-df5a-4a15-ac9b-fde81baae9f0",
+      "notes": "Board approved Aug 22, 2022. Record date Sep 6, 2022. Two additional shares distributed after close Sep 13, 2022. Split-adjusted trading began Sep 14, 2022. First stock split in company history."
+    },
+    {
+      "symbol": "SHOP",
+      "name": "Shopify Inc.",
+      "date": "2022-06-28",
+      "ratio": "10:1",
+      "isin": "CA82509L1076",
+      "exchange": "NYSE",
+      "source": "https://www.newsfilecorp.com/release/126883",
+      "notes": "Board approved Apr 11, 2022. Shareholders approved Jun 7, 2022. Record date Jun 22, 2022. Nine additional shares distributed Jun 28, 2022. Split-adjusted trading began Jun 29, 2022. Applied to both Class A and Class B shares."
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla, Inc.",
+      "date": "2022-08-24",
+      "ratio": "3:1",
+      "isin": "US88160R1014",
+      "exchange": "NASDAQ",
+      "source": "https://ir.tesla.com/press-release/tesla-announces-three-one-stock-split",
+      "notes": "Shareholders approved Aug 4, 2022. Record date Aug 17, 2022. Two additional shares distributed after close Aug 24, 2022. Split-adjusted trading began Aug 25, 2022. Second split in company history (first was 5:1 in Aug 2020)."
+    }
+  ]
+}
