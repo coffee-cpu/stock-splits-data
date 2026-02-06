@@ -192,13 +192,14 @@ Every US public company stock split triggers an 8-K filing. The SEC EDGAR full-t
 https://efts.sec.gov/LATEST/search-index?q=QUERY&dateRange=custom&startdt=YYYY-MM-DD&enddt=YYYY-MM-DD&forms=8-K
 ```
 
-Run three separate searches, each with a different query, to catch all types of corporate actions:
+Run four separate searches, each with a different query, to catch all types of corporate actions:
 
 | Query | URL-encoded query | What it catches |
 |-------|-------------------|-----------------|
 | `"stock split"` | `%22stock+split%22` | Forward and reverse splits |
 | `"stock dividend"` | `%22stock+dividend%22` | Stock dividends (e.g., 5% dividend = 21:20) |
 | `"reverse stock split"` | `%22reverse+stock+split%22` | Reverse splits specifically |
+| `"share consolidation"` | `%22share+consolidation%22` | Reverse splits using alternative terminology |
 
 **Example — all splits in January 2026:**
 ```
@@ -211,6 +212,8 @@ For each result, open the 8-K filing and extract:
 - Key dates: board approval, record date, distribution/effective date, first split-adjusted trading date
 
 > **Note:** EDGAR requires a `User-Agent` header with a company name and email (e.g., `stock-splits-data research@github.com`). The human-facing search at [sec.gov/edgar/search](https://www.sec.gov/edgar/search/) also works — use the "8-K" form type filter.
+
+> **Pagination:** EFTS returns up to 100 results per page. For queries with many results, use `&from=0&size=100` to paginate (increment `from` by 100 for each page). The `dateRange` start and end parameters are inclusive.
 
 ### Step 2: Cross-Reference with Exchange Calendars
 

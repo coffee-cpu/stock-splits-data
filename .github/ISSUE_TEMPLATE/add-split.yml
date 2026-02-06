@@ -1,0 +1,77 @@
+name: Add Stock Split
+description: Submit a new stock split to be added to the catalog
+title: "Add [SYMBOL] [YYYY] split"
+labels: ["new-split"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing! Please fill in the details below. All fields marked with * are required.
+
+        **Important**: Only use publicly available sources (SEC filings, company IR pages, exchange announcements). Do not use data from paid APIs or restricted services.
+
+  - type: input
+    id: symbol
+    attributes:
+      label: Ticker Symbol
+      description: Uppercase stock ticker
+      placeholder: "NVDA"
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Company Name
+      description: Full legal company name
+      placeholder: "NVIDIA Corporation"
+    validations:
+      required: true
+
+  - type: input
+    id: date
+    attributes:
+      label: Effective Date
+      description: "Distribution/effective date in YYYY-MM-DD format (not record date or approval date)"
+      placeholder: "2024-06-10"
+    validations:
+      required: true
+
+  - type: input
+    id: ratio
+    attributes:
+      label: Split Ratio
+      description: "In new:old format (e.g., 4:1 for forward split, 1:10 for reverse split)"
+      placeholder: "10:1"
+    validations:
+      required: true
+
+  - type: input
+    id: exchange
+    attributes:
+      label: Exchange
+      description: Primary exchange where the stock trades
+      placeholder: "NASDAQ"
+
+  - type: input
+    id: isin
+    attributes:
+      label: ISIN
+      description: "12-character International Securities Identification Number (2 letters + 10 alphanumeric)"
+      placeholder: "US67066G1040"
+
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+      description: Link to SEC filing, company press release, or exchange announcement
+      placeholder: "https://www.sec.gov/Archives/edgar/data/..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: "Key dates, context, or other relevant information"
+      placeholder: "Board approved YYYY-MM-DD. Record date YYYY-MM-DD. Split-adjusted trading began YYYY-MM-DD."

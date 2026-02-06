@@ -1,0 +1,6 @@
+# Default owners for everything in the repo
+* @coffee-cpu
+
+# Data files require review from maintainers
+/data/ @coffee-cpu
+/schema/ @coffee-cpu

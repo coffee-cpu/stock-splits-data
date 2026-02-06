@@ -1,0 +1,52 @@
+name: Correct Stock Split Data
+description: Report an error in existing stock split data
+title: "Fix [SYMBOL] [YYYY] split data"
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Found an error in existing data? Please provide the details below so we can correct it.
+
+  - type: input
+    id: symbol
+    attributes:
+      label: Ticker Symbol
+      description: Which stock has incorrect data?
+      placeholder: "AAPL"
+    validations:
+      required: true
+
+  - type: input
+    id: year
+    attributes:
+      label: Year
+      description: Which year file contains the error?
+      placeholder: "2024"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current (Incorrect) Data
+      description: What does the entry currently say?
+    validations:
+      required: true
+
+  - type: textarea
+    id: correct
+    attributes:
+      label: Correct Data
+      description: What should it say instead?
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+      description: Link to SEC filing or official source that confirms the correct data
+      placeholder: "https://www.sec.gov/Archives/edgar/data/..."
+    validations:
+      required: true
