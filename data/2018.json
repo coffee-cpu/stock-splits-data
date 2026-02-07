@@ -1,0 +1,70 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2018,
+  "updated": "2026-02-07",
+  "splits": [
+    {
+      "symbol": "ACGL",
+      "name": "Arch Capital Group Ltd.",
+      "date": "2018-06-20",
+      "ratio": "3:1",
+      "exchange": "NASDAQ",
+      "source": "https://infomemo.theocc.com/infomemos?number=43178",
+      "notes": "Shareholders approved amendment enabling split at annual meeting (8-K filed May 15, 2018). Record date Jun 18, 2018. Payable date Jun 20, 2018. Ex-distribution date Jun 21, 2018. Second 3-for-1 split (first was May 2011). Bermuda-domiciled company."
+    },
+    {
+      "symbol": "AFL",
+      "name": "Aflac Incorporated",
+      "date": "2018-03-16",
+      "ratio": "2:1",
+      "exchange": "NYSE",
+      "source": "https://www.prnewswire.com/news-releases/aflac-incorporated-announces-two-for-one-stock-split-in-the-form-of-a-100-stock-dividend-payable-on-march-16-2018-300598267.html",
+      "notes": "Board approved Feb 13, 2018. Record date Mar 2, 2018. Payable date Mar 16, 2018. Split-adjusted trading began Mar 19, 2018. Implemented as 100% stock dividend. Ninth split since NYSE listing in 1974, first in 17 years."
+    },
+    {
+      "symbol": "CASH",
+      "name": "Meta Financial Group, Inc.",
+      "date": "2018-10-04",
+      "ratio": "3:1",
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2018/08/28/1557916/0/en/Meta-Financial-Group-Inc-Announces-Forward-Stock-Split-and-Dividend-Increase.html",
+      "notes": "Announced Aug 28, 2018. Record date Sep 20, 2018. Payable date Oct 4, 2018. Split-adjusted trading began Oct 5, 2018. Forward stock split implemented as stock dividend of two additional shares per share. Company renamed to Pathward Financial, Inc. in July 2022."
+    },
+    {
+      "symbol": "HEI",
+      "name": "HEICO Corporation",
+      "date": "2018-01-17",
+      "ratio": "5:4",
+      "exchange": "NYSE",
+      "source": "https://www.businesswire.com/news/home/20171215005358/en/HEICO-Corporation-Declares-a-5-for-4-Stock-Split-Increases-the-Semi-Annual-Cash-Dividend-by-9-Percent-and-Sets-the-Annual-Meeting-and-Record-Date",
+      "notes": "Board approved Dec 15, 2017. Record date Jan 3, 2018. Payable date Jan 17, 2018. Split-adjusted trading began Jan 18, 2018. Effected as 25% stock dividend on both Common Stock (HEI) and Class A Common Stock (HEI.A). 16th stock split or stock dividend since 1995."
+    },
+    {
+      "symbol": "HEI",
+      "name": "HEICO Corporation",
+      "date": "2018-06-27",
+      "ratio": "5:4",
+      "exchange": "NYSE",
+      "source": "https://www.businesswire.com/news/home/20180612005838/en/HEICO-Corporation-Declares-a-5-for-4-Stock-Split-and-Increases-the-Semi-Annual-Cash-Dividend-by-7-Percent",
+      "notes": "Board approved Jun 12, 2018. Record date Jun 21, 2018. Payable date Jun 27, 2018. Split-adjusted trading began Jun 28, 2018. Effected as 25% stock dividend on both Common Stock (HEI) and Class A Common Stock (HEI.A). 17th stock split or stock dividend since 1995, second split in past year."
+    },
+    {
+      "symbol": "HLF",
+      "name": "Herbalife Nutrition Ltd.",
+      "date": "2018-05-14",
+      "ratio": "2:1",
+      "exchange": "NYSE",
+      "source": "https://www.businesswire.com/news/home/20180424006514/en/Herbalife-Ltd.-Announces-Strategic-Name-Change-to-Herbalife-Nutrition-Ltd.-Reflecting-its-Leadership-as-a-Premier-Global-Nutrition-Company",
+      "notes": "Shareholder approval at Annual General Meeting Apr 24, 2018. Record date May 7, 2018. Distribution date May 14, 2018. Split-adjusted trading began May 15, 2018. Implemented as 100% stock dividend. Company name changed from Herbalife Ltd. to Herbalife Nutrition Ltd. effective Apr 25, 2018."
+    },
+    {
+      "symbol": "TREX",
+      "name": "Trex Company, Inc.",
+      "date": "2018-06-18",
+      "ratio": "2:1",
+      "exchange": "NYSE",
+      "source": "https://www.businesswire.com/news/home/20180619005071/en/Trex-Companys-2-For-1-Stock-Split-Becomes-Effective-Today",
+      "notes": "Board approved May 7, 2018. Record date May 23, 2018. Distribution date Jun 18, 2018. Split-adjusted trading began Jun 19, 2018. Implemented as 100% stock dividend."
+    }
+  ]
+}
