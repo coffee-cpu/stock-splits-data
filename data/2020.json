@@ -1,0 +1,47 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2020,
+  "updated": "2026-02-07",
+  "splits": [
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "date": "2020-08-28",
+      "ratio": "4:1",
+      "exchange": "NASDAQ",
+      "isin": "US0378331005",
+      "source": "https://www.sec.gov/Archives/edgar/data/320193/000119312520213158/d49399d8k.htm",
+      "notes": "Board approved Jul 30, 2020 alongside Q3 FY2020 earnings. Articles of Incorporation amended Aug 3, 2020 increasing authorized shares from 12.6B to 50.4B. Record date Aug 24, 2020. Effective at 5:00 PM PT Aug 28, 2020. Split-adjusted trading began Aug 31, 2020. Fifth split in company history."
+    },
+    {
+      "symbol": "NEE",
+      "name": "NextEra Energy, Inc.",
+      "date": "2020-10-26",
+      "ratio": "4:1",
+      "exchange": "NYSE",
+      "isin": "US65339F1012",
+      "source": "https://www.sec.gov/Archives/edgar/data/753308/000075330820000192/nee8kdated10262020.htm",
+      "notes": "Board approved 4-for-1 forward split on Sep 14, 2020. Record date Oct 19, 2020. Distribution of three additional shares per share held on Oct 26, 2020. Split-adjusted trading began Oct 27, 2020."
+    },
+    {
+      "symbol": "POWI",
+      "name": "Power Integrations, Inc.",
+      "date": "2020-08-18",
+      "ratio": "2:1",
+      "exchange": "NASDAQ",
+      "isin": "US7392761034",
+      "source": "https://www.businesswire.com/news/home/20200730005966/en/Power-Integrations-Reports-Second-Quarter-Financial-Results",
+      "notes": "Board approved 2-for-1 split effected as stock dividend of one share per outstanding share. Announced Jul 30, 2020 alongside Q2 2020 earnings. Record date Aug 14, 2020. Shares distributed Aug 18, 2020. Split-adjusted trading began Aug 19, 2020."
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla, Inc.",
+      "date": "2020-08-31",
+      "ratio": "5:1",
+      "exchange": "NASDAQ",
+      "isin": "US88160R1014",
+      "source": "https://www.sec.gov/Archives/edgar/data/1318605/000156459020039353/tsla-8k_20200811.htm",
+      "notes": "Board approved 5-for-1 split in the form of a stock dividend. Announced Aug 11, 2020. Record date Aug 21, 2020. Distribution of four additional shares after close of trading Aug 28, 2020. Split-adjusted trading began Aug 31, 2020."
+    }
+  ]
+}
