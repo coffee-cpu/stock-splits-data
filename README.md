@@ -1,5 +1,7 @@
 # Stock Splits Data
 
+[![Validate Data](https://github.com/coffee-cpu/stock-splits-data/actions/workflows/validate-data.yml/badge.svg)](https://github.com/coffee-cpu/stock-splits-data/actions/workflows/validate-data.yml)
+
 Community-maintained catalog of stock split data, optimized for client-side fetching via CDN.
 
 ## ⚠️ Disclaimer

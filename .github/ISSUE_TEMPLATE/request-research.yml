@@ -1,0 +1,24 @@
+name: Request Split Research
+description: Request the community to research splits for a specific company or time period
+title: "Research: [description]"
+labels: ["research"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to request help researching stock splits for a specific company or time period.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What needs to be researched?
+      description: "Describe the company, time period, or gap in data you've identified"
+      placeholder: "e.g., All NASDAQ reverse splits from Q1 2023, or Missing historical splits for TSLA"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: "Any leads, partial information, or reasons you suspect data is missing"
