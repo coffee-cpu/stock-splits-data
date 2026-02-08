@@ -1,0 +1,147 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2015,
+  "updated": "2026-02-08",
+  "splits": [
+    {
+      "symbol": "BOFI",
+      "name": "BofI Holding, Inc.",
+      "date": "2015-11-17",
+      "ratio": "4:1",
+      "isin": "US05566U1088",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/1299709/000129970915000142/a8-k20151026stocksplitanno.htm",
+      "notes": "Board approved Oct 26, 2015. Record date Nov 6, 2015. Payable date Nov 17, 2015. Split-adjusted trading began Nov 18, 2015. Implemented as stock dividend of three additional shares per share. Company later renamed to Axos Financial, Inc. (NYSE: AX) in October 2018."
+    },
+    {
+      "symbol": "CF",
+      "name": "CF Industries Holdings, Inc.",
+      "date": "2015-06-17",
+      "ratio": "5:1",
+      "isin": "US1252691001",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/1324404/000162828015004271/exhibit99-01.htm",
+      "notes": "Board declared 5-for-1 split on May 15, 2015. Record date Jun 1, 2015. Distribution date Jun 17, 2015. Split-adjusted trading began Jun 18, 2015. Effected as stock dividend of four additional shares per share."
+    },
+    {
+      "symbol": "CTRP",
+      "name": "Ctrip.com International, Ltd.",
+      "date": "2015-12-02",
+      "ratio": "2:1",
+      "isin": "US22943F1003",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/1269238/000110465915080054/a15-23753_1ex99d1.htm",
+      "notes": "ADS ratio change from 4 ADSs per ordinary share to 8 ADSs per ordinary share. Announced Nov 18, 2015. Record date Nov 30, 2015. Effective on books Dec 1, 2015. Price adjustment (ex-date) Dec 2, 2015. Company later changed ticker from CTRP to TCOM in Oct 2019."
+    },
+    {
+      "symbol": "ENSG",
+      "name": "The Ensign Group, Inc.",
+      "date": "2015-12-24",
+      "ratio": "2:1",
+      "isin": "US29358P1012",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/1125376/000112537615000111/stocksplitpressrelease.htm",
+      "notes": "Board approved Dec 9, 2015. Stock dividend payable on or about Dec 23, 2015 to shareholders of record Dec 17, 2015. Split-adjusted trading began Dec 24, 2015."
+    },
+    {
+      "symbol": "EW",
+      "name": "Edwards Lifesciences Corporation",
+      "date": "2015-12-11",
+      "ratio": "2:1",
+      "isin": "US28176E1082",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/1099800/000109980015000038/a8-kstocksplit2015.htm",
+      "notes": "Announced Nov 19, 2015. Record date Nov 30, 2015. Shares distributed Dec 11, 2015. Split-adjusted trading began Dec 14, 2015. Outstanding shares increased from ~108M to ~216M."
+    },
+    {
+      "symbol": "GPN",
+      "name": "Global Payments Inc.",
+      "date": "2015-11-02",
+      "ratio": "2:1",
+      "isin": "US37940X1028",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/1123360/000112336015000035/exhibit99120150831.htm",
+      "notes": "Two-for-one forward split effected as stock dividend. Announced alongside Q1 FY2016 earnings Oct 7, 2015. Record date Oct 21, 2015. Distribution date Nov 2, 2015."
+    },
+    {
+      "symbol": "HBI",
+      "name": "Hanesbrands Inc.",
+      "date": "2015-03-03",
+      "ratio": "4:1",
+      "isin": "US4103451021",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/1359841/000135984115000010/hbi-2015127x8k.htm",
+      "notes": "4-for-1 forward split effected as stock dividend. Board approved Jan 27, 2015. Record date Feb 9, 2015. Distribution date Mar 3, 2015. Split-adjusted trading began Mar 4, 2015."
+    },
+    {
+      "symbol": "KR",
+      "name": "The Kroger Co.",
+      "date": "2015-07-14",
+      "ratio": "2:1",
+      "isin": "US5010441013",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/56873/000110465915047569/a15-14699_1ex99d1.htm",
+      "notes": "Board approved Jun 25, 2015. Record date Jul 6, 2015. Distribution date on or about Jul 13, 2015. Split-adjusted trading began Jul 14, 2015. Fifth stock split in Kroger's history."
+    },
+    {
+      "symbol": "NJR",
+      "name": "New Jersey Resources Corporation",
+      "date": "2015-03-03",
+      "ratio": "2:1",
+      "isin": "US6460251068",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/356309/000093041315000181/c79894_8k.htm",
+      "notes": "Record date Feb 6, 2015. Distribution after close Mar 3, 2015. Split-adjusted trading began Mar 4, 2015."
+    },
+    {
+      "symbol": "NKE",
+      "name": "NIKE, Inc.",
+      "date": "2015-12-24",
+      "ratio": "2:1",
+      "isin": "US6541061031",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/320187/000032018715000226/a2015stocksplit.htm",
+      "notes": "Two-for-one split of both Class A and Class B Common shares. Announced Nov 19, 2015 alongside $12B share repurchase program. Record date Dec 9, 2015. Stock dividend payable Dec 23, 2015. Split-adjusted trading began Dec 24, 2015."
+    },
+    {
+      "symbol": "PPG",
+      "name": "PPG Industries, Inc.",
+      "date": "2015-06-15",
+      "ratio": "2:1",
+      "isin": "US6935061076",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/79879/000007987915000020/april2015dividendpressrele.htm",
+      "notes": "Announced Apr 16, 2015. Record date May 11, 2015. Stock dividend distributed Jun 12, 2015. Split-adjusted trading began Jun 15, 2015."
+    },
+    {
+      "symbol": "SBUX",
+      "name": "Starbucks Corporation",
+      "date": "2015-04-09",
+      "ratio": "2:1",
+      "isin": "US8552441094",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/829224/000082922415000009/sbux-31915x8xk.htm",
+      "notes": "6th two-for-one split since 1992 IPO. Board approved Mar 17, 2015. Record date Mar 30, 2015. Distribution date Apr 8, 2015. Split-adjusted trading began Apr 9, 2015."
+    },
+    {
+      "symbol": "SMBC",
+      "name": "Southern Missouri Bancorp, Inc.",
+      "date": "2015-01-30",
+      "ratio": "2:1",
+      "isin": "US8433801060",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/916907/000092708915000007/smbc-8k010215.htm",
+      "notes": "2-for-1 split in the form of a 100% common stock dividend. Announced Jan 2, 2015. Record date Jan 16, 2015. Payable on or about Jan 30, 2015."
+    },
+    {
+      "symbol": "V",
+      "name": "Visa Inc.",
+      "date": "2015-03-19",
+      "ratio": "4:1",
+      "isin": "US92826C8394",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/1403161/000119312515025534/0001193125-15-025534-index.htm",
+      "notes": "4-for-1 forward split of Class A common stock via stock dividend. Board approved Jan 29, 2015. Record date Feb 13, 2015. Three additional shares distributed Mar 18, 2015. Split-adjusted trading began Mar 19, 2015."
+    }
+  ]
+}
