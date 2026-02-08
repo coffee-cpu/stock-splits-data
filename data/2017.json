@@ -1,0 +1,45 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2017,
+  "updated": "2026-02-07",
+  "splits": [
+    {
+      "symbol": "HEI",
+      "name": "HEICO Corporation",
+      "date": "2017-04-18",
+      "ratio": "5:4",
+      "exchange": "NYSE",
+      "source": "https://www.globenewswire.com/news-release/2017/03/20/942183/0/en/HEICO-Corporation-Declares-5-for-4-Stock-Split.html",
+      "notes": "Board approved Mar 20, 2017. Record date Apr 7, 2017. Payable date Apr 18, 2017. Split-adjusted trading began Apr 19, 2017. Effected as 25% stock dividend on both Common Stock (HEI) and Class A Common Stock (HEI.A). 15th stock split or stock dividend since 1995."
+    },
+    {
+      "symbol": "HSIC",
+      "name": "Henry Schein, Inc.",
+      "date": "2017-09-14",
+      "ratio": "2:1",
+      "isin": "US8064071025",
+      "exchange": "NASDAQ",
+      "source": "https://www.prnewswire.com/news-releases/henry-schein-announces-2-for-1-stock-split-300505011.html",
+      "notes": "Board approved Aug 16, 2017. Record date Sep 1, 2017. Distribution date Sep 14, 2017. Split-adjusted trading began Sep 15, 2017. Implemented as 100% stock dividend. Second stock split since IPO in Nov 1995 (first was 2-for-1 in Feb 2005). Approximately 158 million shares outstanding after split."
+    },
+    {
+      "symbol": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "date": "2017-10-06",
+      "ratio": "3:1",
+      "isin": "US46120E6023",
+      "exchange": "NASDAQ",
+      "source": "https://isrg.intuitive.com/news-releases/news-release-details/intuitive-surgical-board-directors-approves-three-one-stock",
+      "notes": "Board announced Aug 11, 2017. Stockholder approval at Special Meeting Sep 22, 2017. Authorized shares increased from 100M to 300M. Split record date Sep 29, 2017. Each stockholder received two additional shares for every one share held. Split-adjusted trading began Oct 6, 2017."
+    },
+    {
+      "symbol": "NSP",
+      "name": "Insperity, Inc.",
+      "date": "2017-12-18",
+      "ratio": "2:1",
+      "exchange": "NYSE",
+      "source": "https://www.businesswire.com/news/home/20171116006531/en/Insperity-Announces-Two-For-One-Stock-Split-2-Special",
+      "notes": "Board approved and announced Nov 16, 2017. Record date Dec 4, 2017. Payable date Dec 18, 2017. Split-adjusted trading began Dec 19, 2017. Effected as 100% stock dividend. Second stock split in company history (first was 2-for-1 in Oct 2000). Also announced alongside $2/share special cash dividend and expansion of repurchase program."
+    }
+  ]
+}

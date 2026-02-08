@@ -1,0 +1,35 @@
+{
+  "$schema": "../schema/year-file.schema.json",
+  "year": 2016,
+  "updated": "2026-02-07",
+  "splits": [
+    {
+      "symbol": "MNST",
+      "name": "Monster Beverage Corporation",
+      "date": "2016-11-09",
+      "ratio": "3:1",
+      "isin": "US61174X1090",
+      "exchange": "NASDAQ",
+      "source": "https://investors.monsterbevcorp.com/news-releases/news-release-details/monster-beverage-board-declares-three-one-stock-split",
+      "notes": "Effected as 200% stock dividend. Board approved and announced Oct 14, 2016. Record date Oct 26, 2016. Shares distributed Nov 9, 2016. Split-adjusted trading began Nov 10, 2016. Outstanding shares tripled to approximately 571 million."
+    },
+    {
+      "symbol": "TTC",
+      "name": "The Toro Company",
+      "date": "2016-09-16",
+      "ratio": "2:1",
+      "exchange": "NYSE",
+      "source": "https://www.thetorocompany.com/news-releases/news-release-details/toro-company-reports-record-third-quarter-earnings-declares-2-1",
+      "notes": "2-for-1 forward split effected as 100% stock dividend. Announced Aug 18, 2016 alongside record Q3 FY2016 earnings. Record date Sep 1, 2016. Distribution date Sep 16, 2016. Split-adjusted trading began Sep 19, 2016."
+    },
+    {
+      "symbol": "UAA",
+      "name": "Under Armour, Inc.",
+      "date": "2016-04-07",
+      "ratio": "2:1",
+      "exchange": "NYSE",
+      "source": "https://www.prnewswire.com/news-releases/under-armour-announces-class-c-stock-dividend-300237041.html",
+      "notes": "Board approved creation of Class C non-voting stock Jun 15, 2015. Shareholders approved Aug 2015; delayed by shareholder lawsuit settled Feb 29, 2016. Board approved issuance Mar 16, 2016. Record date Mar 28, 2016. Class C shares distributed Apr 7, 2016 (ex-date Apr 8, 2016). One-for-one Class C stock dividend to Class A and Class B holders, effectively a 2-for-1 split. Class C (non-voting) shares trade under 'UA'."
+    }
+  ]
+}
