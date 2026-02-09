@@ -1,8 +1,28 @@
 {
   "$schema": "../schema/year-file.schema.json",
   "year": 2025,
-  "updated": "2026-02-05",
+  "updated": "2026-02-09",
   "splits": [
+    {
+      "symbol": "ASRT",
+      "name": "Assertio Holdings, Inc.",
+      "date": "2025-12-26",
+      "exchange": "NASDAQ",
+      "source": "https://www.businesswire.com/news/home/20251222116211/en/Assertio-Holdings-Inc-Announces-1-for-15-Reverse-Stock-Split",
+      "notes": "Reverse split. Certificate of amendment filed Dec 19, 2025. Effective at 12:01 AM ET Dec 26, 2025. Split-adjusted trading began Dec 26, 2025. Intended to maintain Nasdaq listing compliance with minimum bid price requirement.",
+      "ratioNew": 1,
+      "ratioOld": 15
+    },
+    {
+      "symbol": "BOXL",
+      "name": "Boxlight Corporation",
+      "date": "2025-12-22",
+      "exchange": "NASDAQ",
+      "source": "https://www.businesswire.com/news/home/20251219007469/en/Boxlight-Announces-1-for-6-Reverse-Stock-Split-of-Class-A-Common-Stock",
+      "notes": "Reverse split. Board approved Dec 19, 2025. Effective at 5:00 PM ET Dec 22, 2025. Split-adjusted trading began Dec 23, 2025. CUSIP changed to 103197406. Intended to maintain Nasdaq listing compliance with minimum bid price requirement. Second reverse split in 2025 (first was 1-for-5 in Feb 2025).",
+      "ratioNew": 1,
+      "ratioOld": 6
+    },
     {
       "symbol": "CBSH",
       "name": "Commerce Bancshares, Inc.",
@@ -13,16 +33,6 @@
       "notes": "5% stock dividend (1.05-for-1). Board declared Oct 31, 2025. Record date Dec 2, 2025. Distributed Dec 16, 2025. 57th consecutive year of dividend increases.",
       "ratioNew": 21,
       "ratioOld": 20
-    },
-    {
-      "symbol": "FTLF",
-      "name": "FitLife Brands, Inc.",
-      "date": "2025-02-06",
-      "exchange": "NASDAQ",
-      "source": "https://www.sec.gov/Archives/edgar/data/1374328/000143774925002916/",
-      "notes": "Board approved 2-for-1 forward split. Certificate of Change filed with Nevada Secretary of State effective Feb 6, 2025. Split-adjusted trading began Feb 7, 2025. Shares outstanding doubled from 4,605,108 to 9,210,216.",
-      "ratioNew": 2,
-      "ratioOld": 1
     },
     {
       "symbol": "COKE",
@@ -42,6 +52,16 @@
       "exchange": "NASDAQ",
       "source": "https://investor.fastenal.com/news-releases/news-details/2025/Fastenal-Company-Announces-Two-For-One-Stock-Split/default.aspx",
       "notes": "Board approved Apr 23, 2025. Record date May 5, 2025. Effective after close May 21, 2025. Split-adjusted trading began May 22, 2025. SEC 8-K: https://www.sec.gov/Archives/edgar/data/815556/000081555625000085/fast-20250423.htm",
+      "ratioNew": 2,
+      "ratioOld": 1
+    },
+    {
+      "symbol": "FTLF",
+      "name": "FitLife Brands, Inc.",
+      "date": "2025-02-06",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/1374328/000143774925002916/",
+      "notes": "Board approved 2-for-1 forward split. Certificate of Change filed with Nevada Secretary of State effective Feb 6, 2025. Split-adjusted trading began Feb 7, 2025. Shares outstanding doubled from 4,605,108 to 9,210,216.",
       "ratioNew": 2,
       "ratioOld": 1
     },
@@ -79,6 +99,16 @@
       "ratioOld": 1
     },
     {
+      "symbol": "NVVE",
+      "name": "Nuvve Holding Corp.",
+      "date": "2025-12-15",
+      "exchange": "NASDAQ",
+      "source": "https://investors.nuvve.com/news-releases/news-release-details/nuvve-announces-1-40-reverse-stock-split-0",
+      "notes": "Reverse split. Board approved Nov 30, 2025. Effective at 12:01 AM ET Dec 15, 2025. Shares reduced from ~53M to ~1.3M. Intended to regain Nasdaq minimum bid price compliance.",
+      "ratioNew": 1,
+      "ratioOld": 40
+    },
+    {
       "symbol": "OBT",
       "name": "Orange County Bancorp, Inc.",
       "date": "2025-01-10",
@@ -110,16 +140,6 @@
       "ratioOld": 1
     },
     {
-      "symbol": "YOSH",
-      "name": "Yoshiharu Global Co.",
-      "date": "2025-07-31",
-      "exchange": "NASDAQ",
-      "source": "https://ir.yoshiharuramen.com/news-events/press-releases/detail/53/yoshiharu-announces-4-for-1-stock-split",
-      "notes": "Board approved 4-for-1 forward split. Record date Jul 28, 2025. Three additional shares distributed after close Jul 30, 2025. Split-adjusted trading began Jul 31, 2025.",
-      "ratioNew": 4,
-      "ratioOld": 1
-    },
-    {
       "symbol": "TPL",
       "name": "Texas Pacific Land Corporation",
       "date": "2025-12-22",
@@ -128,6 +148,16 @@
       "source": "https://www.texaspacific.com/investors/news-events/press-releases/detail/175/texas-pacific-land-corporation-announces-effective-date-of",
       "notes": "Announced Nov 5, 2025. Record date Dec 12, 2025. Two additional shares distributed Dec 22, 2025. Split-adjusted trading began Dec 23, 2025. SEC 8-K: https://www.texaspacific.com/investors/sec-filings/all-sec-filings/content/0001104659-25-117726/0001104659-25-117726.pdf",
       "ratioNew": 3,
+      "ratioOld": 1
+    },
+    {
+      "symbol": "YOSH",
+      "name": "Yoshiharu Global Co.",
+      "date": "2025-07-31",
+      "exchange": "NASDAQ",
+      "source": "https://ir.yoshiharuramen.com/news-events/press-releases/detail/53/yoshiharu-announces-4-for-1-stock-split",
+      "notes": "Board approved 4-for-1 forward split. Record date Jul 28, 2025. Three additional shares distributed after close Jul 30, 2025. Split-adjusted trading began Jul 31, 2025.",
+      "ratioNew": 4,
       "ratioOld": 1
     }
   ]

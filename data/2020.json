@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/year-file.schema.json",
   "year": 2020,
-  "updated": "2026-02-07",
+  "updated": "2026-02-09",
   "splits": [
     {
       "symbol": "AAPL",
@@ -13,6 +13,16 @@
       "notes": "Board approved Jul 30, 2020 alongside Q3 FY2020 earnings. Articles of Incorporation amended Aug 3, 2020 increasing authorized shares from 12.6B to 50.4B. Record date Aug 24, 2020. Effective at 5:00 PM PT Aug 28, 2020. Split-adjusted trading began Aug 31, 2020. Fifth split in company history.",
       "ratioNew": 4,
       "ratioOld": 1
+    },
+    {
+      "symbol": "ACB",
+      "name": "Aurora Cannabis Inc.",
+      "date": "2020-05-11",
+      "exchange": "NYSE",
+      "source": "https://www.prnewswire.com/news-releases/aurora-cannabis-confirms-share-consolidation-effective-date-301055974.html",
+      "notes": "Reverse split. 1-for-12 share consolidation. Board approved. Shares consolidated from ~1.31B to ~109.5M. Effective May 11, 2020. Trading on NYSE and TSX began on post-consolidation basis at market open. Intended to maintain NYSE listing compliance with minimum bid price requirement.",
+      "ratioNew": 1,
+      "ratioOld": 12
     },
     {
       "symbol": "NEE",
