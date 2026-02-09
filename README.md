@@ -43,7 +43,8 @@ console.log(data.splits);
 //     symbol: "NVDA",
 //     name: "NVIDIA Corporation",
 //     date: "2024-06-10",
-//     ratio: "10:1",
+//     ratioNew: 10,
+//     ratioOld: 1,
 //     isin: "US67066G1040",
 //     exchange: "NASDAQ"
 //   },
@@ -61,7 +62,8 @@ interface SplitEntry {
   symbol: string;
   name: string;
   date: string;      // YYYY-MM-DD
-  ratio: string;     // e.g., "4:1"
+  ratioNew: number;  // New shares received (e.g., 4 in a 4-for-1 split)
+  ratioOld: number;  // Old shares exchanged (e.g., 1 in a 4-for-1 split)
   isin?: string;
   exchange?: string;
   source?: string;   // URL to SEC filing or press release
@@ -117,7 +119,8 @@ data/
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "date": "2024-06-10",
-      "ratio": "10:1",
+      "ratioNew": 10,
+      "ratioOld": 1,
       "isin": "US67066G1040",
       "exchange": "NASDAQ"
     }
@@ -127,19 +130,14 @@ data/
 
 ### Split Ratio Format
 
-Ratios are expressed as `new:old`:
-- `4:1` = 4 new shares for every 1 old share (forward split)
-- `1:10` = 1 new share for every 10 old shares (reverse split)
-- `3:2` = 3 new shares for every 2 old shares
+Ratios use two integer fields, `ratioNew` (new shares received) and `ratioOld` (old shares exchanged):
+- `ratioNew: 4, ratioOld: 1` = 4 new shares for every 1 old share (forward split)
+- `ratioNew: 1, ratioOld: 10` = 1 new share for every 10 old shares (reverse split)
+- `ratioNew: 3, ratioOld: 2` = 3 new shares for every 2 old shares
 
 ## Calculating Adjusted Cost Basis
 
 ```javascript
-function parseRatio(ratio) {
-  const [newShares, oldShares] = ratio.split(':').map(Number);
-  return newShares / oldShares;
-}
-
 async function adjustForSplits(purchaseDate, symbol, originalShares, originalCost) {
   // Fetch all year files (you might want to cache these)
   const years = [2014, 2015, 2020, 2021, 2022, 2024, 2025]; // Add all relevant years
@@ -153,7 +151,7 @@ async function adjustForSplits(purchaseDate, symbol, originalShares, originalCos
   let adjustedShares = originalShares;
 
   for (const split of relevantSplits) {
-    const multiplier = parseRatio(split.ratio);
+    const multiplier = split.ratioNew / split.ratioOld;
     adjustedShares *= multiplier;
     // Cost basis stays the same, but cost per share decreases
   }

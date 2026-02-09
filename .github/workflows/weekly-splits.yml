@@ -58,7 +58,8 @@ jobs:
                - Handle pagination using the "from" parameter
                - Also cross-reference with web searches for NASDAQ/NYSE stock split calendars
 
-            4. For each candidate not already in the data, research the filing to extract: symbol, name, date, ratio (new:old format), exchange, isin (if available), source URL, and notes.
+            4. For each candidate not already in the data, research the filing to extract: symbol, name, date, ratioNew (integer), ratioOld (integer), exchange, isin (if available), source URL, and notes.
+               - ratioNew = new shares received, ratioOld = old shares exchanged (e.g., 4-for-1 split: ratioNew=4, ratioOld=1)
                - Only use publicly available sources (SEC filings, press releases, exchange announcements)
                - Verify the split actually happened (not just announced)
 
@@ -117,7 +118,7 @@ jobs:
 
           ## Review Checklist
 
-          - [ ] Verify split ratios are correct (new:old format)
+          - [ ] Verify split ratios are correct (ratioNew/ratioOld integers)
           - [ ] Verify effective dates match source filings
           - [ ] Check that source URLs are accessible
           - [ ] Run `npm run validate` locally if needed

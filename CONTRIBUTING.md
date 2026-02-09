@@ -24,7 +24,8 @@ Add your entry to the `splits` array, maintaining alphabetical order by symbol:
   "symbol": "TICKER",
   "name": "Company Name, Inc.",
   "date": "2024-06-15",
-  "ratio": "4:1",
+  "ratioNew": 4,
+  "ratioOld": 1,
   "isin": "US1234567890",
   "exchange": "NASDAQ",
   "source": "https://www.sec.gov/Archives/edgar/data/...",
@@ -43,7 +44,8 @@ Update the `updated` field to today's date (YYYY-MM-DD format).
 | `symbol` | Stock ticker (uppercase) | `"AAPL"` |
 | `name` | Full company name | `"Apple Inc."` |
 | `date` | Split effective date | `"2024-06-15"` |
-| `ratio` | Split ratio (new:old) | `"4:1"` |
+| `ratioNew` | New shares received | `4` |
+| `ratioOld` | Old shares exchanged | `1` |
 
 ## Recommended Fields
 
@@ -61,11 +63,11 @@ Update the `updated` field to today's date (YYYY-MM-DD format).
 
 ## Ratio Format
 
-Express ratios as `new:old` shares:
+Split ratios use two integer fields, `ratioNew` (new shares received) and `ratioOld` (old shares exchanged):
 
-- **Forward split**: `"4:1"` = receive 4 shares for every 1 held
-- **Reverse split**: `"1:10"` = receive 1 share for every 10 held
-- **Fractional**: `"3:2"` = receive 3 shares for every 2 held
+- **Forward split**: `ratioNew: 4, ratioOld: 1` = receive 4 shares for every 1 held
+- **Reverse split**: `ratioNew: 1, ratioOld: 10` = receive 1 share for every 10 held
+- **Fractional**: `ratioNew: 3, ratioOld: 2` = receive 3 shares for every 2 held
 
 ## Validation
 
@@ -81,7 +83,7 @@ The validator checks:
 - Dates are in the correct year
 - No duplicate entries (same symbol + date)
 - Valid ISIN format (if provided)
-- Valid ratio format
+- Valid ratio fields (positive integers)
 
 ## Pull Request Guidelines
 
@@ -134,7 +136,8 @@ If you need to add a split for a year that doesn't have a file yet:
       "symbol": "TICKER",
       "name": "Company Name",
       "date": "YYYY-MM-DD",
-      "ratio": "X:Y",
+      "ratioNew": 4,
+      "ratioOld": 1,
       "isin": "XXXXXXXXXXXX",
       "exchange": "EXCHANGE"
     }
@@ -242,7 +245,8 @@ For each verified split, record:
 | `symbol` | EDGAR filing header, exchange listing | Uppercase ticker |
 | `name` | Filing header | Full legal name |
 | `date` | 8-K filing body | **Distribution/effective date** (see below) |
-| `ratio` | 8-K filing body | `new:old` format |
+| `ratioNew` | 8-K filing body | New shares (integer) |
+| `ratioOld` | 8-K filing body | Old shares (integer) |
 | `exchange` | EDGAR filing header | `NASDAQ`, `NYSE`, etc. |
 | `source` | URL of the filing/press release | Direct link to SEC filing or company IR page |
 | `notes` | Compiled from filing | All key dates and context (see template below) |

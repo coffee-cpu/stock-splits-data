@@ -7,60 +7,66 @@
       "symbol": "ANET",
       "name": "Arista Networks, Inc.",
       "date": "2021-11-18",
-      "ratio": "4:1",
       "isin": "US0404131064",
       "exchange": "NYSE",
       "source": "https://www.sec.gov/Archives/edgar/data/1596532/0001596532-21-000407-index.html",
-      "notes": "Four-for-one forward stock split. Announced November 1, 2021 alongside Q3 2021 earnings results. Record date: November 11, 2021. Each shareholder of record received three additional shares for every share held. Split-adjusted trading began November 18, 2021. Completion announced November 19, 2021."
+      "notes": "Four-for-one forward stock split. Announced November 1, 2021 alongside Q3 2021 earnings results. Record date: November 11, 2021. Each shareholder of record received three additional shares for every share held. Split-adjusted trading began November 18, 2021. Completion announced November 19, 2021.",
+      "ratioNew": 4,
+      "ratioOld": 1
     },
     {
       "symbol": "CSX",
       "name": "CSX Corporation",
       "date": "2021-06-28",
-      "ratio": "3:1",
       "isin": "US1264081035",
       "exchange": "NASDAQ",
       "source": "https://www.sec.gov/Archives/edgar/data/277948/000119312521184344/0001193125-21-184344.txt",
-      "notes": "3-for-1 forward stock split. Board approved June 3, 2021; announced June 4, 2021. Articles of Incorporation amended June 4, 2021 to increase authorized common shares from 1.8 billion to 5.4 billion. Record date: June 18, 2021. Two additional shares distributed in book-entry form on June 28, 2021. Ex-date: June 29, 2021."
+      "notes": "3-for-1 forward stock split. Board approved June 3, 2021; announced June 4, 2021. Articles of Incorporation amended June 4, 2021 to increase authorized common shares from 1.8 billion to 5.4 billion. Record date: June 18, 2021. Two additional shares distributed in book-entry form on June 28, 2021. Ex-date: June 29, 2021.",
+      "ratioNew": 3,
+      "ratioOld": 1
     },
     {
       "symbol": "FTLF",
       "name": "FitLife Brands, Inc.",
       "date": "2021-12-02",
-      "ratio": "4:1",
       "exchange": "OTCQX",
       "source": "https://www.sec.gov/Archives/edgar/data/1374328/000185173421000140/ftlf20211207_8k.htm",
-      "notes": "4-for-1 forward stock split. Effective date December 2, 2021. FINRA announced split-adjusted trading December 7, 2021; trading on split-adjusted basis began December 8, 2021. CUSIP changed to 33817P306. Shares outstanding before: 1,125,690; after: 4,502,760. Split intended to increase liquidity and help achieve Nasdaq Capital Market initial listing requirements."
+      "notes": "4-for-1 forward stock split. Effective date December 2, 2021. FINRA announced split-adjusted trading December 7, 2021; trading on split-adjusted basis began December 8, 2021. CUSIP changed to 33817P306. Shares outstanding before: 1,125,690; after: 4,502,760. Split intended to increase liquidity and help achieve Nasdaq Capital Market initial listing requirements.",
+      "ratioNew": 4,
+      "ratioOld": 1
     },
     {
       "symbol": "ISRG",
       "name": "Intuitive Surgical, Inc.",
       "date": "2021-10-05",
-      "ratio": "3:1",
       "isin": "US46120E6023",
       "exchange": "NASDAQ",
       "source": "https://www.sec.gov/Archives/edgar/data/1035267/000103526721000144/isrg-20210805.htm",
-      "notes": "3-for-1 forward stock split. Announced August 5, 2021. Stockholder approval at Special Meeting September 20, 2021. Authorized shares increased from 300M to 600M. Split record date September 27, 2021. Payable date October 4, 2021. Ex-distribution date and split-adjusted trading began October 5, 2021."
+      "notes": "3-for-1 forward stock split. Announced August 5, 2021. Stockholder approval at Special Meeting September 20, 2021. Authorized shares increased from 300M to 600M. Split record date September 27, 2021. Payable date October 4, 2021. Ex-distribution date and split-adjusted trading began October 5, 2021.",
+      "ratioNew": 3,
+      "ratioOld": 1
     },
     {
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
       "date": "2021-07-20",
-      "ratio": "4:1",
       "isin": "US67066G1040",
       "exchange": "NASDAQ",
       "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581021000056/pr-may2021.htm",
-      "notes": "4-for-1 forward stock split via stock dividend. Announced May 21, 2021 alongside Q1 FY2022 earnings. Stockholder approval to increase authorized shares from 2B to 4B obtained at annual meeting June 3, 2021. Record date: June 21, 2021. Three additional shares distributed after market close July 19, 2021. Split-adjusted trading began July 20, 2021."
+      "notes": "4-for-1 forward stock split via stock dividend. Announced May 21, 2021 alongside Q1 FY2022 earnings. Stockholder approval to increase authorized shares from 2B to 4B obtained at annual meeting June 3, 2021. Record date: June 21, 2021. Three additional shares distributed after market close July 19, 2021. Split-adjusted trading began July 20, 2021.",
+      "ratioNew": 4,
+      "ratioOld": 1
     },
     {
       "symbol": "TTD",
       "name": "The Trade Desk, Inc.",
       "date": "2021-06-16",
-      "ratio": "10:1",
       "isin": "US88339J1051",
       "exchange": "NASDAQ",
       "source": "https://www.sec.gov/Archives/edgar/data/1671933/000115752321000635/a52426080ex99_2.htm",
-      "notes": "Ten-for-one forward stock split in the form of a stock dividend. Announced May 10, 2021. Record date: June 9, 2021. Nine additional shares distributed after close of trading June 16, 2021. Split-adjusted trading on NASDAQ began June 17, 2021. Applied to both Class A and Class B common stock. First stock split in the company's history."
+      "notes": "Ten-for-one forward stock split in the form of a stock dividend. Announced May 10, 2021. Record date: June 9, 2021. Nine additional shares distributed after close of trading June 16, 2021. Split-adjusted trading on NASDAQ began June 17, 2021. Applied to both Class A and Class B common stock. First stock split in the company's history.",
+      "ratioNew": 10,
+      "ratioOld": 1
     }
   ]
 }
