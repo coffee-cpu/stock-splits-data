@@ -4,7 +4,7 @@
   "title": "Stock Split Entry",
   "description": "Schema for a single stock split entry in yearly files",
   "type": "object",
-  "required": ["symbol", "name", "date", "ratio"],
+  "required": ["symbol", "name", "date", "ratioNew", "ratioOld"],
   "properties": {
     "symbol": {
       "type": "string",
@@ -21,10 +21,15 @@
       "description": "Split effective date (YYYY-MM-DD)",
       "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
     },
-    "ratio": {
-      "type": "string",
-      "description": "Split ratio (e.g., '4:1' means 4 new shares for 1 old share)",
-      "pattern": "^\\d+:\\d+$"
+    "ratioNew": {
+      "type": "integer",
+      "description": "New shares received in the split (e.g., 4 in a 4-for-1 split)",
+      "minimum": 1
+    },
+    "ratioOld": {
+      "type": "integer",
+      "description": "Old shares exchanged in the split (e.g., 1 in a 4-for-1 split)",
+      "minimum": 1
     },
     "isin": {
       "type": "string",

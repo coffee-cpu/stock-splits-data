@@ -95,9 +95,12 @@ function validateYearFiles(): ValidationResult[] {
           errors.push(`Invalid ISIN format for ${split.symbol}: ${split.isin}`);
         }
 
-        // Validate ratio format
-        if (!/^\d+:\d+$/.test(split.ratio)) {
-          errors.push(`Invalid ratio format for ${split.symbol}: ${split.ratio}`);
+        // Validate ratio fields
+        if (typeof split.ratioNew !== 'number' || !Number.isInteger(split.ratioNew) || split.ratioNew < 1) {
+          errors.push(`Invalid ratioNew for ${split.symbol}: ${split.ratioNew} (must be a positive integer)`);
+        }
+        if (typeof split.ratioOld !== 'number' || !Number.isInteger(split.ratioOld) || split.ratioOld < 1) {
+          errors.push(`Invalid ratioOld for ${split.symbol}: ${split.ratioOld} (must be a positive integer)`);
         }
       }
     }

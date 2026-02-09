@@ -31,7 +31,7 @@ npx ts-node scripts/validate.ts           # Validate data integrity
 - Validates all year files against JSON schemas
 - Checks date consistency (splits must be in correct year file)
 - Detects duplicate splits across files (same symbol + date)
-- Validates ISIN format (`/^[A-Z]{2}[A-Z0-9]{10}$/`) and ratio format (`/^\d+:\d+$/`)
+- Validates ISIN format (`/^[A-Z]{2}[A-Z0-9]{10}$/`) and ratio fields (positive integers)
 
 ### Data Validation Rules
 
@@ -41,14 +41,14 @@ Year files must satisfy:
 3. All split dates fall within the file's year
 4. No duplicate symbol+date combinations across all files
 5. Valid ISIN format (if present): 2 letters + 10 alphanumeric
-6. Valid ratio format: `digits:digits` (e.g., "4:1", "1:10")
+6. Valid ratio fields: `ratioNew` and `ratioOld` must be positive integers
 
 ### Split Ratio Convention
 
-Ratios are expressed as `new:old`:
-- `4:1` = forward split (4 new shares per 1 old share)
-- `1:10` = reverse split (1 new share per 10 old shares)
-- `3:2` = fractional split
+Ratios use two integer fields, `ratioNew` and `ratioOld`:
+- `ratioNew: 4, ratioOld: 1` = forward split (4 new shares per 1 old share)
+- `ratioNew: 1, ratioOld: 10` = reverse split (1 new share per 10 old shares)
+- `ratioNew: 3, ratioOld: 2` = fractional split
 
 ### GitHub Actions Workflows
 
@@ -64,7 +64,7 @@ When adding or correcting split data:
 3. Run `npm run validate` to ensure data integrity
 4. Commit changes
 
-Required fields: `symbol`, `name`, `date`, `ratio`
+Required fields: `symbol`, `name`, `date`, `ratioNew`, `ratioOld`
 Recommended fields: `isin`, `exchange`
 Optional fields: `source`, `notes`
 

@@ -7,31 +7,34 @@
       "symbol": "CNC",
       "name": "Centene Corporation",
       "date": "2019-02-06",
-      "ratio": "2:1",
       "exchange": "NYSE",
       "isin": "US15135B1017",
       "source": "https://www.prnewswire.com/news-releases/centene-corporation-announces-two-for-one-stock-split-is-effective-300791283.html",
-      "notes": "Board declared split Dec 12, 2018. Effected as 100% stock dividend. Record date Dec 24, 2018. Stockholders approved increase in authorized shares from 400M to 800M at special meeting Jan 28, 2019. Amendment to Certificate of Incorporation filed Feb 6, 2019. Split-adjusted trading began Feb 7, 2019."
+      "notes": "Board declared split Dec 12, 2018. Effected as 100% stock dividend. Record date Dec 24, 2018. Stockholders approved increase in authorized shares from 400M to 800M at special meeting Jan 28, 2019. Amendment to Certificate of Incorporation filed Feb 6, 2019. Split-adjusted trading began Feb 7, 2019.",
+      "ratioNew": 2,
+      "ratioOld": 1
     },
     {
       "symbol": "FAST",
       "name": "Fastenal Company",
       "date": "2019-05-22",
-      "ratio": "2:1",
       "exchange": "NASDAQ",
       "isin": "US3119001044",
       "source": "https://investor.fastenal.com/news-releases/news-details/2019/Fastenal-Company-Announces-Two-For-One-Stock-Split/default.aspx",
-      "notes": "Board approved April 17, 2019. Record date May 2, 2019. One additional share distributed for every share held. Effective at close of business May 22, 2019. Split-adjusted trading began May 23, 2019. Eighth stock split in company history."
+      "notes": "Board approved April 17, 2019. Record date May 2, 2019. One additional share distributed for every share held. Effective at close of business May 22, 2019. Split-adjusted trading began May 23, 2019. Eighth stock split in company history.",
+      "ratioNew": 2,
+      "ratioOld": 1
     },
     {
       "symbol": "FFIN",
       "name": "First Financial Bankshares, Inc.",
       "date": "2019-06-03",
-      "ratio": "2:1",
       "exchange": "NASDAQ",
       "isin": "US32020R1095",
       "source": "https://www.prnewswire.com/news-releases/first-financial-bankshares-announces-two-for-one-stock-split-and-increase-in-cash-dividend-at-annual-meeting-300836581.html",
-      "notes": "Board declared April 23, 2019 at annual shareholders' meeting. Effected as 100% stock dividend. Record date May 15, 2019. Distribution June 3, 2019. Shareholders also approved increase in authorized common shares to 200M. Board increased quarterly cash dividend to $0.12 per share post-split."
+      "notes": "Board declared April 23, 2019 at annual shareholders' meeting. Effected as 100% stock dividend. Record date May 15, 2019. Distribution June 3, 2019. Shareholders also approved increase in authorized common shares to 200M. Board increased quarterly cash dividend to $0.12 per share post-split.",
+      "ratioNew": 2,
+      "ratioOld": 1
     }
   ]
 }

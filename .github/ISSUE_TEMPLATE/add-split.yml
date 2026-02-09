@@ -38,11 +38,20 @@ body:
       required: true
 
   - type: input
-    id: ratio
+    id: ratioNew
     attributes:
-      label: Split Ratio
-      description: "In new:old format (e.g., 4:1 for forward split, 1:10 for reverse split)"
-      placeholder: "10:1"
+      label: Ratio - New Shares
+      description: "New shares received (e.g., 10 for a 10-for-1 split, 1 for a 1-for-10 reverse split)"
+      placeholder: "10"
+    validations:
+      required: true
+
+  - type: input
+    id: ratioOld
+    attributes:
+      label: Ratio - Old Shares
+      description: "Old shares exchanged (e.g., 1 for a 10-for-1 split, 10 for a 1-for-10 reverse split)"
+      placeholder: "1"
     validations:
       required: true
 

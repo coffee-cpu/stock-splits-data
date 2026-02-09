@@ -90,7 +90,8 @@ Use the **Task tool** to dispatch a sub-agent for each candidate. The sub-agent 
    - `symbol` — ticker symbol (uppercase, letters/numbers/dots only)
    - `name` — full company name
    - `date` — effective/distribution date (YYYY-MM-DD)
-   - `ratio` — split ratio in `new:old` format (e.g., `4:1` for forward, `1:10` for reverse)
+   - `ratioNew` — new shares received (integer, e.g., `4` for a 4-for-1 split)
+   - `ratioOld` — old shares exchanged (integer, e.g., `1` for a 4-for-1 split)
    - `exchange` — primary exchange (NASDAQ, NYSE, NYSE American, etc.)
    - `isin` — ISIN if mentioned (format: 2 uppercase letters + 10 alphanumeric characters)
    - `source` — URL of the primary source (press release or SEC filing)
@@ -105,7 +106,7 @@ After each batch completes, update the progress file — this serves as a checkp
 - Only use publicly available sources (SEC filings, company press releases, exchange announcements)
 - Do NOT use financial data APIs or paid services
 - Verify the split actually happened (not just announced) — check for effective date confirmation
-- For the `ratio` field, always express as `new:old` (e.g., a 4-for-1 forward split = `4:1`, a 1-for-10 reverse split = `1:10`)
+- For the ratio fields, `ratioNew` is the new shares received and `ratioOld` is the old shares exchanged (e.g., a 4-for-1 forward split = `ratioNew: 4, ratioOld: 1`)
 
 ### Step 5 — Deduplicate
 
@@ -131,7 +132,7 @@ For each new split entry:
 3. Insert the entry into the `splits` array in **alphabetical order by symbol**
 4. Update the `updated` field to today's date (YYYY-MM-DD)
 
-Include only fields that have values — don't include `isin`, `exchange`, `source`, or `notes` if they're empty/unknown. The required fields are: `symbol`, `name`, `date`, `ratio`.
+Include only fields that have values — don't include `isin`, `exchange`, `source`, or `notes` if they're empty/unknown. The required fields are: `symbol`, `name`, `date`, `ratioNew`, `ratioOld`.
 
 ### Step 7 — Validate
 
@@ -139,13 +140,13 @@ Run `npm run validate` to check all data files pass schema validation.
 
 If validation fails:
 - Read the error messages carefully
-- Fix the issues (common problems: date format, ratio format, ISIN format, duplicate entries)
+- Fix the issues (common problems: date format, ratio fields, ISIN format, duplicate entries)
 - Re-run validation until it passes
 
 ### Step 8 — Present Summary
 
 Display a summary table showing:
-- **Added**: splits successfully added (with symbol, name, date, ratio)
+- **Added**: splits successfully added (with symbol, name, date, ratioNew, ratioOld)
 - **Skipped**: splits that were already in the data or couldn't be verified
 - **Errors**: candidates that couldn't be researched (with error details)
 
