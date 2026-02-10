@@ -1,8 +1,18 @@
 {
   "$schema": "../schema/year-file.schema.json",
   "year": 2023,
-  "updated": "2026-02-06",
+  "updated": "2026-02-09",
   "splits": [
+    {
+      "symbol": "AMC",
+      "name": "AMC Entertainment Holdings, Inc.",
+      "date": "2023-08-24",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/1411579/000110465023090981/tm2323643d1_8k.htm",
+      "notes": "Reverse split. Shareholders approved Mar 14, 2023. Charter Amendment filed Aug 14, 2023. Effective at 12:01 AM ET Aug 24, 2023. Split-adjusted trading on NYSE began Aug 24, 2023. Facilitated conversion of AMC Preferred Equity Units (APEs) into Class A common stock on Aug 25, 2023.",
+      "ratioNew": 1,
+      "ratioOld": 10
+    },
     {
       "symbol": "CELH",
       "name": "Celsius Holdings, Inc.",

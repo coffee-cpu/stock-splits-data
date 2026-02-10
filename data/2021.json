@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/year-file.schema.json",
   "year": 2021,
-  "updated": "2026-02-07",
+  "updated": "2026-02-09",
   "splits": [
     {
       "symbol": "ANET",
@@ -12,6 +12,16 @@
       "source": "https://www.sec.gov/Archives/edgar/data/1596532/0001596532-21-000407-index.html",
       "notes": "Four-for-one forward stock split. Announced November 1, 2021 alongside Q3 2021 earnings results. Record date: November 11, 2021. Each shareholder of record received three additional shares for every share held. Split-adjusted trading began November 18, 2021. Completion announced November 19, 2021.",
       "ratioNew": 4,
+      "ratioOld": 1
+    },
+    {
+      "symbol": "CSGP",
+      "name": "CoStar Group, Inc.",
+      "date": "2021-06-25",
+      "exchange": "NASDAQ",
+      "source": "https://investors.costargroup.com/node/9146/html",
+      "notes": "Ten-for-one forward stock split in the form of a stock dividend. Board approved Jun 7, 2021. Fourth Amended and Restated Certificate of Incorporation effective Jun 7, 2021, increasing authorized shares from 60M to 1.2B. Record date Jun 17, 2021. Nine additional shares distributed after close Jun 25, 2021. Split-adjusted trading began Jun 28, 2021. First stock split in company history.",
+      "ratioNew": 10,
       "ratioOld": 1
     },
     {
@@ -34,6 +44,16 @@
       "notes": "4-for-1 forward stock split. Effective date December 2, 2021. FINRA announced split-adjusted trading December 7, 2021; trading on split-adjusted basis began December 8, 2021. CUSIP changed to 33817P306. Shares outstanding before: 1,125,690; after: 4,502,760. Split intended to increase liquidity and help achieve Nasdaq Capital Market initial listing requirements.",
       "ratioNew": 4,
       "ratioOld": 1
+    },
+    {
+      "symbol": "GE",
+      "name": "General Electric Company",
+      "date": "2021-07-30",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/40545/000120677421001925/ge3936671-8k.htm",
+      "notes": "Reverse split. Shareholders approved May 4, 2021. Effective date announced Jun 18, 2021. Certificate of Amendment filed and effective Jul 30, 2021. Split-adjusted trading on NYSE began Aug 2, 2021. CUSIP changed to 369604301. Shares reduced from ~8.8B to ~1.1B. Authorized shares reduced proportionately. Par value reduced from $0.06 to $0.01.",
+      "ratioNew": 1,
+      "ratioOld": 8
     },
     {
       "symbol": "ISRG",

@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/year-file.schema.json",
   "year": 2022,
-  "updated": "2026-02-06",
+  "updated": "2026-02-09",
   "splits": [
     {
       "symbol": "AMZN",
@@ -65,6 +65,16 @@
       "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000015/googexhibit991q42021.htm",
       "notes": "Board approved Feb 1, 2022. Shareholders approved June 1, 2022. Record date Jul 1, 2022. 19 additional shares distributed after close Jul 15, 2022. Split-adjusted trading began Jul 18, 2022. Applied to all three share classes (Class A GOOGL, Class B, and Class C GOOG). First split since 2014.",
       "ratioNew": 20,
+      "ratioOld": 1
+    },
+    {
+      "symbol": "KNTK",
+      "name": "Kinetik Holdings Inc.",
+      "date": "2022-06-08",
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2022/05/19/2447328/0/en/Kinetik-Announces-Two-For-One-Split-of-its-Common-Stock.html",
+      "notes": "Two-for-one forward stock split in the form of a stock dividend. Board approved May 19, 2022. Record date May 31, 2022. One additional share distributed Jun 8, 2022. Split-adjusted trading began Jun 9, 2022. Applied to both Class A and Class C Common Stock. ~135M shares outstanding after split.",
+      "ratioNew": 2,
       "ratioOld": 1
     },
     {
