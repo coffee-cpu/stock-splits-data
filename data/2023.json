@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/year-file.schema.json",
   "year": 2023,
-  "updated": "2026-02-09",
+  "updated": "2026-11-06",
   "splits": [
     {
       "symbol": "AMC",
@@ -85,8 +85,8 @@
       "date": "2023-09-20",
       "isin": "US6701002056",
       "exchange": "NYSE",
-      "source": "https://www.nasdaq.com/press-release/novo-nordisk-conducts-a-two-for-one-stock-split-2023-09-13",
-      "notes": "Board approved Aug 10, 2023. Copenhagen B shares split effective Sep 13, 2023. NYSE ADR split effective Sep 20, 2023. Maintained 1:1 relationship between B-share and ADR.",
+      "source": "https://www.sec.gov/Archives/edgar/data/353278/000117184323005686/f6k_091323.htm",
+      "notes": "Board approved Aug 10, 2023 (announced in 6-K Sep 13, 2023). Copenhagen B-share trading unit changed Sep 13, 2023. NYSE ADRs split 2-for-1 as of Sep 20, 2023, preserving the 1:1 B-share/ADR relationship.",
       "ratioNew": 2,
       "ratioOld": 1
     },
@@ -100,6 +100,17 @@
       "notes": "Board declared Dec 5, 2022. 50% stock dividend (3-for-2 split). Record date Jan 17, 2023. Distributed Feb 7, 2023. Split-adjusted trading began Feb 8, 2023.",
       "ratioNew": 3,
       "ratioOld": 2
+    },
+    {
+      "symbol": "SNEX",
+      "name": "StoneX Group Inc.",
+      "date": "2023-11-27",
+      "ratioNew": 3,
+      "ratioOld": 2,
+      "isin": "US8618961085",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/913760/000091376023000147/pressreleasenov2023stocksp.htm",
+      "notes": "Announced Nov 7, 2023. One additional share for every two held. Record date Nov 17, 2023. Distributed after close Nov 24, 2023. Split-adjusted trading began Nov 27, 2023. Cash in lieu of fractional shares based on Nov 20 opening price."
     },
     {
       "symbol": "SRE",
