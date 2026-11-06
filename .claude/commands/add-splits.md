@@ -89,12 +89,12 @@ Use the **Task tool** to dispatch a sub-agent for each candidate. The sub-agent 
 2. Extract these fields:
    - `symbol` — ticker symbol (uppercase, letters/numbers/dots only)
    - `name` — full company name
-   - `date` — effective/distribution date (YYYY-MM-DD)
+   - `date` — **first split-adjusted trading day / ex-date** (YYYY-MM-DD), NOT the record, payable or approval date
    - `ratioNew` — new shares received (integer, e.g., `4` for a 4-for-1 split)
    - `ratioOld` — old shares exchanged (integer, e.g., `1` for a 4-for-1 split)
    - `exchange` — primary exchange (NASDAQ, NYSE, NYSE American, etc.)
    - `isin` — ISIN if mentioned (format: 2 uppercase letters + 10 alphanumeric characters)
-   - `source` — URL of the primary source (press release or SEC filing)
+   - `source` — URL of the primary source: sec.gov, nasdaqtrader.com, an official newswire release, or the company IR site. Never an aggregator (StockTitan, TipRanks, Yahoo, MarketScreener, Investing.com, …)
    - `notes` — key details: board/shareholder approval dates, record date, CUSIP changes, reason for split
 3. Return a JSON object with these fields, OR return `"NOT_A_SPLIT"` if the filing is not actually about a stock split (e.g., mentions "split" in a different context)
 
@@ -105,7 +105,9 @@ After each batch completes, update the progress file — this serves as a checkp
 **Important research guidelines:**
 - Only use publicly available sources (SEC filings, company press releases, exchange announcements)
 - Do NOT use financial data APIs or paid services
-- Verify the split actually happened (not just announced) — check for effective date confirmation
+- Verify the split actually happened (not just announced) — check for effective date confirmation. Do not add splits whose date is in the future
+- Only US-listed securities (NASDAQ, NYSE, NYSE American, NYSE Arca, SEC-reporting OTC issuers). Skip non-US listings traded only as OTC grey-market tickers
+- If several listed share classes split (e.g. GOOG and GOOGL), add one entry per class
 - For the ratio fields, `ratioNew` is the new shares received and `ratioOld` is the old shares exchanged (e.g., a 4-for-1 forward split = `ratioNew: 4, ratioOld: 1`)
 
 ### Step 5 — Deduplicate
@@ -129,7 +131,7 @@ For each new split entry:
      "splits": []
    }
    ```
-3. Insert the entry into the `splits` array in **alphabetical order by symbol**
+3. Insert the entry into the `splits` array sorted by **symbol, then date** (the validator enforces this)
 4. Update the `updated` field to today's date (YYYY-MM-DD)
 
 Include only fields that have values — don't include `isin`, `exchange`, `source`, or `notes` if they're empty/unknown. The required fields are: `symbol`, `name`, `date`, `ratioNew`, `ratioOld`.

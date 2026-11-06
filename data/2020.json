@@ -1,12 +1,12 @@
 {
   "$schema": "../schema/year-file.schema.json",
   "year": 2020,
-  "updated": "2026-02-09",
+  "updated": "2026-11-06",
   "splits": [
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
-      "date": "2020-08-28",
+      "date": "2020-08-31",
       "exchange": "NASDAQ",
       "isin": "US0378331005",
       "source": "https://www.sec.gov/Archives/edgar/data/320193/000119312520213158/d49399d8k.htm",
@@ -27,7 +27,7 @@
     {
       "symbol": "NEE",
       "name": "NextEra Energy, Inc.",
-      "date": "2020-10-26",
+      "date": "2020-10-27",
       "exchange": "NYSE",
       "isin": "US65339F1012",
       "source": "https://www.sec.gov/Archives/edgar/data/753308/000075330820000192/nee8kdated10262020.htm",
@@ -38,7 +38,7 @@
     {
       "symbol": "POWI",
       "name": "Power Integrations, Inc.",
-      "date": "2020-08-18",
+      "date": "2020-08-19",
       "exchange": "NASDAQ",
       "isin": "US7392761034",
       "source": "https://www.businesswire.com/news/home/20200730005966/en/Power-Integrations-Reports-Second-Quarter-Financial-Results",

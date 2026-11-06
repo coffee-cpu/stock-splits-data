@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/year-file.schema.json",
   "year": 2025,
-  "updated": "2026-02-09",
+  "updated": "2026-11-06",
   "splits": [
     {
       "symbol": "ASRT",
@@ -16,7 +16,7 @@
     {
       "symbol": "BOXL",
       "name": "Boxlight Corporation",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "exchange": "NASDAQ",
       "source": "https://www.businesswire.com/news/home/20251219007469/en/Boxlight-Announces-1-for-6-Reverse-Stock-Split-of-Class-A-Common-Stock",
       "notes": "Reverse split. Board approved Dec 19, 2025. Effective at 5:00 PM ET Dec 22, 2025. Split-adjusted trading began Dec 23, 2025. CUSIP changed to 103197406. Intended to maintain Nasdaq listing compliance with minimum bid price requirement. Second reverse split in 2025 (first was 1-for-5 in Feb 2025).",
@@ -26,7 +26,7 @@
     {
       "symbol": "CBSH",
       "name": "Commerce Bancshares, Inc.",
-      "date": "2025-12-16",
+      "date": "2025-12-02",
       "isin": "US2005251036",
       "exchange": "NASDAQ",
       "source": "https://investor.commercebank.com/news-info/financial-news-releases/press-release/2025/Commerce-Bancshares-Inc--Declares-Stock-Dividend-and-Quarterly-Cash-Dividend-on-Common-Stock/default.aspx",
@@ -37,7 +37,7 @@
     {
       "symbol": "COKE",
       "name": "Coca-Cola Consolidated, Inc.",
-      "date": "2025-05-23",
+      "date": "2025-05-27",
       "exchange": "NASDAQ",
       "source": "https://www.sec.gov/Archives/edgar/data/317540/000031754025000062/cokepressrelease51625.htm",
       "notes": "Board approved Mar 4, 2025. Stockholders approved May 13, 2025. Record date May 16, 2025. Distributed May 23, 2025. Split-adjusted trading began May 27, 2025. Applies to both Common Stock and Class B Common Stock.",
@@ -47,7 +47,7 @@
     {
       "symbol": "FAST",
       "name": "Fastenal Company",
-      "date": "2025-05-21",
+      "date": "2025-05-22",
       "isin": "US3119001044",
       "exchange": "NASDAQ",
       "source": "https://investor.fastenal.com/news-releases/news-details/2025/Fastenal-Company-Announces-Two-For-One-Stock-Split/default.aspx",
@@ -58,7 +58,7 @@
     {
       "symbol": "FTLF",
       "name": "FitLife Brands, Inc.",
-      "date": "2025-02-06",
+      "date": "2025-02-07",
       "exchange": "NASDAQ",
       "source": "https://www.sec.gov/Archives/edgar/data/1374328/000143774925002916/",
       "notes": "Board approved 2-for-1 forward split. Certificate of Change filed with Nevada Secretary of State effective Feb 6, 2025. Split-adjusted trading began Feb 7, 2025. Shares outstanding doubled from 4,605,108 to 9,210,216.",
@@ -68,7 +68,7 @@
     {
       "symbol": "IBKR",
       "name": "Interactive Brokers Group, Inc.",
-      "date": "2025-06-17",
+      "date": "2025-06-18",
       "isin": "US45841N1072",
       "exchange": "NASDAQ",
       "source": "https://www.businesswire.com/news/home/20250415584574/en/Interactive-Brokers-Group-Announces-1Q2025-Results",
@@ -79,7 +79,7 @@
     {
       "symbol": "NFLX",
       "name": "Netflix, Inc.",
-      "date": "2025-11-14",
+      "date": "2025-11-17",
       "isin": "US64110L1061",
       "exchange": "NASDAQ",
       "source": "https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2025/Netflix-Announces-Ten-For-One-Stock-Split/default.aspx",
@@ -90,7 +90,7 @@
     {
       "symbol": "NOW",
       "name": "ServiceNow, Inc.",
-      "date": "2025-12-17",
+      "date": "2025-12-18",
       "isin": "US81762P1021",
       "exchange": "NYSE",
       "source": "https://newsroom.servicenow.com/press-releases/details/2025/ServiceNow-Shareholders-Approve-5-for-1-Stock-Split/default.aspx",
@@ -111,7 +111,7 @@
     {
       "symbol": "OBT",
       "name": "Orange County Bancorp, Inc.",
-      "date": "2025-01-10",
+      "date": "2025-01-13",
       "exchange": "NASDAQ",
       "source": "https://investors.orangebanktrust.com/news-releases/news-release-details/orange-county-bancorp-inc-declares-two-one-stock-split/",
       "notes": "Board declared 2-for-1 forward split. Record date Jan 8, 2025 (adjusted from Jan 9 due to markets closing for President Carter). Effective after close Jan 10, 2025. Split-adjusted trading began Jan 13, 2025. Shares doubled from ~5.7M to ~11.4M.",
@@ -121,7 +121,7 @@
     {
       "symbol": "ORLY",
       "name": "O'Reilly Automotive, Inc.",
-      "date": "2025-06-09",
+      "date": "2025-06-10",
       "isin": "US67103H1077",
       "exchange": "NASDAQ",
       "source": "https://corporate.oreillyauto.com/2025/03/13/oreilly-automotive-inc-board-of-directors-approves-15-for-1-stock-split-subject-to-shareholder-approval-of-an-increase-in-the-number-of-authorized-shares-of-common-stock/",
@@ -132,7 +132,7 @@
     {
       "symbol": "RLI",
       "name": "RLI Corp.",
-      "date": "2025-01-15",
+      "date": "2025-01-16",
       "exchange": "NYSE",
       "source": "https://investors.rlicorp.com/news/news-details/2024/RLI-Declares-Special-Dividend-and-Two-for-One-Stock-Split/default.aspx",
       "notes": "Board announced Nov 7, 2024. Record date Dec 31, 2024. Shares distributed Jan 15, 2025. Split-adjusted trading began Jan 16, 2025.",
@@ -142,7 +142,7 @@
     {
       "symbol": "TPL",
       "name": "Texas Pacific Land Corporation",
-      "date": "2025-12-22",
+      "date": "2025-12-23",
       "isin": "US88262P1021",
       "exchange": "NYSE",
       "source": "https://www.texaspacific.com/investors/news-events/press-releases/detail/175/texas-pacific-land-corporation-announces-effective-date-of",

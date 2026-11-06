@@ -31,7 +31,8 @@ npx ts-node scripts/validate.ts           # Validate data integrity
 - Validates all year files against JSON schemas
 - Checks date consistency (splits must be in correct year file)
 - Detects duplicate splits across files (same symbol + date)
-- Validates ISIN format (`/^[A-Z]{2}[A-Z0-9]{10}$/`) and ratio fields (positive integers)
+- Validates ISIN format and check digit, and ratio fields (positive integers, lowest terms, not 1:1)
+- Enforces sort order (symbol, then date), no future split dates, and `updated` freshness
 
 ### Data Validation Rules
 
@@ -40,8 +41,18 @@ Year files must satisfy:
 2. Year in filename matches `year` field
 3. All split dates fall within the file's year
 4. No duplicate symbol+date combinations across all files
-5. Valid ISIN format (if present): 2 letters + 10 alphanumeric
-6. Valid ratio fields: `ratioNew` and `ratioOld` must be positive integers
+5. Valid ISIN (if present): 2 letters + 10 alphanumeric, valid check digit
+6. Valid ratio fields: `ratioNew` and `ratioOld` positive integers in lowest terms, not equal
+7. Splits sorted by symbol, then date (ordinal string compare)
+8. No split dates in the future; `updated` not in the future and ≥ latest split date in the file
+
+### Date Convention
+
+`date` is the **first split-adjusted trading day (ex-date)** — not the record, payable or approval date. Record those in `notes`. Stock dividends under 25% use the normal ex-dividend date (usually the record date). Each listed share class (GOOG/GOOGL, HEI/HEI.A) gets its own entry.
+
+### Scope
+
+US-listed securities only (NASDAQ, NYSE, NYSE American, NYSE Arca, SEC-reporting OTC issuers), including ETFs/ETNs and ADSs. Exclude listings outside the US and their OTC grey-market tickers, freeze-out transactions, and splits that have not yet taken effect.
 
 ### Split Ratio Convention
 
@@ -65,8 +76,9 @@ When adding or correcting split data:
 4. Commit changes
 
 Required fields: `symbol`, `name`, `date`, `ratioNew`, `ratioOld`
+Required (schema-enforced): `source` — must be a primary source URL
 Recommended fields: `isin`, `exchange`
-Optional fields: `source`, `notes`
+Optional fields: `notes`
 
 Always maintain alphabetical ordering of splits within year files and include source documentation in PRs.
 
@@ -82,6 +94,6 @@ Always maintain alphabetical ordering of splits within year files and include so
 **Prohibited Sources:**
 - Financial data APIs (Polygon.io, Massive, Alpha Vantage, etc.) - violates ToS
 - Paid data services (Bloomberg Terminal, FactSet, etc.) - redistribution not permitted
-- Aggregator websites without original source verification
+- Aggregator websites as the `source` (StockTitan, TipRanks, Yahoo Finance, MarketScreener, Investing.com, etc.) — discovery only; link the original SEC filing, Nasdaq Trader alert, newswire release or company IR page
 
 Using only original public records ensures no terms of service violations, highest data accuracy from primary sources, and legal compliance for all contributors and users. See CONTRIBUTING.md for detailed guidelines.

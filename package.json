@@ -16,10 +16,10 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "validate": "npx ts-node scripts/validate.ts"
+    "validate": "ts-node scripts/validate.ts"
   },
   "devDependencies": {
-    "@types/node": "^20.19.30",
+    "@types/node": "^24.19.2",
     "ajv": "^8.12.0",
     "ajv-formats": "^2.1.1",
     "ts-node": "^10.9.2",

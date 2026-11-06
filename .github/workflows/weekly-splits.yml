@@ -16,19 +16,26 @@ permissions:
   pull-requests: write
   id-token: write
 
+concurrency:
+  group: weekly-splits
+  cancel-in-progress: false
+
 jobs:
   update-splits:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
+    env:
+      # Passed via env (never interpolated into shell) to avoid script injection.
+      TIME_RANGE: ${{ github.event.inputs.time_range || 'last 8 days' }}
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
 
       - name: Install dependencies
@@ -36,51 +43,55 @@ jobs:
 
       - name: Create branch
         run: |
-          BRANCH_NAME="auto/splits-$(date +%Y%m%d)"
+          BRANCH_NAME="auto/splits-$(date +%Y%m%d)-${GITHUB_RUN_ID}"
           git checkout -b "$BRANCH_NAME"
           echo "BRANCH_NAME=$BRANCH_NAME" >> "$GITHUB_ENV"
 
       - name: Research and add splits
-        uses: anthropics/claude-code-action@v1
+        uses: anthropics/claude-code-action@c0949c50a78c1ec8ce2647db36629b870e715d0c # v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # Without an explicit allowlist the agent cannot edit files or run curl/npm,
+          # and the job "succeeds" with no changes.
+          claude_args: >-
+            --max-turns 150
+            --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(curl:*),Bash(jq:*),Bash(npm run validate),Bash(date:*),Bash(git diff:*),Bash(git status)"
           prompt: |
-            Research and add stock split data for the following time range: ${{ github.event.inputs.time_range || 'last 8 days' }}
+            Research and add stock split data for this time range: ${{ env.TIME_RANGE }}
 
-            Follow these steps:
+            Follow CONTRIBUTING.md ("Research Procedure") and these rules:
 
-            1. Parse the time range into start/end dates.
+            1. Parse the time range into start/end dates (today is the run date).
+            2. Load the relevant data/YYYY.json file(s); skip SYMBOL:DATE pairs that already exist.
+            3. Discover candidates via SEC EDGAR full-text search (8-K/6-K: "stock split",
+               "reverse stock split", "share consolidation", "stock dividend") and the
+               Nasdaq Trader equity corporate actions alerts. Aggregators may be used for
+               discovery only.
+            4. For each candidate, open the primary source and extract symbol, name, date,
+               ratioNew, ratioOld, exchange, isin (if stated), source, notes.
+               - `date` = FIRST SPLIT-ADJUSTED TRADING DAY (ex-date), not record/payable date.
+               - `source` MUST be a primary source: sec.gov, nasdaqtrader.com, a newswire
+                 (globenewswire/prnewswire/businesswire/accessnewswire) or the company IR site.
+                 Never stocktitan, tipranks, yahoo, marketscreener, investing.com, etc.
+               - Only US-listed securities (NASDAQ, NYSE, NYSE American, NYSE Arca, Cboe, OTC with SEC filings).
+               - Only splits that have already taken effect. Skip announced-only splits.
+               - Skip reverse/forward freeze-out combinations (net share reduction to cash out holders).
+               - If several share classes split (e.g. GOOG and GOOGL), add one entry per listed class.
+            5. Insert entries sorted by symbol then date; set "updated" to today's date.
+            6. Run `npm run validate` and fix every error.
+            7. Print a summary of added / skipped (with reason) / errored candidates.
 
-            2. Load existing data from the relevant data/YYYY.json file(s). Build a set of SYMBOL:DATE pairs to skip.
+            Only modify files under data/. Do not commit or push.
 
-            3. Search SEC EDGAR EFTS for 8-K filings mentioning "stock split", "stock dividend", and "reverse stock split" in the date range:
-               - URL pattern: https://efts.sec.gov/LATEST/search-index?q="<term>"&forms=8-K&dateRange=custom&startdt=<start>&enddt=<end>
-               - Handle pagination using the "from" parameter
-               - Also cross-reference with web searches for NASDAQ/NYSE stock split calendars
-
-            4. For each candidate not already in the data, research the filing to extract: symbol, name, date, ratioNew (integer), ratioOld (integer), exchange, isin (if available), source URL, and notes.
-               - ratioNew = new shares received, ratioOld = old shares exchanged (e.g., 4-for-1 split: ratioNew=4, ratioOld=1)
-               - Only use publicly available sources (SEC filings, press releases, exchange announcements)
-               - Verify the split actually happened (not just announced)
-
-            5. Deduplicate against existing data.
-
-            6. Add new entries to the appropriate data/YYYY.json files:
-               - Insert alphabetically by symbol
-               - Update the "updated" field to today's date
-               - Create new year files if needed (use schema: "../schema/year-file.schema.json")
-
-            7. Run "npm run validate" and fix any issues.
-
-            8. Output a summary of added/skipped/errored splits.
-
-            Only commit changes to files in the data/ directory.
+      - name: Validate data
+        run: npm run validate
 
       - name: Check for changes
         id: changes
         run: |
-          if git diff --quiet data/; then
+          if git diff --quiet -- data/; then
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::No new splits found for $TIME_RANGE"
           else
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi
@@ -91,14 +102,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git commit -m "$(cat <<'EOF'
-          Add stock splits for ${{ github.event.inputs.time_range || 'last 8 days' }}
-
-          Automated weekly update via SEC EDGAR research.
-
-          Co-Authored-By: Claude <noreply@anthropic.com>
-          EOF
-          )"
+          git commit -m "Add stock splits for $TIME_RANGE" \
+            -m "Automated weekly update via SEC EDGAR research." \
+            -m "Co-Authored-By: Claude <noreply@anthropic.com>"
           git push origin "$BRANCH_NAME"
 
       - name: Create pull request
@@ -106,30 +112,25 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ADDED=$(git diff HEAD~1 --stat data/ | tail -1)
+          CHANGES=$(git diff HEAD~1 --stat -- data/ | tail -1)
+          {
+            echo "## Summary"
+            echo
+            echo "Automated weekly stock splits update for **$TIME_RANGE**, researched from SEC EDGAR filings and exchange notices."
+            echo
+            echo "**Changes:** $CHANGES"
+            echo
+            echo "Validation (\`npm run validate\`) passed in the generating workflow. Note: PRs opened with GITHUB_TOKEN do not trigger other workflows, so the Validate Data check will not appear automatically — re-run it via workflow_dispatch or push a commit if required."
+            echo
+            echo "## Review Checklist"
+            echo
+            echo "- [ ] Ratios are correct (ratioNew/ratioOld integers)"
+            echo "- [ ] Dates are the first split-adjusted trading day"
+            echo "- [ ] Every source is a primary source (SEC, Nasdaq Trader, newswire, company IR)"
+            echo "- [ ] Spot-checked 2-3 entries against their filings"
+            echo
+            echo "🤖 Generated with [Claude Code](https://claude.com/claude-code)"
+          } > "$RUNNER_TEMP/pr-body.md"
           gh pr create \
-            --title "Add stock splits for ${{ github.event.inputs.time_range || 'last 8 days' }}" \
-            --body "$(cat <<'EOF'
-          ## Summary
-
-          Automated weekly stock splits update researched from SEC EDGAR 8-K filings and exchange announcements.
-
-          **Changes:** $ADDED
-
-          ## Review Checklist
-
-          - [ ] Verify split ratios are correct (ratioNew/ratioOld integers)
-          - [ ] Verify effective dates match source filings
-          - [ ] Check that source URLs are accessible
-          - [ ] Run `npm run validate` locally if needed
-          - [ ] Spot-check 2-3 entries against their source filings
-
-          ## Data Sources
-
-          - SEC EDGAR full-text search (8-K filings)
-          - NASDAQ/NYSE corporate action calendars
-          - Company investor relations press releases
-
-          🤖 Generated with [Claude Code](https://claude.com/claude-code)
-          EOF
-          )"
+            --title "Add stock splits for $TIME_RANGE" \
+            --body-file "$RUNNER_TEMP/pr-body.md"

@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/year-file.schema.json",
   "year": 2021,
-  "updated": "2026-02-09",
+  "updated": "2026-11-06",
   "splits": [
     {
       "symbol": "ANET",
@@ -17,7 +17,7 @@
     {
       "symbol": "CSGP",
       "name": "CoStar Group, Inc.",
-      "date": "2021-06-25",
+      "date": "2021-06-28",
       "exchange": "NASDAQ",
       "source": "https://investors.costargroup.com/node/9146/html",
       "notes": "Ten-for-one forward stock split in the form of a stock dividend. Board approved Jun 7, 2021. Fourth Amended and Restated Certificate of Incorporation effective Jun 7, 2021, increasing authorized shares from 60M to 1.2B. Record date Jun 17, 2021. Nine additional shares distributed after close Jun 25, 2021. Split-adjusted trading began Jun 28, 2021. First stock split in company history.",
@@ -27,7 +27,7 @@
     {
       "symbol": "CSX",
       "name": "CSX Corporation",
-      "date": "2021-06-28",
+      "date": "2021-06-29",
       "isin": "US1264081035",
       "exchange": "NASDAQ",
       "source": "https://www.sec.gov/Archives/edgar/data/277948/000119312521184344/0001193125-21-184344.txt",
@@ -38,7 +38,7 @@
     {
       "symbol": "FTLF",
       "name": "FitLife Brands, Inc.",
-      "date": "2021-12-02",
+      "date": "2021-12-08",
       "exchange": "OTCQX",
       "source": "https://www.sec.gov/Archives/edgar/data/1374328/000185173421000140/ftlf20211207_8k.htm",
       "notes": "4-for-1 forward stock split. Effective date December 2, 2021. FINRA announced split-adjusted trading December 7, 2021; trading on split-adjusted basis began December 8, 2021. CUSIP changed to 33817P306. Shares outstanding before: 1,125,690; after: 4,502,760. Split intended to increase liquidity and help achieve Nasdaq Capital Market initial listing requirements.",
@@ -48,7 +48,7 @@
     {
       "symbol": "GE",
       "name": "General Electric Company",
-      "date": "2021-07-30",
+      "date": "2021-08-02",
       "exchange": "NYSE",
       "source": "https://www.sec.gov/Archives/edgar/data/40545/000120677421001925/ge3936671-8k.htm",
       "notes": "Reverse split. Shareholders approved May 4, 2021. Effective date announced Jun 18, 2021. Certificate of Amendment filed and effective Jul 30, 2021. Split-adjusted trading on NYSE began Aug 2, 2021. CUSIP changed to 369604301. Shares reduced from ~8.8B to ~1.1B. Authorized shares reduced proportionately. Par value reduced from $0.06 to $0.01.",
@@ -80,7 +80,7 @@
     {
       "symbol": "TTD",
       "name": "The Trade Desk, Inc.",
-      "date": "2021-06-16",
+      "date": "2021-06-17",
       "isin": "US88339J1051",
       "exchange": "NASDAQ",
       "source": "https://www.sec.gov/Archives/edgar/data/1671933/000115752321000635/a52426080ex99_2.htm",
