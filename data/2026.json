@@ -135,6 +135,26 @@
       "ratioOld": 7
     },
     {
+      "symbol": "BNRG",
+      "name": "Brenmiller Energy Ltd.",
+      "date": "2026-04-15",
+      "ratioNew": 1,
+      "ratioOld": 5,
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/1901215/000121390026042623/ea028499801ex99-1.htm",
+      "notes": "Israel-based. Approved at Special General Meeting Mar 31, 2026. Implemented after market close Apr 14; post-split trading began Apr 15, 2026. Shares reduced from 2,577,327 to 515,465."
+    },
+    {
+      "symbol": "BNRG",
+      "name": "Brenmiller Energy Ltd.",
+      "date": "2026-08-13",
+      "ratioNew": 1,
+      "ratioOld": 6,
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001901215/000121390026086735/ea030074401ex99-1.htm",
+      "notes": "Announced Aug 7, 2026. Implemented after market close Aug 12; post-split trading began Aug 13, 2026. Shares reduced from 4,325,329 to 720,888. Third reverse split of 2026."
+    },
+    {
       "symbol": "BOIL",
       "name": "ProShares Ultra Bloomberg Natural Gas",
       "date": "2026-05-28",
@@ -283,6 +303,17 @@
       "notes": "Effective 12:01 AM ET. New CUSIP 34417J500. Shares reduced from ~9.87M to ~987K.",
       "ratioNew": 1,
       "ratioOld": 10
+    },
+    {
+      "symbol": "FCUV",
+      "name": "Focus Universal Inc.",
+      "date": "2026-06-23",
+      "ratioNew": 1,
+      "ratioOld": 4,
+      "isin": "US34417J6091",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001590418/000168316826004961/focus_8k.htm",
+      "notes": "Effective 12:01 AM ET Jun 23, 2026; split-adjusted trading began that day. New CUSIP 34417J609. Shares reduced from 2,811,244 to ~702,811. Second reverse split of 2026."
     },
     {
       "symbol": "FGL",
@@ -655,6 +686,17 @@
       "ratioOld": 4
     },
     {
+      "symbol": "REVB",
+      "name": "Revelation Biosciences, Inc.",
+      "date": "2026-10-20",
+      "ratioNew": 1,
+      "ratioOld": 7,
+      "isin": "US76135L8871",
+      "exchange": "NASDAQ",
+      "source": "https://www.revbiosciences.com/press-releases/revelation-biosciences-announces-1-for-7-reverse-stock-split-effective-october-20-2026",
+      "notes": "Announced Oct 16, 2026. Split-adjusted trading began Oct 20, 2026 under new CUSIP 76135L887. Fractional shares rounded up. Reverse split to regain Nasdaq minimum bid price compliance; confirmed in Q3 2026 10-Q."
+    },
+    {
       "symbol": "REW",
       "name": "ProShares UltraShort Technology",
       "date": "2026-05-28",
@@ -806,6 +848,17 @@
       "ratioOld": 2
     },
     {
+      "symbol": "SNEX",
+      "name": "StoneX Group Inc.",
+      "date": "2026-07-20",
+      "ratioNew": 3,
+      "ratioOld": 2,
+      "isin": "US8618961085",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0000913760/000091376026000034/pressrelease-may2026_stock.htm",
+      "notes": "Announced May 26, 2026. One additional share for every two held. Record date Jul 7, 2026. Distributed after close Jul 17, 2026. Split-adjusted trading began Jul 20, 2026. Second 3-for-2 split of 2026."
+    },
+    {
       "symbol": "SOXS",
       "name": "Direxion Daily Semiconductor Bear 3X Shares",
       "date": "2026-03-05",
@@ -934,6 +987,28 @@
       "notes": "Effective 12:01 AM ET. Certificate of Amendment filed in Nevada Jan 22. Shares reduced from 7,652,661 to ~510,177. New CUSIP 90137F608.",
       "ratioNew": 1,
       "ratioOld": 15
+    },
+    {
+      "symbol": "XXII",
+      "name": "22nd Century Group, Inc.",
+      "date": "2026-06-12",
+      "ratioNew": 1,
+      "ratioOld": 20,
+      "isin": "US90137F7078",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001347858/000149315226027838/form8-k.htm",
+      "notes": "Certificate of Amendment filed in Nevada Jun 10. Effective 12:01 AM ET Jun 12, 2026; split-adjusted trading began that day. New CUSIP 90137F707. Shares reduced from 10,326,551 to ~516,328."
+    },
+    {
+      "symbol": "XXII",
+      "name": "22nd Century Group, Inc.",
+      "date": "2026-11-05",
+      "ratioNew": 1,
+      "ratioOld": 58,
+      "isin": "US90137F8068",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001347858/000149315226049743/form8-k.htm",
+      "notes": "Ratio set under range approved by stockholders Aug 5, 2026. Certificate filed in Nevada Nov 3. Effective 12:01 AM ET Nov 5, 2026; split-adjusted trading began that day. New CUSIP 90137F806. Shares reduced from 31,949,758 to ~550,858."
     },
     {
       "symbol": "YJGJ",
