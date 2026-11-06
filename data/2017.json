@@ -4,6 +4,17 @@
   "updated": "2026-11-06",
   "splits": [
     {
+      "symbol": "CPRT",
+      "name": "Copart, Inc.",
+      "date": "2017-04-11",
+      "ratioNew": 2,
+      "ratioOld": 1,
+      "isin": "US2172041061",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0000900075/000090007517000023/cprt03272017ex991.htm",
+      "notes": "Announced Mar 24, 2017. Effected as a stock dividend of one additional share per share held. Record date Apr 3, 2017. Distributed after close Apr 10, 2017. Ex-distribution (split-adjusted trading) Apr 11, 2017. Shares outstanding increased from ~115M to ~230M."
+    },
+    {
       "symbol": "HEI",
       "name": "HEICO Corporation",
       "date": "2017-04-19",
