@@ -64,7 +64,7 @@ Ratios use two integer fields, `ratioNew` and `ratioOld`:
 ### GitHub Actions Workflows
 
 **.github/workflows/validate-data.yml**
-- Triggers on PRs and pushes to main affecting data/ or schema/
+- Runs on every PR (required status check `validate` on main) and on pushes to main affecting data, schema, scripts or package files
 - Runs `npm run validate` to ensure data integrity
 
 ## Contributing Workflow
