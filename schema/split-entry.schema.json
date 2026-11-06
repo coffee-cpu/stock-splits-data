@@ -4,7 +4,7 @@
   "title": "Stock Split Entry",
   "description": "Schema for a single stock split entry in yearly files",
   "type": "object",
-  "required": ["symbol", "name", "date", "ratioNew", "ratioOld"],
+  "required": ["symbol", "name", "date", "ratioNew", "ratioOld", "source"],
   "properties": {
     "symbol": {
       "type": "string",
@@ -18,7 +18,7 @@
     "date": {
       "type": "string",
       "format": "date",
-      "description": "Split effective date (YYYY-MM-DD)",
+      "description": "First split-adjusted trading day / ex-date (YYYY-MM-DD)",
       "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
     },
     "ratioNew": {
@@ -42,9 +42,10 @@
     },
     "source": {
       "type": "string",
-      "description": "Data source URL or reference"
+      "description": "Primary source URL (SEC filing, exchange notice, official newswire release or company IR page)",
+      "format": "uri"
     },
-"notes": {
+    "notes": {
       "type": "string",
       "description": "Additional notes about the split"
     }

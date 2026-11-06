@@ -1,12 +1,12 @@
 {
   "$schema": "../schema/year-file.schema.json",
   "year": 2019,
-  "updated": "2026-02-07",
+  "updated": "2026-11-06",
   "splits": [
     {
       "symbol": "CNC",
       "name": "Centene Corporation",
-      "date": "2019-02-06",
+      "date": "2019-02-07",
       "exchange": "NYSE",
       "isin": "US15135B1017",
       "source": "https://www.prnewswire.com/news-releases/centene-corporation-announces-two-for-one-stock-split-is-effective-300791283.html",
@@ -17,7 +17,7 @@
     {
       "symbol": "FAST",
       "name": "Fastenal Company",
-      "date": "2019-05-22",
+      "date": "2019-05-23",
       "exchange": "NASDAQ",
       "isin": "US3119001044",
       "source": "https://investor.fastenal.com/news-releases/news-details/2019/Fastenal-Company-Announces-Two-For-One-Stock-Split/default.aspx",
@@ -28,7 +28,7 @@
     {
       "symbol": "FFIN",
       "name": "First Financial Bankshares, Inc.",
-      "date": "2019-06-03",
+      "date": "2019-06-04",
       "exchange": "NASDAQ",
       "isin": "US32020R1095",
       "source": "https://www.prnewswire.com/news-releases/first-financial-bankshares-announces-two-for-one-stock-split-and-increase-in-cash-dividend-at-annual-meeting-300836581.html",

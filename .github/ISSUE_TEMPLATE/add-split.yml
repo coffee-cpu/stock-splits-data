@@ -31,8 +31,8 @@ body:
   - type: input
     id: date
     attributes:
-      label: Effective Date
-      description: "Distribution/effective date in YYYY-MM-DD format (not record date or approval date)"
+      label: Ex-Date (first split-adjusted trading day)
+      description: "First split-adjusted trading day (ex-date) in YYYY-MM-DD format — not the record, payable or approval date"
       placeholder: "2024-06-10"
     validations:
       required: true

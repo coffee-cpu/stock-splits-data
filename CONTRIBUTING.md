@@ -43,9 +43,10 @@ Update the `updated` field to today's date (YYYY-MM-DD format).
 |-------|-------------|---------|
 | `symbol` | Stock ticker (uppercase) | `"AAPL"` |
 | `name` | Full company name | `"Apple Inc."` |
-| `date` | Split effective date | `"2024-06-15"` |
+| `date` | First split-adjusted trading day (ex-date) | `"2024-06-15"` |
 | `ratioNew` | New shares received | `4` |
 | `ratioOld` | Old shares exchanged | `1` |
+| `source` | Primary source URL (see [Acceptable Data Sources](#acceptable-data-sources)) | `"https://www.sec.gov/..."` |
 
 ## Recommended Fields
 
@@ -58,7 +59,6 @@ Update the `updated` field to today's date (YYYY-MM-DD format).
 
 | Field | Description | Example |
 |-------|-------------|---------|
-| `source` | Data source URL | `"https://..."` |
 | `notes` | Additional context | `"Created Class C shares"` |
 
 ## Ratio Format
@@ -79,11 +79,13 @@ npm run validate
 ```
 
 The validator checks:
-- JSON schema compliance
-- Dates are in the correct year
-- No duplicate entries (same symbol + date)
-- Valid ISIN format (if provided)
-- Valid ratio fields (positive integers)
+- JSON schema compliance and the `$schema` reference
+- Dates are in the correct year and not in the future
+- Entries are sorted by symbol, then date
+- `updated` is not in the future and not earlier than the latest split in the file
+- No duplicate entries (same symbol + date) across all files
+- ISIN format and check digit (if provided)
+- Ratios are positive integers in lowest terms, and `ratioNew` ≠ `ratioOld`
 
 ## Pull Request Guidelines
 
@@ -106,8 +108,7 @@ Include in your PR description:
 2. **Source link** (required) - one of:
    - Company press release or investor relations page
    - SEC filing (8-K, proxy statement)
-   - Exchange announcement
-   - Major financial news source
+   - Exchange announcement (e.g. Nasdaq Trader corporate actions alert)
 
 ### Example PR
 
@@ -130,7 +131,7 @@ If you need to add a split for a year that doesn't have a file yet:
 {
   "$schema": "../schema/year-file.schema.json",
   "year": YYYY,
-  "updated": "2025-01-25",
+  "updated": "YYYY-MM-DD",
   "splits": [
     {
       "symbol": "TICKER",
@@ -139,7 +140,8 @@ If you need to add a split for a year that doesn't have a file yet:
       "ratioNew": 4,
       "ratioOld": 1,
       "isin": "XXXXXXXXXXXX",
-      "exchange": "EXCHANGE"
+      "exchange": "EXCHANGE",
+      "source": "https://www.sec.gov/Archives/edgar/data/..."
     }
   ]
 }
@@ -158,8 +160,9 @@ All contributions must be verifiable through one of these public sources:
 
 - **SEC EDGAR filings**: 8-K forms, proxy statements (public domain)
 - **Company investor relations pages**: Official press releases and announcements
-- **Exchange announcements**: NYSE, NASDAQ corporate action notices
+- **Exchange announcements**: NYSE, NASDAQ corporate action notices ([Nasdaq Trader alerts](https://www.nasdaqtrader.com/))
 - **Company official websites**: Investor relations sections
+- **Official newswire releases** issued by the company (GlobeNewswire, PR Newswire, Business Wire, ACCESS Newswire)
 
 ### ❌ Prohibited Sources
 
@@ -167,7 +170,7 @@ Do NOT submit data from:
 
 - **Financial data APIs** (Polygon.io, Massive, Alpha Vantage, etc.) - violates their terms of service
 - **Paid data services** (Bloomberg Terminal, FactSet, etc.) - redistribution not permitted
-- **Aggregator websites** without original source verification
+- **Aggregator websites** as the `source` (e.g. StockTitan, TipRanks, Yahoo Finance, MarketScreener, Investing.com). They may be used to *discover* splits, but each entry must link to the original document
 - **Third-party databases** that restrict redistribution
 
 ### Why These Restrictions?
@@ -244,7 +247,7 @@ For each verified split, record:
 |-------|-----------------|------------|
 | `symbol` | EDGAR filing header, exchange listing | Uppercase ticker |
 | `name` | Filing header | Full legal name |
-| `date` | 8-K filing body | **Distribution/effective date** (see below) |
+| `date` | 8-K filing body | **First split-adjusted trading day** (see below) |
 | `ratioNew` | 8-K filing body | New shares (integer) |
 | `ratioOld` | 8-K filing body | Old shares (integer) |
 | `exchange` | EDGAR filing header | `NASDAQ`, `NYSE`, etc. |
@@ -254,21 +257,32 @@ For each verified split, record:
 
 **Notes template:**
 ```
-Board approved YYYY-MM-DD. Record date YYYY-MM-DD. Distributed YYYY-MM-DD. Split-adjusted trading began YYYY-MM-DD. SEC 8-K: [url]
+Board approved YYYY-MM-DD. Record date YYYY-MM-DD. Distributed YYYY-MM-DD. Split-adjusted trading began YYYY-MM-DD.
 ```
 
 ### Date Convention
 
-Always use the **distribution/effective date** — the date shares are actually distributed to shareholders:
+Always use the **first split-adjusted trading day** (the ex-date). This is the first session in which the stock trades at the post-split price:
 
 | Date type | Example | Use as `date`? |
 |-----------|---------|----------------|
 | Board approval date | Mar 13, 2025 | No |
 | Record date | Jun 2, 2025 | No |
-| **Distribution/effective date** | **Jun 9, 2025** | **Yes** |
-| First split-adjusted trading date | Jun 10, 2025 | No |
+| Distribution/payable date | Jun 9, 2025 | No |
+| **First split-adjusted trading day** | **Jun 10, 2025** | **Yes** |
 
-If a filing says "shares distributed after the close of trading on June 9" and "split-adjusted trading begins June 10", the `date` is `2025-06-09`.
+If a filing says "shares distributed after the close of trading on June 9" and "split-adjusted trading begins June 10", the `date` is `2025-06-10`. For reverse splits "effective at 12:01 AM on <date>", that date is normally also the first split-adjusted trading day.
+
+Special cases:
+- **Stock dividends under 25%** (e.g. a 5% dividend = `21:20`) follow the normal ex-dividend rule, so the ex-date usually equals the record date.
+- **Distinct share classes** (e.g. `GOOG`/`GOOGL`, `HEI`/`HEI.A`) each need their own entry.
+- **ADS ratio changes** count as splits of the ADS. Record the ratio from the ADS holder's point of view.
+
+Record the other key dates in `notes`.
+
+### Scope
+
+Only add securities listed in the US (NASDAQ, NYSE, NYSE American, NYSE Arca, and OTC issuers that file with the SEC), including ETFs/ETNs and ADSs. Don't add companies whose only US presence is an OTC grey-market ticker. Only add splits that have **already taken effect**.
 
 ### Step 5: Validate and Submit
 
@@ -283,7 +297,7 @@ If you already know which company split and just need the details:
 
 1. **SEC EDGAR**: Search for the company's 8-K filings at [sec.gov/cgi-bin/browse-edgar](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&type=8-K)
 2. **Company IR page**: Search `[Company Name] investor relations stock split [year]`
-3. **Financial news**: Use Reuters, Yahoo Finance, etc. to verify — but always link to the original SEC filing or company press release as the `source`
+3. **Financial news**: may help you find a split, but the `source` must always be the original SEC filing, exchange notice or company press release
 
 ## Questions?
 
