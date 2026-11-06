@@ -15,6 +15,7 @@ permissions:
   contents: write
   pull-requests: write
   id-token: write
+  actions: write  # dispatch Validate Data on the PR branch
 
 concurrency:
   group: weekly-splits
@@ -27,6 +28,8 @@ jobs:
     env:
       # Passed via env (never interpolated into shell) to avoid script injection.
       TIME_RANGE: ${{ github.event.inputs.time_range || 'last 8 days' }}
+      # SEC fair-access policy: automated requests must declare a contact email.
+      SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
 
     steps:
       - name: Checkout repository
@@ -67,6 +70,10 @@ jobs:
                "reverse stock split", "share consolidation", "stock dividend") and the
                Nasdaq Trader equity corporate actions alerts. Aggregators may be used for
                discovery only.
+               For every sec.gov request use curl with the declared User-Agent:
+               `curl -s --compressed -A "$SEC_USER_AGENT" <url>` (WebFetch is blocked by SEC).
+               Stay under 10 requests/second. If SEC still returns 403, fall back to
+               WebSearch to locate sec.gov filing URLs.
             4. For each candidate, open the primary source and extract symbol, name, date,
                ratioNew, ratioOld, exchange, isin (if stated), source, notes.
                - `date` = FIRST SPLIT-ADJUSTED TRADING DAY (ex-date), not record/payable date.
@@ -120,7 +127,7 @@ jobs:
             echo
             echo "**Changes:** $CHANGES"
             echo
-            echo "Validation (\`npm run validate\`) passed in the generating workflow. Note: PRs opened with GITHUB_TOKEN do not trigger other workflows, so the Validate Data check will not appear automatically — re-run it via workflow_dispatch or push a commit if required."
+            echo "Validation (\`npm run validate\`) passed in the generating workflow, and the Validate Data check is dispatched on this branch."
             echo
             echo "## Review Checklist"
             echo
@@ -134,3 +141,7 @@ jobs:
           gh pr create \
             --title "Add stock splits for $TIME_RANGE" \
             --body-file "$RUNNER_TEMP/pr-body.md"
+          # PRs opened with GITHUB_TOKEN don't trigger pull_request workflows,
+          # but workflow_dispatch is allowed; its check run lands on the head commit
+          # and satisfies the required "validate" check.
+          gh workflow run validate-data.yml --ref "$BRANCH_NAME"

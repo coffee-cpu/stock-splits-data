@@ -1,15 +1,9 @@
 name: Validate Data
 
 on:
+  # Runs on every PR (no path filter) because it is a required status check:
+  # a filtered-out required check never reports and would block the merge.
   pull_request:
-    paths:
-      - 'data/**'
-      - 'schema/**'
-      - 'scripts/**'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'tsconfig.json'
-      - '.github/workflows/validate-data.yml'
   push:
     branches:
       - main
