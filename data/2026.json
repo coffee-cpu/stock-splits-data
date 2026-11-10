@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/year-file.schema.json",
   "year": 2026,
-  "updated": "2026-11-06",
+  "updated": "2026-11-10",
   "splits": [
     {
       "symbol": "ADIL",
@@ -22,6 +22,26 @@
       "notes": "Stockholders approved May 1, 2026. Effective at market open May 18, 2026. New CUSIP 007025869.",
       "ratioNew": 1,
       "ratioOld": 27
+    },
+    {
+      "symbol": "AIIO",
+      "name": "Robo.ai Inc.",
+      "date": "2026-04-06",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/1932737/000121390026037954/ea028337101ex99-1.htm",
+      "notes": "Reverse split of Class B ordinary shares. Effective 8:00 AM ET Apr 6, 2026. CUSIP G6693P122. Nasdaq bid price compliance.",
+      "ratioNew": 1,
+      "ratioOld": 20
+    },
+    {
+      "symbol": "AIRE",
+      "name": "reAlpha Tech Corp.",
+      "date": "2026-04-30",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001859199/000121390026048607/ea028807301ex99-1.htm",
+      "notes": "Stockholders approved Oct 8, 2025. Announced Apr 28, 2026. Effective 12:01 AM ET Apr 30, 2026 under new CUSIP 75607T204. Shares reduced from ~134.12M to ~5.36M. Nasdaq bid price compliance.",
+      "ratioNew": 1,
+      "ratioOld": 25
     },
     {
       "symbol": "AKAN",
@@ -123,6 +143,16 @@
       "notes": "Effective 12:01 AM ET. New CUSIP 095633608. Third reverse split (prior 1:8 and 1:50 in 2024).",
       "ratioNew": 1,
       "ratioOld": 4
+    },
+    {
+      "symbol": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "date": "2026-04-06",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/1075531/000095015726000465/form8-k.htm",
+      "notes": "Board approved earlier in 2026. Charter amendment effective 4:01 PM ET Apr 2, 2026; split-adjusted trading began at open Apr 6, 2026. Each share (incl. treasury) converted into 25; authorized common increased to 25B.",
+      "ratioNew": 25,
+      "ratioOld": 1
     },
     {
       "symbol": "BNRG",
@@ -396,6 +426,16 @@
       "ratioOld": 60
     },
     {
+      "symbol": "HDV",
+      "name": "iShares Core High Dividend ETF",
+      "date": "2026-04-29",
+      "exchange": "NYSE Arca",
+      "source": "https://www.ishares.com/ch/professionals/en/products/239563/ishares-high-dividend-etf",
+      "notes": "Announced Mar 27, 2026 (iShares Trust board authorized). Record date Apr 27; split effectuated after close Apr 28; split-adjusted trading began Apr 29, 2026. Creation unit size unchanged at 50,000 shares.",
+      "ratioNew": 5,
+      "ratioOld": 1
+    },
+    {
       "symbol": "HERZ",
       "name": "Herzfeld Credit Income Fund, Inc.",
       "date": "2026-02-09",
@@ -414,6 +454,16 @@
       "notes": "Split-adjusted trading began Mar 5. Part of Direxion batch reverse split announcement Feb 4, 2026.",
       "ratioNew": 1,
       "ratioOld": 10
+    },
+    {
+      "symbol": "HTCR",
+      "name": "HeartCore Enterprises, Inc.",
+      "date": "2026-04-06",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/1892322/000149315226014518/ex99-1.htm",
+      "notes": "Stockholders approved range Jun 30, 2025; board set 1-for-20. Effective 4:00 PM ET Apr 2, 2026; split-adjusted trading began Apr 6, 2026 under new CUSIP 42240Q203. Fractional shares rounded up. Nasdaq bid price compliance.",
+      "ratioNew": 1,
+      "ratioOld": 20
     },
     {
       "symbol": "IBG",
@@ -486,6 +536,16 @@
       "ratioOld": 1
     },
     {
+      "symbol": "IWF",
+      "name": "iShares Russell 1000 Growth ETF",
+      "date": "2026-04-29",
+      "exchange": "NYSE Arca",
+      "source": "https://www.ishares.com/ch/professionals/en/products/239706/ishares-russell-1000-growth-etf",
+      "notes": "Announced Mar 27, 2026 (iShares Trust board authorized). Record date Apr 27; split effectuated after close Apr 28; split-adjusted trading began Apr 29, 2026. Creation unit size unchanged at 50,000 shares.",
+      "ratioNew": 4,
+      "ratioOld": 1
+    },
+    {
       "symbol": "JDST",
       "name": "Direxion Daily Junior Gold Miners Index Bear 2X Shares",
       "date": "2026-03-05",
@@ -514,6 +574,16 @@
       "notes": "Effective 12:01 AM ET Jan 26, 2026. Split-adjusted trading began Jan 26, 2026 under new CUSIP 50172T301. Reduced outstanding shares from ~5.35M to ~535K. Proactive measure to preserve Nasdaq listing.",
       "ratioNew": 1,
       "ratioOld": 10
+    },
+    {
+      "symbol": "MGK",
+      "name": "Vanguard Mega Cap Growth ETF",
+      "date": "2026-04-21",
+      "exchange": "NYSE Arca",
+      "source": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-announces-share-splits-for-five-equity-index-etfs-032426.html",
+      "notes": "Record date Apr 17, 2026; payable after close Apr 20. Split-adjusted trading began Apr 21, 2026. Part of Vanguard five-ETF split announcement of Mar 24, 2026.",
+      "ratioNew": 5,
+      "ratioOld": 1
     },
     {
       "symbol": "MKDW",
@@ -594,6 +664,16 @@
       "notes": "Record May 26, payable May 27, 2026; post-split trading began May 28, 2026. CUSIP unchanged.",
       "ratioNew": 2,
       "ratioOld": 1
+    },
+    {
+      "symbol": "NXPL",
+      "name": "NextPlat Corp",
+      "date": "2026-04-13",
+      "exchange": "NASDAQ",
+      "source": "https://www.prnewswire.com/news-releases/nextplat-announces-1-for-10-reverse-stock-split-to-be-effective-prior-to-market-open-on-april-13-2026-302733255.html",
+      "notes": "Announced Apr 2, 2026. Effective 12:01 AM ET Apr 13, 2026. New CUSIP 68557F308. Shares reduced from ~26.9M to ~2.7M. Cash paid in lieu of fractional shares.",
+      "ratioNew": 1,
+      "ratioOld": 10
     },
     {
       "symbol": "PBM",
@@ -967,6 +1047,46 @@
       "notes": "Effective prior to market open May 28, 2026. CUSIP changed 74349Y498 -> 74350P410.",
       "ratioNew": 1,
       "ratioOld": 5
+    },
+    {
+      "symbol": "VGT",
+      "name": "Vanguard Information Technology ETF",
+      "date": "2026-04-21",
+      "exchange": "NYSE Arca",
+      "source": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-announces-share-splits-for-five-equity-index-etfs-032426.html",
+      "notes": "Record date Apr 17, 2026; payable after close Apr 20. Split-adjusted trading began Apr 21, 2026. Part of Vanguard five-ETF split announcement of Mar 24, 2026.",
+      "ratioNew": 8,
+      "ratioOld": 1
+    },
+    {
+      "symbol": "VO",
+      "name": "Vanguard Mid-Cap ETF",
+      "date": "2026-04-21",
+      "exchange": "NYSE Arca",
+      "source": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-announces-share-splits-for-five-equity-index-etfs-032426.html",
+      "notes": "Record date Apr 17, 2026; payable after close Apr 20. Split-adjusted trading began Apr 21, 2026. Part of Vanguard five-ETF split announcement of Mar 24, 2026.",
+      "ratioNew": 4,
+      "ratioOld": 1
+    },
+    {
+      "symbol": "VOOG",
+      "name": "Vanguard S&P 500 Growth ETF",
+      "date": "2026-04-21",
+      "exchange": "NYSE Arca",
+      "source": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-announces-share-splits-for-five-equity-index-etfs-032426.html",
+      "notes": "Record date Apr 17, 2026; payable after close Apr 20. Split-adjusted trading began Apr 21, 2026. Part of Vanguard five-ETF split announcement of Mar 24, 2026.",
+      "ratioNew": 6,
+      "ratioOld": 1
+    },
+    {
+      "symbol": "VUG",
+      "name": "Vanguard Growth ETF",
+      "date": "2026-04-21",
+      "exchange": "NYSE Arca",
+      "source": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-announces-share-splits-for-five-equity-index-etfs-032426.html",
+      "notes": "Record date Apr 17, 2026; payable after close Apr 20. Split-adjusted trading began Apr 21, 2026. Part of Vanguard five-ETF split announcement of Mar 24, 2026.",
+      "ratioNew": 6,
+      "ratioOld": 1
     },
     {
       "symbol": "WTO",
