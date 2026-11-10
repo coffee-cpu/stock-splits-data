@@ -406,6 +406,15 @@
       "ratioOld": 10
     },
     {
+      "symbol": "GOVZ",
+      "name": "iShares 25+ Year Treasury STRIPS Bond ETF",
+      "date": "2026-05-05",
+      "ratioNew": 1,
+      "ratioOld": 4,
+      "source": "https://www.sec.gov/Archives/edgar/data/1100663/000119312526129300/d765912d497.htm",
+      "notes": "iShares Trust prospectus supplement dated Mar 27, 2026. Reverse split effectuated after close May 4, 2026; split-adjusted trading began May 5, 2026."
+    },
+    {
       "symbol": "GRI",
       "name": "GRI Bio, Inc.",
       "date": "2026-01-26",
@@ -430,7 +439,7 @@
       "name": "iShares Core High Dividend ETF",
       "date": "2026-04-29",
       "exchange": "NYSE Arca",
-      "source": "https://www.ishares.com/ch/professionals/en/products/239563/ishares-high-dividend-etf",
+      "source": "https://www.sec.gov/Archives/edgar/data/1100663/000119312526129300/d765912d497.htm",
       "notes": "Announced Mar 27, 2026 (iShares Trust board authorized). Record date Apr 27; split effectuated after close Apr 28; split-adjusted trading began Apr 29, 2026. Creation unit size unchanged at 50,000 shares.",
       "ratioNew": 5,
       "ratioOld": 1
@@ -540,7 +549,7 @@
       "name": "iShares Russell 1000 Growth ETF",
       "date": "2026-04-29",
       "exchange": "NYSE Arca",
-      "source": "https://www.ishares.com/ch/professionals/en/products/239706/ishares-russell-1000-growth-etf",
+      "source": "https://www.sec.gov/Archives/edgar/data/1100663/000119312526129300/d765912d497.htm",
       "notes": "Announced Mar 27, 2026 (iShares Trust board authorized). Record date Apr 27; split effectuated after close Apr 28; split-adjusted trading began Apr 29, 2026. Creation unit size unchanged at 50,000 shares.",
       "ratioNew": 4,
       "ratioOld": 1
