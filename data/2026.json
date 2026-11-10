@@ -65,6 +65,16 @@
       "ratioOld": 5
     },
     {
+      "symbol": "AMIX",
+      "name": "Autonomix Medical, Inc.",
+      "date": "2026-06-24",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001617867/000143774926021495/amix20260619_8k.htm",
+      "notes": "Effective 12:01 AM ET. New CUSIP 05330T304. Stockholder-approved range 1-for-2 to 1-for-25 (Oct 30, 2025); board chose 1-for-21. Shares outstanding ~11.4M to ~542K.",
+      "ratioNew": 1,
+      "ratioOld": 21
+    },
+    {
       "symbol": "ANY",
       "name": "Sphere 3D Corp.",
       "date": "2026-02-10",
@@ -195,6 +205,16 @@
       "ratioOld": 2
     },
     {
+      "symbol": "BOXL",
+      "name": "Boxlight Corporation",
+      "date": "2026-06-22",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001624512/000121390026070452/ea0295025-8k_boxlight.htm",
+      "notes": "Effective 9:30 AM ET. New CUSIP 103197505. Certificate of Change filed with Nevada SoS June 17; board approval under NRS 78.207, no stockholder vote.",
+      "ratioNew": 1,
+      "ratioOld": 6
+    },
+    {
       "symbol": "BTF",
       "name": "CoinShares Bitcoin and Ether ETF",
       "date": "2026-01-26",
@@ -253,6 +273,16 @@
       "notes": "Effective prior to market open May 28, 2026. CUSIP changed 74349Y423 -> 74350P428.",
       "ratioNew": 1,
       "ratioOld": 2
+    },
+    {
+      "symbol": "DD",
+      "name": "DuPont de Nemours, Inc.",
+      "date": "2026-06-24",
+      "exchange": "NYSE",
+      "source": "https://www.dupont.com/news/dupont-announces-reverse-stock-split-and-reaffirms-2026-financial-guidance.html",
+      "notes": "Announced May 26, 2026; effective 12:01 AM ET. New CUSIP 26614N201.",
+      "ratioNew": 1,
+      "ratioOld": 3
     },
     {
       "symbol": "DTCK",
@@ -394,6 +424,16 @@
       "notes": "Articles of Amendment filed in Florida effective Jan 8, 2026. Marketplace effective date Jan 20, 2026. Reduced authorized common shares from 600M to 150M and outstanding from ~20.2M to ~5.0M. New CUSIP 36117V402. Reverse split to support Nasdaq bid-price compliance.",
       "ratioNew": 1,
       "ratioOld": 4
+    },
+    {
+      "symbol": "GDC",
+      "name": "GD Culture Group Limited",
+      "date": "2026-06-29",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001641398/000121390026073137/ea0296350-8k_gdculture.htm",
+      "notes": "New CUSIP 19200A303. Certificate filed June 18; stockholder-approved range 1-for-2 to 1-for-250 (Dec 31, 2025). Fractional shares rounded up.",
+      "ratioNew": 1,
+      "ratioOld": 250
     },
     {
       "symbol": "GDXD",
@@ -565,6 +605,16 @@
       "ratioOld": 20
     },
     {
+      "symbol": "KLAC",
+      "name": "KLA Corporation",
+      "date": "2026-06-12",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0000319201/000119312526212093/d116682dex991.htm",
+      "notes": "Announced May 7, 2026. Charter amendment effective 11:59 PM ET June 11; record date June 4; ten-for-one via stock dividend of nine additional shares.",
+      "ratioNew": 10,
+      "ratioOld": 1
+    },
+    {
       "symbol": "KUST",
       "name": "Kustom Entertainment, Inc.",
       "date": "2026-01-08",
@@ -685,6 +735,16 @@
       "ratioOld": 10
     },
     {
+      "symbol": "OPAD",
+      "name": "Offerpad Solutions Inc.",
+      "date": "2026-06-09",
+      "exchange": "NYSE",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001825024/000119312526257381/d59784d8k.htm",
+      "notes": "Effective 5:00 PM ET June 8. New CUSIP 67623L505. Stockholders approved range 1-for-5 to 1-for-50 at June 3, 2026 annual meeting.",
+      "ratioNew": 1,
+      "ratioOld": 10
+    },
+    {
       "symbol": "PBM",
       "name": "Psyence Biomedical Ltd.",
       "date": "2026-02-02",
@@ -743,6 +803,16 @@
       "notes": "Formerly PainReform Ltd. Israel-based. Shares reduced from 3,915,340 to 783,068. Fractional shares rounded up.",
       "ratioNew": 1,
       "ratioOld": 5
+    },
+    {
+      "symbol": "PRHI",
+      "name": "Presurance Holdings, Inc.",
+      "date": "2026-06-02",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001502292/000119312526245505/prhi-ex99_1.htm",
+      "notes": "Effective 5:00 PM ET June 1. New CUSIP 20731J409. Stockholder-approved range 1-for-2 to 1-for-12 (June 3, 2025).",
+      "ratioNew": 1,
+      "ratioOld": 7
     },
     {
       "symbol": "PRTS",
@@ -846,6 +916,16 @@
       "ratioOld": 4
     },
     {
+      "symbol": "SCYX",
+      "name": "SCYNEXIS, Inc.",
+      "date": "2026-06-01",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001178253/000117825326000017/scyx-20260528.htm",
+      "notes": "Effective 4:05 PM ET May 29. New CUSIP 811292309. Approved at May 19 special meeting.",
+      "ratioNew": 1,
+      "ratioOld": 8
+    },
+    {
       "symbol": "SDOT",
       "name": "Sadot Group Inc.",
       "date": "2026-05-27",
@@ -946,6 +1026,16 @@
       "exchange": "NASDAQ",
       "source": "https://www.sec.gov/Archives/edgar/data/0000913760/000091376026000034/pressrelease-may2026_stock.htm",
       "notes": "Announced May 26, 2026. One additional share for every two held. Record date Jul 7, 2026. Distributed after close Jul 17, 2026. Split-adjusted trading began Jul 20, 2026. Second 3-for-2 split of 2026."
+    },
+    {
+      "symbol": "SNXX",
+      "name": "Tradr 2X Long SNDK Daily ETF",
+      "date": "2026-06-03",
+      "exchange": "Cboe BZX",
+      "source": "https://www.sec.gov/Archives/edgar/data/1587982/000121390026057930/ea0291169-05_497.htm",
+      "notes": "Forward split; record date June 1, 2026.",
+      "ratioNew": 8,
+      "ratioOld": 1
     },
     {
       "symbol": "SOXS",
