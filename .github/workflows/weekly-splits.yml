@@ -51,6 +51,7 @@ jobs:
           echo "BRANCH_NAME=$BRANCH_NAME" >> "$GITHUB_ENV"
 
       - name: Research and add splits
+        id: claude
         uses: anthropics/claude-code-action@c0949c50a78c1ec8ce2647db36629b870e715d0c # v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -89,6 +90,16 @@ jobs:
             7. Print a summary of added / skipped (with reason) / errored candidates.
 
             Only modify files under data/. Do not commit or push.
+
+      # Keep the agent transcript (tool calls, permission denials, final summary)
+      # so empty or failed runs can be diagnosed. Runs even if the agent step fails.
+      - name: Upload agent transcript
+        if: always() && steps.claude.outputs.execution_file != ''
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: claude-transcript-${{ github.run_id }}
+          path: ${{ steps.claude.outputs.execution_file }}
+          retention-days: 14
 
       - name: Validate data
         run: npm run validate
