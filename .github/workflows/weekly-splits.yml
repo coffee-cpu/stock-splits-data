@@ -51,6 +51,7 @@ jobs:
           echo "BRANCH_NAME=$BRANCH_NAME" >> "$GITHUB_ENV"
 
       - name: Research and add splits
+        id: claude
         uses: anthropics/claude-code-action@c0949c50a78c1ec8ce2647db36629b870e715d0c # v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -89,6 +90,23 @@ jobs:
             7. Print a summary of added / skipped (with reason) / errored candidates.
 
             Only modify files under data/. Do not commit or push.
+
+      # Log only refused tool calls and the agent's final summary (not the full
+      # transcript, which would be public). Runs even if the agent step fails.
+      - name: Agent summary
+        if: always() && steps.claude.outputs.execution_file != ''
+        env:
+          EXECUTION_FILE: ${{ steps.claude.outputs.execution_file }}
+        run: |
+          [ -f "$EXECUTION_FILE" ] || { echo "No execution file"; exit 0; }
+          echo "::group::Permission denials"
+          jq -r '.[] | select(.type == "result") | .permission_denials[]?
+            | "- \(.tool_name): \((.tool_input.command // .tool_input.url // .tool_input.query // .tool_input.file_path // (.tool_input | tostring)) | tostring | .[0:200])"' \
+            "$EXECUTION_FILE" || true
+          echo "::endgroup::"
+          echo "::group::Final summary"
+          jq -r '.[] | select(.type == "result") | (.result // "(no result text)") | .[0:6000]' "$EXECUTION_FILE" || true
+          echo "::endgroup::"
 
       - name: Validate data
         run: npm run validate
