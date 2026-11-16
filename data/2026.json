@@ -75,6 +75,16 @@
       "ratioOld": 5
     },
     {
+      "symbol": "ALPS",
+      "name": "Alps Group Inc",
+      "date": "2026-11-09",
+      "ratioNew": 1,
+      "ratioOld": 5,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-802",
+      "notes": "Nasdaq alert Nov 5, 2026. Par value change from $0.0001 to $0.0005. New CUSIP G0231P124."
+    },
+    {
       "symbol": "AMCR",
       "name": "Amcor plc",
       "date": "2026-01-15",
@@ -126,6 +136,15 @@
       "ratioOld": 10
     },
     {
+      "symbol": "AOHY",
+      "name": "Angel Oak High Yield Opportunities ETF",
+      "date": "2026-11-16",
+      "ratioNew": 1,
+      "ratioOld": 5,
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-816",
+      "notes": "Reverse ETF share split per Nasdaq alert Nov 12, 2026. New CUSIP 03463K679."
+    },
+    {
       "symbol": "APUS",
       "name": "Apimeds Pharmaceuticals US, Inc.",
       "date": "2026-07-24",
@@ -135,6 +154,26 @@
       "exchange": "NYSE American",
       "source": "https://www.sec.gov/Archives/edgar/data/0001894525/000121390026102321/ea0306326-8k_apimeds.htm",
       "notes": "Approved by written consent Dec 1, 2025; previously announced Mar 26 effective date did not occur. Charter amendment filed Jul 23; effective 12:01 AM ET Jul 24, 2026; split-adjusted trading began that day. New CUSIP 03771D201. Shares reduced from 15,091,180 to 1,509,118."
+    },
+    {
+      "symbol": "ARAI",
+      "name": "Arrive AI Inc.",
+      "date": "2026-11-12",
+      "ratioNew": 1,
+      "ratioOld": 48,
+      "exchange": "NASDAQ",
+      "source": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/arrive-ai-announces-1-for-48-reverse-stock-split-to-be-effective-1248596",
+      "notes": "Effective 12:01 AM ET Nov 12, 2026; split-adjusted trading began at open. New CUSIP 04272H303. Fractional shares rounded up. Shares reduced from ~68.8M to ~1.43M. Confirmed by Nasdaq alert ECA2026-810."
+    },
+    {
+      "symbol": "ARAY",
+      "name": "Accuray Incorporated",
+      "date": "2026-11-09",
+      "ratioNew": 1,
+      "ratioOld": 40,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-801",
+      "notes": "Nasdaq alert Nov 5, 2026. New CUSIP 004397303."
     },
     {
       "symbol": "AREB",
@@ -352,6 +391,15 @@
       "ratioOld": 2
     },
     {
+      "symbol": "CARY",
+      "name": "Angel Oak Income ETF",
+      "date": "2026-11-16",
+      "ratioNew": 1,
+      "ratioOld": 3,
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-816",
+      "notes": "Reverse ETF share split per Nasdaq alert Nov 12, 2026. New CUSIP 03463K695."
+    },
+    {
       "symbol": "CCHH",
       "name": "CCH Holdings Ltd",
       "date": "2026-07-13",
@@ -393,6 +441,16 @@
       "ratioOld": 20
     },
     {
+      "symbol": "CISS",
+      "name": "C3is Inc.",
+      "date": "2026-11-09",
+      "ratioNew": 1,
+      "ratioOld": 5,
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2026/11/05/3396493/0/en/c3is-inc-announces-reverse-stock-split.html",
+      "notes": "Effective 11:59 PM ET Nov 8, 2026; split-adjusted trading began Nov 9. New CUSIP Y18284508. Shares reduced from ~4.2M to ~0.84M. Also 6-K exhibit on sec.gov."
+    },
+    {
       "symbol": "CLDI",
       "name": "Calidi Biotherapeutics, Inc.",
       "date": "2026-07-31",
@@ -411,6 +469,16 @@
       "notes": "Effective prior to market open May 28, 2026. CUSIP changed 74349Y423 -> 74350P428.",
       "ratioNew": 1,
       "ratioOld": 2
+    },
+    {
+      "symbol": "COSM",
+      "name": "Cosmos Health Inc.",
+      "date": "2026-11-13",
+      "ratioNew": 1,
+      "ratioOld": 20,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-812",
+      "notes": "Nasdaq alert Nov 11, 2026. New CUSIP 221413404."
     },
     {
       "symbol": "CRIS",
@@ -453,6 +521,16 @@
       "exchange": "NASDAQ",
       "source": "https://www.sec.gov/Archives/edgar/data/1787518/000121390026078551/ea0298224-8k_t3defense.htm",
       "notes": "Board raised the ratio from the 1-for-50 disclosed in a Jul 13 8-K to 1-for-125. Effective 12:01 AM ET Jul 20, 2026; split-adjusted trading began that day. New CUSIP 67054R302."
+    },
+    {
+      "symbol": "DFSC",
+      "name": "DEFSEC Technologies Inc.",
+      "date": "2026-11-16",
+      "ratioNew": 1,
+      "ratioOld": 9,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-818",
+      "notes": "Nasdaq alert Nov 12, 2026. New CUSIP 244778205."
     },
     {
       "symbol": "DJTU",
@@ -677,6 +755,16 @@
       "notes": "Direxion release Jun 10, 2026 (CUSIPs corrected Jun 26). Record date Jul 13; reverse split after close Jul 14; split-adjusted trading began Jul 15, 2026. New CUSIP 25461H267."
     },
     {
+      "symbol": "GOVX",
+      "name": "GeoVax Labs, Inc.",
+      "date": "2026-11-11",
+      "ratioNew": 1,
+      "ratioOld": 24,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-807",
+      "notes": "Nasdaq alert Nov 9, 2026. New CUSIP 373678804."
+    },
+    {
       "symbol": "GOVZ",
       "name": "iShares 25+ Year Treasury STRIPS Bond ETF",
       "date": "2026-05-05",
@@ -744,6 +832,16 @@
       "notes": "Stockholders approved range Jun 30, 2025; board set 1-for-20. Effective 4:00 PM ET Apr 2, 2026; split-adjusted trading began Apr 6, 2026 under new CUSIP 42240Q203. Fractional shares rounded up. Nasdaq bid price compliance.",
       "ratioNew": 1,
       "ratioOld": 20
+    },
+    {
+      "symbol": "HUBC",
+      "name": "Hub Cyber Security Ltd.",
+      "date": "2026-11-13",
+      "ratioNew": 1,
+      "ratioOld": 20,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-814",
+      "notes": "Nasdaq alert Nov 11, 2026. New CUSIP M6000J408."
     },
     {
       "symbol": "IBG",
@@ -836,6 +934,16 @@
       "ratioOld": 20
     },
     {
+      "symbol": "KALA",
+      "name": "KALA BIO, Inc.",
+      "date": "2026-11-16",
+      "ratioNew": 1,
+      "ratioOld": 30,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-817",
+      "notes": "Nasdaq alert Nov 12, 2026. New CUSIP 483119400."
+    },
+    {
       "symbol": "KLAC",
       "name": "KLA Corporation",
       "date": "2026-06-12",
@@ -883,6 +991,15 @@
       "notes": "Effective 12:01 AM ET Jan 26, 2026. Split-adjusted trading began Jan 26, 2026 under new CUSIP 50172T301. Reduced outstanding shares from ~5.35M to ~535K. Proactive measure to preserve Nasdaq listing.",
       "ratioNew": 1,
       "ratioOld": 10
+    },
+    {
+      "symbol": "MBS",
+      "name": "Angel Oak Mortgage-Backed Securities ETF",
+      "date": "2026-11-16",
+      "ratioNew": 1,
+      "ratioOld": 7,
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-816",
+      "notes": "Reverse ETF share split per Nasdaq alert Nov 12, 2026. New CUSIP 03463K687."
     },
     {
       "symbol": "MGK",
@@ -986,6 +1103,16 @@
       "ratioOld": 40
     },
     {
+      "symbol": "NCI",
+      "name": "Neo-Concept International Group Holdings Limited",
+      "date": "2026-11-10",
+      "ratioNew": 1,
+      "ratioOld": 8,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-805",
+      "notes": "Nasdaq alert Nov 6, 2026. New CUSIP G6421C146."
+    },
+    {
       "symbol": "NCRA",
       "name": "Nocera, Inc.",
       "date": "2026-07-07",
@@ -1045,6 +1172,26 @@
       "notes": "Announced Apr 2, 2026. Effective 12:01 AM ET Apr 13, 2026. New CUSIP 68557F308. Shares reduced from ~26.9M to ~2.7M. Cash paid in lieu of fractional shares.",
       "ratioNew": 1,
       "ratioOld": 10
+    },
+    {
+      "symbol": "NXTS",
+      "name": "Nexentis Technologies Inc.",
+      "date": "2026-11-09",
+      "ratioNew": 1,
+      "ratioOld": 5,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-797",
+      "notes": "Nevada amendment effective 4:15 PM ET Nov 6, 2026; Nasdaq split-adjusted trading Nov 9. New CUSIP 80512Q709. No fractional shares issued."
+    },
+    {
+      "symbol": "OFAL",
+      "name": "OFA Group",
+      "date": "2026-11-10",
+      "ratioNew": 1,
+      "ratioOld": 10,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-804",
+      "notes": "Class A ordinary shares. Nasdaq alert Nov 6, 2026. New CUSIP G6713S122."
     },
     {
       "symbol": "OPAD",
@@ -1116,6 +1263,16 @@
       "notes": "Board approved Feb 6, 2026; announced with Q4 2025 earnings. Certificate of Incorporation amendment effective 4:30 PM ET Mar 23, 2026. Split-adjusted trading began Mar 24, 2026. Forward split to increase liquidity and broaden investor accessibility.",
       "ratioNew": 4,
       "ratioOld": 1
+    },
+    {
+      "symbol": "PMCB",
+      "name": "PharmaCyte Biotech, Inc.",
+      "date": "2026-11-13",
+      "ratioNew": 1,
+      "ratioOld": 19,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-813",
+      "notes": "Nasdaq alert Nov 11, 2026. New CUSIP 71715X302."
     },
     {
       "symbol": "PRFX",
@@ -1351,6 +1508,16 @@
       "ratioOld": 5
     },
     {
+      "symbol": "SLXN",
+      "name": "Silexion Therapeutics Corp.",
+      "date": "2026-11-11",
+      "ratioNew": 1,
+      "ratioOld": 24,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-808",
+      "notes": "Nasdaq alert Nov 9, 2026. Par value change from $0.135 to $3.24. New CUSIP G1281K163."
+    },
+    {
       "symbol": "SMN",
       "name": "ProShares UltraShort Materials",
       "date": "2026-05-28",
@@ -1359,6 +1526,16 @@
       "notes": "Effective prior to market open May 28, 2026. CUSIP changed 74347G226 -> 74350P493.",
       "ratioNew": 1,
       "ratioOld": 2
+    },
+    {
+      "symbol": "SMX",
+      "name": "SMX (Security Matters) Public Limited Company",
+      "date": "2026-11-09",
+      "ratioNew": 5,
+      "ratioOld": 14,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-800",
+      "notes": "Reverse split of 1-for-2.8 (5 new for 14 old) per Nasdaq alert Nov 5, 2026. New CUSIP G8267K505."
     },
     {
       "symbol": "SNAL",
@@ -1430,6 +1607,16 @@
       "exchange": "NYSE American",
       "source": "https://www.sec.gov/Archives/edgar/data/0001471727/000149315226029963/form8-k.htm",
       "notes": "Effective at market open July 6. Board and majority shareholders authorized range 15-to-1 to 1-for-85; board chose 1-for-60. Holders entitled to a fraction receive one whole share."
+    },
+    {
+      "symbol": "STKH",
+      "name": "Steakholder Foods Ltd.",
+      "date": "2026-11-09",
+      "ratioNew": 1,
+      "ratioOld": 5,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-799",
+      "notes": "ADS ratio change: 1 ADS from 12,000 to 60,000 ordinary shares (1-for-5 ADS reverse split). Nasdaq alert Nov 5, 2026. New CUSIP 583435607."
     },
     {
       "symbol": "SVC",
@@ -1600,6 +1787,16 @@
       "notes": "Record date Apr 17, 2026; payable after close Apr 20. Split-adjusted trading began Apr 21, 2026. Part of Vanguard five-ETF split announcement of Mar 24, 2026.",
       "ratioNew": 6,
       "ratioOld": 1
+    },
+    {
+      "symbol": "WCT",
+      "name": "Wellchange Holdings Company Limited",
+      "date": "2026-11-09",
+      "ratioNew": 1,
+      "ratioOld": 10,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-798",
+      "notes": "Nasdaq alert Nov 5, 2026. Par value change from $0.000025 to $0.00025. New CUSIP G9545M149."
     },
     {
       "symbol": "WTO",
