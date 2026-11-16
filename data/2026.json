@@ -4,6 +4,17 @@
   "updated": "2026-11-16",
   "splits": [
     {
+      "symbol": "ABTC",
+      "name": "American Bitcoin Corp.",
+      "date": "2026-07-06",
+      "ratioNew": 1,
+      "ratioOld": 15,
+      "isin": "US02462A2033",
+      "exchange": "NASDAQ",
+      "source": "https://abtc.com/news-and-insights/american-bitcoin-announces-effective-date-of-reverse-stock-split",
+      "notes": "Approved at annual meeting Jun 22, 2026. Effective 5:00 PM ET Jul 2; split-adjusted trading began Jul 6, 2026. New CUSIP 02462A203. Class A shares reduced from ~1.09B to ~73M."
+    },
+    {
       "symbol": "ADIL",
       "name": "Adial Pharmaceuticals, Inc.",
       "date": "2026-02-06",
@@ -22,6 +33,15 @@
       "notes": "Stockholders approved May 1, 2026. Effective at market open May 18, 2026. New CUSIP 007025869.",
       "ratioNew": 1,
       "ratioOld": 27
+    },
+    {
+      "symbol": "AIBD",
+      "name": "Direxion Daily AI and Big Data Bear 2X ETF",
+      "date": "2026-07-15",
+      "ratioNew": 1,
+      "ratioOld": 10,
+      "source": "https://www.direxion.com/press-release/direxion-to-split-nine-etfs",
+      "notes": "Direxion release Jun 10, 2026 (CUSIPs corrected Jun 26). Record date Jul 13; reverse split after close Jul 14; split-adjusted trading began Jul 15, 2026."
     },
     {
       "symbol": "AIIO",
@@ -63,6 +83,16 @@
       "notes": "Shareholders approved Nov 6, 2025 AGM. Amendment filed Jan 14, 2026. Split-adjusted trading began Jan 15, 2026 under new CUSIP G0250X149. Reduced outstanding shares from ~2.3B to ~461M. CDIs also consolidated 1-for-5 on ASX. SEC 8-K: https://www.sec.gov/Archives/edgar/data/1748790/000110465925120321/tm2533112d1_8k.htm",
       "ratioNew": 1,
       "ratioOld": 5
+    },
+    {
+      "symbol": "AMDD",
+      "name": "Direxion Daily AMD Bear 1X ETF",
+      "date": "2026-07-15",
+      "ratioNew": 1,
+      "ratioOld": 10,
+      "isin": "US25461H2590",
+      "source": "https://www.direxion.com/press-release/direxion-to-split-nine-etfs",
+      "notes": "Direxion release Jun 10, 2026 (CUSIPs corrected Jun 26). Record date Jul 13; reverse split after close Jul 14; split-adjusted trading began Jul 15, 2026. New CUSIP 25461H259."
     },
     {
       "symbol": "AMIX",
@@ -322,6 +352,16 @@
       "ratioOld": 2
     },
     {
+      "symbol": "CCHH",
+      "name": "CCH Holdings Ltd",
+      "date": "2026-07-13",
+      "ratioNew": 1,
+      "ratioOld": 10,
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0002074123/000121390026077372/ea029744602ex99-1_cchhold.htm",
+      "notes": "Share consolidation of Class A and Class B shares. Board approved Jun 30, 2026 under AGM authority of Mar 4. Split-adjusted trading began at open Jul 13, 2026. New CUSIP G1993F114."
+    },
+    {
       "symbol": "CCTG",
       "name": "CCSC Technology International Holdings Limited",
       "date": "2026-01-23",
@@ -373,6 +413,17 @@
       "ratioOld": 2
     },
     {
+      "symbol": "CRIS",
+      "name": "Curis, Inc.",
+      "date": "2026-07-06",
+      "ratioNew": 1,
+      "ratioOld": 20,
+      "isin": "US2312694084",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001108205/000110820526000078/cris-20260702.htm",
+      "notes": "Approved at special meeting Jun 25, 2026. Effective 5:00 PM ET Jul 2; split-adjusted trading began Jul 6, 2026. New CUSIP 231269408. Fractional shares rounded up."
+    },
+    {
       "symbol": "CRWD",
       "name": "CrowdStrike Holdings, Inc.",
       "date": "2026-07-02",
@@ -414,6 +465,15 @@
       "notes": "T-REX release Jun 22, 2026. Record date Jul 10 (after close); split-adjusted trading began Jul 13, 2026."
     },
     {
+      "symbol": "DRIP",
+      "name": "Direxion Daily S&P Oil & Gas Exp. & Prod. Bear 2X ETF",
+      "date": "2026-07-15",
+      "ratioNew": 1,
+      "ratioOld": 10,
+      "source": "https://www.direxion.com/press-release/direxion-to-split-nine-etfs",
+      "notes": "Direxion release Jun 10, 2026 (CUSIPs corrected Jun 26). Record date Jul 13; reverse split after close Jul 14; split-adjusted trading began Jul 15, 2026."
+    },
+    {
       "symbol": "DTCK",
       "name": "Davis Commodities Limited",
       "date": "2026-03-09",
@@ -442,6 +502,17 @@
       "notes": "Effective 12:01 AM ET. New CUSIP 28059P501. Nasdaq compliance.",
       "ratioNew": 1,
       "ratioOld": 10
+    },
+    {
+      "symbol": "EDBL",
+      "name": "Edible Garden AG Incorporated",
+      "date": "2026-07-13",
+      "ratioNew": 1,
+      "ratioOld": 45,
+      "isin": "US28059P6007",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001809750/000147793226004225/edbl_8k.htm",
+      "notes": "8-K filed Jul 9, 2026. Effective 12:01 AM ET Jul 13; split-adjusted trading began that day. New CUSIP 28059P600."
     },
     {
       "symbol": "EDHL",
@@ -482,6 +553,16 @@
       "notes": "Effective prior to market open May 28, 2026. CUSIP changed 74347B367 -> 74350P527.",
       "ratioNew": 1,
       "ratioOld": 2
+    },
+    {
+      "symbol": "ENLV",
+      "name": "Enlivex Therapeutics Ltd.",
+      "date": "2026-07-09",
+      "ratioNew": 1,
+      "ratioOld": 15,
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001596812/000121390026075756/ea029719501ex99-1.htm",
+      "notes": "Israel-based. Under authority from EGM Feb 3, 2026. Split-adjusted trading began Jul 9, 2026. Shares reduced from 252,480,222 to ~16,832,015. Fractional shares rounded up."
     },
     {
       "symbol": "FCUV",
@@ -555,6 +636,17 @@
       "ratioOld": 4
     },
     {
+      "symbol": "FTFT",
+      "name": "Future FinTech Group Inc.",
+      "date": "2026-07-13",
+      "ratioNew": 1,
+      "ratioOld": 4,
+      "isin": "US36117V5012",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001066923/000121390026076459/ea0297411-8k_future.htm",
+      "notes": "Effective 4:00 PM ET Jul 10; split-adjusted trading began Jul 13, 2026. New CUSIP 36117V501. Shares reduced from ~7.47M to ~1.87M."
+    },
+    {
       "symbol": "GDC",
       "name": "GD Culture Group Limited",
       "date": "2026-06-29",
@@ -573,6 +665,16 @@
       "notes": "Issued by Bank of Montreal. ETN. New CUSIP 06368M302. Announced Jan 28, 2026.",
       "ratioNew": 1,
       "ratioOld": 10
+    },
+    {
+      "symbol": "GGLS",
+      "name": "Direxion Daily GOOGL Bear 1X ETF",
+      "date": "2026-07-15",
+      "ratioNew": 1,
+      "ratioOld": 10,
+      "isin": "US25461H2673",
+      "source": "https://www.direxion.com/press-release/direxion-to-split-nine-etfs",
+      "notes": "Direxion release Jun 10, 2026 (CUSIPs corrected Jun 26). Record date Jul 13; reverse split after close Jul 14; split-adjusted trading began Jul 15, 2026. New CUSIP 25461H267."
     },
     {
       "symbol": "GOVZ",
@@ -744,6 +846,15 @@
       "ratioOld": 1
     },
     {
+      "symbol": "KORU",
+      "name": "Direxion Daily MSCI South Korea Bull 3X ETF",
+      "date": "2026-07-15",
+      "ratioNew": 20,
+      "ratioOld": 1,
+      "source": "https://www.sec.gov/Archives/edgar/data/0001424958/000119312526265925/d105555d497.htm",
+      "notes": "Record date Jul 13, 2026. Split after close Jul 14; split-adjusted trading began Jul 15, 2026."
+    },
+    {
       "symbol": "KUST",
       "name": "Kustom Entertainment, Inc.",
       "date": "2026-01-08",
@@ -856,6 +967,15 @@
       "ratioOld": 10
     },
     {
+      "symbol": "MUU",
+      "name": "Direxion Daily MU Bull 2X ETF",
+      "date": "2026-07-15",
+      "ratioNew": 20,
+      "ratioOld": 1,
+      "source": "https://www.sec.gov/Archives/edgar/data/0001424958/000119312526265925/d105555d497.htm",
+      "notes": "Record date Jul 13, 2026. Split after close Jul 14; split-adjusted trading began Jul 15, 2026."
+    },
+    {
       "symbol": "NAKA",
       "name": "Nakamoto Inc.",
       "date": "2026-05-22",
@@ -904,6 +1024,17 @@
       "notes": "Record May 26, payable May 27, 2026; post-split trading began May 28, 2026. CUSIP unchanged.",
       "ratioNew": 2,
       "ratioOld": 1
+    },
+    {
+      "symbol": "NVVE",
+      "name": "Nuvve Holding Corp.",
+      "date": "2026-07-06",
+      "ratioNew": 1,
+      "ratioOld": 18,
+      "isin": "US67079Y5069",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001836875/000183687526000051/nvve-20260630.htm",
+      "notes": "Board set ratio Jun 23, 2026. Effective 12:01 AM ET Jul 6; split-adjusted trading began that day. New CUSIP 67079Y506."
     },
     {
       "symbol": "NXPL",
@@ -966,6 +1097,17 @@
       "ratioOld": 75
     },
     {
+      "symbol": "PFSA",
+      "name": "Profusa, Inc.",
+      "date": "2026-07-07",
+      "ratioNew": 1,
+      "ratioOld": 25,
+      "isin": "US74319X3061",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001859807/000121390026075502/ea029713001ex99-1.htm",
+      "notes": "Announced Jul 2, 2026. Effective 12:01 AM ET Jul 7; split-adjusted trading began that day. New CUSIP 74319X306. Shares reduced from ~13.2M to ~530K."
+    },
+    {
       "symbol": "PIPR",
       "name": "Piper Sandler Companies",
       "date": "2026-03-24",
@@ -1024,6 +1166,16 @@
       "notes": "Shareholders approved Jun 2025 AGM. Part of ~$500M synthetic share repurchase combining capital repayment ($2.29/share) with 20-to-19 share consolidation. Last day pre-split trading Jan 7, 2026. Consolidated shares began trading Jan 8, 2026 on NYSE (QGEN) and Frankfurt (QIA). ~5% reduction in issued shares.",
       "ratioNew": 19,
       "ratioOld": 20
+    },
+    {
+      "symbol": "RBNE",
+      "name": "Robin Energy Ltd.",
+      "date": "2026-07-09",
+      "ratioNew": 1,
+      "ratioOld": 15,
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0002039060/000114036126027717/ef20077344_ex99-1.htm",
+      "notes": "Announced Jul 7, 2026. Effective 11:59 PM ET Jul 8; split-adjusted trading began Jul 9, 2026. New CUSIP Y73118120."
     },
     {
       "symbol": "REVB",
@@ -1209,6 +1361,17 @@
       "ratioOld": 2
     },
     {
+      "symbol": "SNAL",
+      "name": "Snail, Inc.",
+      "date": "2026-07-06",
+      "ratioNew": 1,
+      "ratioOld": 5,
+      "isin": "US83301J3086",
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-461",
+      "notes": "Class A and Class B common stock (Class A listed). Announced Jul 1, 2026. Effective 11:59 PM ET Jul 2; split-adjusted trading began Jul 6, 2026. New CUSIP 83301J308."
+    },
+    {
       "symbol": "SNEX",
       "name": "StoneX Group Inc.",
       "date": "2026-03-23",
@@ -1250,6 +1413,15 @@
       "ratioOld": 20
     },
     {
+      "symbol": "SOXS",
+      "name": "Direxion Daily Semiconductor Bear 3X ETF",
+      "date": "2026-07-15",
+      "ratioNew": 1,
+      "ratioOld": 10,
+      "source": "https://www.direxion.com/press-release/direxion-to-split-nine-etfs",
+      "notes": "Direxion release Jun 10, 2026 (CUSIPs corrected Jun 26). Record date Jul 13; reverse split after close Jul 14; split-adjusted trading began Jul 15, 2026."
+    },
+    {
       "symbol": "SRXH",
       "name": "SRx Global, Inc.",
       "date": "2026-07-06",
@@ -1258,6 +1430,17 @@
       "exchange": "NYSE American",
       "source": "https://www.sec.gov/Archives/edgar/data/0001471727/000149315226029963/form8-k.htm",
       "notes": "Effective at market open July 6. Board and majority shareholders authorized range 15-to-1 to 1-for-85; board chose 1-for-60. Holders entitled to a fraction receive one whole share."
+    },
+    {
+      "symbol": "SVC",
+      "name": "Service Properties Trust",
+      "date": "2026-07-07",
+      "ratioNew": 1,
+      "ratioOld": 5,
+      "isin": "US81761L2016",
+      "exchange": "NASDAQ",
+      "source": "https://www.businesswire.com/news/home/20260701924687/en/Service-Properties-Trust-Announces-Effective-Date-of-Reverse-Split",
+      "notes": "Effective 4:01 PM ET Jul 6 (8-K); split-adjusted trading began Jul 7, 2026. New CUSIP 81761L201. Shares reduced from ~647.7M to ~129.5M. Cash in lieu of fractional shares."
     },
     {
       "symbol": "SVRE",
@@ -1300,6 +1483,15 @@
       "ratioOld": 2
     },
     {
+      "symbol": "TECS",
+      "name": "Direxion Daily Technology Bear 3X ETF",
+      "date": "2026-07-15",
+      "ratioNew": 1,
+      "ratioOld": 10,
+      "source": "https://www.direxion.com/press-release/direxion-to-split-nine-etfs",
+      "notes": "Direxion release Jun 10, 2026 (CUSIPs corrected Jun 26). Record date Jul 13; reverse split after close Jul 14; split-adjusted trading began Jul 15, 2026."
+    },
+    {
       "symbol": "TRT",
       "name": "Trio-Tech International",
       "date": "2026-01-05",
@@ -1318,6 +1510,16 @@
       "notes": "Split-adjusted trading originally set for Mar 5; moved to Mar 10, 2026 (Direxion release Feb 26). Single-stock inverse ETF. Part of Direxion batch announcement Feb 4, 2026.",
       "ratioNew": 1,
       "ratioOld": 10
+    },
+    {
+      "symbol": "TZA",
+      "name": "Direxion Daily Small Cap Bear 3X ETF",
+      "date": "2026-07-15",
+      "ratioNew": 1,
+      "ratioOld": 10,
+      "isin": "US25461H3259",
+      "source": "https://www.direxion.com/press-release/direxion-to-split-nine-etfs",
+      "notes": "Direxion release Jun 10, 2026 (CUSIPs corrected Jun 26). Record date Jul 13; reverse split after close Jul 14; split-adjusted trading began Jul 15, 2026. New CUSIP 25461H325."
     },
     {
       "symbol": "UGRO",
@@ -1450,6 +1652,17 @@
       "exchange": "NASDAQ",
       "source": "https://www.sec.gov/Archives/edgar/data/0001347858/000149315226049743/form8-k.htm",
       "notes": "Ratio set under range approved by stockholders Aug 5, 2026. Certificate filed in Nevada Nov 3. Effective 12:01 AM ET Nov 5, 2026; split-adjusted trading began that day. New CUSIP 90137F806. Shares reduced from 31,949,758 to ~550,858."
+    },
+    {
+      "symbol": "YHC",
+      "name": "LQR House Inc.",
+      "date": "2026-07-13",
+      "ratioNew": 1,
+      "ratioOld": 100,
+      "isin": "US50215C4069",
+      "exchange": "NASDAQ",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001843165/000121390026078355/ea0298137-8k_lqrhouse.htm",
+      "notes": "8-K report date Jul 9, 2026. Effective 12:01 AM ET Jul 13; split-adjusted trading began that day. New CUSIP 50215C406. Shares reduced from 130,383,799 to ~1,303,838."
     },
     {
       "symbol": "YJGJ",
