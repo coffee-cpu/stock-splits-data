@@ -63,6 +63,16 @@ jobs:
           prompt: |
             Research and add stock split data for this time range: ${{ env.TIME_RANGE }}
 
+            This run is unattended: nobody will answer questions. Never stop to ask for
+            input. Add every candidate you can verify against a primary source, and list
+            the rest as skipped with the reason.
+
+            Tooling rules (other commands are refused by the permission system):
+            - The working directory is already the repo root. Never use `cd`, `;`, `&&`
+              or pipes other than into `jq`. Don't use python, node, ls or cat.
+            - Read and edit data files with the Read/Edit/Grep/Glob tools; use `jq` for queries.
+            - Bash commands must not contain shell variables like `$VAR`; write values literally.
+
             Follow CONTRIBUTING.md ("Research Procedure") and these rules:
 
             1. Parse the time range into start/end dates (today is the run date).
@@ -72,9 +82,14 @@ jobs:
                Nasdaq Trader equity corporate actions alerts. Aggregators may be used for
                discovery only.
                For every sec.gov request use curl with the declared User-Agent:
-               `curl -s --compressed -A "$SEC_USER_AGENT" <url>` (WebFetch is blocked by SEC).
-               Stay under 10 requests/second. If SEC still returns 403, fall back to
-               WebSearch to locate sec.gov filing URLs.
+               `curl -s --compressed -A "${{ vars.SEC_USER_AGENT }}" "<url>"`
+               (type the User-Agent literally as shown). EDGAR full-text search returns JSON:
+               https://efts.sec.gov/LATEST/search-index?q=%22reverse%20stock%20split%22&forms=8-K,6-K&dateRange=custom&startdt=YYYY-MM-DD&enddt=YYYY-MM-DD
+               To read a filing document, WebFetch on the www.sec.gov/Archives URL also works.
+               Stay under 10 requests/second. If SEC returns 403, use WebSearch to find
+               sec.gov filing URLs and read them with WebFetch.
+               If a newswire page fails with WebFetch, try curl, or find the same release
+               on sec.gov (8-K/6-K exhibit 99.1) or the company IR site.
             4. For each candidate, open the primary source and extract symbol, name, date,
                ratioNew, ratioOld, exchange, isin (if stated), source, notes.
                - `date` = FIRST SPLIT-ADJUSTED TRADING DAY (ex-date), not record/payable date.
