@@ -33,7 +33,7 @@ Data is organized by year in individual JSON files.
 |-------|----------|
 | 2015–2023 | Notable forward splits of well-known US companies; very few reverse splits |
 | 2024–2025 | Broader: major forward splits plus a sample of reverse splits |
-| 2026 | Systematic (forward and reverse) for January–March only |
+| 2026 | NASDAQ reverse splits, ADS ratio changes and ETF splits: systematic, from Nasdaq Trader corporate action alerts. Forward splits and other exchanges: best effort |
 
 - **In scope:** securities listed in the US (NASDAQ, NYSE, NYSE American, NYSE Arca, OTC issuers that file with the SEC), including ETFs/ETNs and ADSs. Each listed share class gets its own entry (e.g. `GOOG` and `GOOGL`).
 - **Out of scope:** listings outside the US and their OTC grey-market tickers, and freeze-out (reverse/forward) transactions.
