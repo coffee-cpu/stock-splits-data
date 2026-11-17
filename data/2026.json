@@ -185,6 +185,16 @@
       "notes": "Nasdaq Trader alert ECA2026-196: effective Mar 31, 2026. Reverse split of the American Depositary Shares (ADS ratio change). New CUSIP 00972G405."
     },
     {
+      "symbol": "ALPS",
+      "name": "Alps Group Inc",
+      "date": "2026-11-09",
+      "ratioNew": 1,
+      "ratioOld": 5,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-802",
+      "notes": "Nasdaq alert Nov 5, 2026. Par value change from $0.0001 to $0.0005. New CUSIP G0231P124."
+    },
+    {
       "symbol": "AMCR",
       "name": "Amcor plc",
       "date": "2026-01-15",
@@ -246,6 +256,16 @@
       "ratioOld": 10
     },
     {
+      "symbol": "AOHY",
+      "name": "Angel Oak High Yield Opportunities ETF",
+      "date": "2026-11-16",
+      "ratioNew": 1,
+      "ratioOld": 5,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-816",
+      "notes": "Reverse ETF share split per Nasdaq alert Nov 12, 2026. New CUSIP 03463K679."
+    },
+    {
       "symbol": "APPX",
       "name": "Tradr 2X Long APP Daily ETF",
       "date": "2026-03-10",
@@ -265,6 +285,26 @@
       "exchange": "NYSE American",
       "source": "https://www.sec.gov/Archives/edgar/data/0001894525/000121390026102321/ea0306326-8k_apimeds.htm",
       "notes": "Approved by written consent Dec 1, 2025; previously announced Mar 26 effective date did not occur. Charter amendment filed Jul 23; effective 12:01 AM ET Jul 24, 2026; split-adjusted trading began that day. New CUSIP 03771D201. Shares reduced from 15,091,180 to 1,509,118."
+    },
+    {
+      "symbol": "ARAI",
+      "name": "Arrive AI Inc.",
+      "date": "2026-11-12",
+      "ratioNew": 1,
+      "ratioOld": 48,
+      "exchange": "NASDAQ",
+      "source": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/arrive-ai-announces-1-for-48-reverse-stock-split-to-be-effective-1248596",
+      "notes": "Effective 12:01 AM ET Nov 12, 2026; split-adjusted trading began at open. New CUSIP 04272H303. Fractional shares rounded up. Shares reduced from ~68.8M to ~1.43M. Confirmed by Nasdaq alert ECA2026-810."
+    },
+    {
+      "symbol": "ARAY",
+      "name": "Accuray Incorporated",
+      "date": "2026-11-09",
+      "ratioNew": 1,
+      "ratioOld": 40,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-801",
+      "notes": "Nasdaq alert Nov 5, 2026. New CUSIP 004397303."
     },
     {
       "symbol": "AREB",
@@ -692,6 +732,16 @@
       "ratioOld": 2
     },
     {
+      "symbol": "CARY",
+      "name": "Angel Oak Income ETF",
+      "date": "2026-11-16",
+      "ratioNew": 1,
+      "ratioOld": 3,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-816",
+      "notes": "Reverse ETF share split per Nasdaq alert Nov 12, 2026. New CUSIP 03463K695."
+    },
+    {
       "symbol": "CCHH",
       "name": "CCH Holdings Ltd",
       "date": "2026-07-13",
@@ -813,6 +863,16 @@
       "notes": "Nasdaq Trader alert ECA2026-268: effective Apr 27, 2026. New CUSIP Y18284300."
     },
     {
+      "symbol": "CISS",
+      "name": "C3is Inc.",
+      "date": "2026-11-09",
+      "ratioNew": 1,
+      "ratioOld": 5,
+      "exchange": "NASDAQ",
+      "source": "https://www.globenewswire.com/news-release/2026/11/05/3396493/0/en/c3is-inc-announces-reverse-stock-split.html",
+      "notes": "Effective 11:59 PM ET Nov 8, 2026; split-adjusted trading began Nov 9. New CUSIP Y18284508. Shares reduced from ~4.2M to ~0.84M. Also 6-K exhibit on sec.gov."
+    },
+    {
       "symbol": "CLDI",
       "name": "Calidi Biotherapeutics, Inc.",
       "date": "2026-07-31",
@@ -861,6 +921,16 @@
       "notes": "Effective prior to market open May 28, 2026. CUSIP changed 74349Y423 -> 74350P428.",
       "ratioNew": 1,
       "ratioOld": 2
+    },
+    {
+      "symbol": "COSM",
+      "name": "Cosmos Health Inc.",
+      "date": "2026-11-13",
+      "ratioNew": 1,
+      "ratioOld": 20,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-812",
+      "notes": "Nasdaq alert Nov 11, 2026. New CUSIP 221413404."
     },
     {
       "symbol": "COYY",
@@ -1013,6 +1083,16 @@
       "exchange": "NASDAQ",
       "source": "https://www.sec.gov/Archives/edgar/data/1787518/000121390026078551/ea0298224-8k_t3defense.htm",
       "notes": "Board raised the ratio from the 1-for-50 disclosed in a Jul 13 8-K to 1-for-125. Effective 12:01 AM ET Jul 20, 2026; split-adjusted trading began that day. New CUSIP 67054R302."
+    },
+    {
+      "symbol": "DFSC",
+      "name": "DEFSEC Technologies Inc.",
+      "date": "2026-11-16",
+      "ratioNew": 1,
+      "ratioOld": 9,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-818",
+      "notes": "Nasdaq alert Nov 12, 2026. New CUSIP 244778205."
     },
     {
       "symbol": "DGNX",
@@ -1527,6 +1607,16 @@
       "notes": "Nasdaq Trader alert ECA2026-10: effective Jan 12, 2026. New CUSIP 373678705."
     },
     {
+      "symbol": "GOVX",
+      "name": "GeoVax Labs, Inc.",
+      "date": "2026-11-11",
+      "ratioNew": 1,
+      "ratioOld": 24,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-807",
+      "notes": "Nasdaq alert Nov 9, 2026. New CUSIP 373678804."
+    },
+    {
       "symbol": "GOVZ",
       "name": "iShares 25+ Year Treasury STRIPS Bond ETF",
       "date": "2026-05-05",
@@ -1714,6 +1804,16 @@
       "exchange": "NASDAQ",
       "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-246",
       "notes": "Nasdaq Trader alert ECA2026-246: effective Apr 20, 2026. New CUSIP M6000J184."
+    },
+    {
+      "symbol": "HUBC",
+      "name": "Hub Cyber Security Ltd.",
+      "date": "2026-11-13",
+      "ratioNew": 1,
+      "ratioOld": 20,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-814",
+      "notes": "Nasdaq alert Nov 11, 2026. New CUSIP M6000J408."
     },
     {
       "symbol": "IBG",
@@ -1996,6 +2096,16 @@
       "notes": "Nasdaq Trader alert ECA2026-309: effective May 11, 2026. New CUSIP 483119301."
     },
     {
+      "symbol": "KALA",
+      "name": "KALA BIO, Inc.",
+      "date": "2026-11-16",
+      "ratioNew": 1,
+      "ratioOld": 30,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-817",
+      "notes": "Nasdaq alert Nov 12, 2026. New CUSIP 483119400."
+    },
+    {
       "symbol": "KIDZ",
       "name": "Classover Holdings Inc.",
       "date": "2026-03-10",
@@ -2193,6 +2303,16 @@
       "exchange": "NASDAQ",
       "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-155",
       "notes": "Nasdaq Trader alert ECA2026-155: effective Mar 16, 2026. New CUSIP G8849D128."
+    },
+    {
+      "symbol": "MBS",
+      "name": "Angel Oak Mortgage-Backed Securities ETF",
+      "date": "2026-11-16",
+      "ratioNew": 1,
+      "ratioOld": 7,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-816",
+      "notes": "Reverse ETF share split per Nasdaq alert Nov 12, 2026. New CUSIP 03463K687."
     },
     {
       "symbol": "MGK",
@@ -2426,6 +2546,16 @@
       "notes": "Nasdaq Trader alert ECA2026-429: effective Jun 25, 2026. Reverse split of the American Depositary Shares (ADS ratio change). New CUSIP 47760D201."
     },
     {
+      "symbol": "NCI",
+      "name": "Neo-Concept International Group Holdings Limited",
+      "date": "2026-11-10",
+      "ratioNew": 1,
+      "ratioOld": 8,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-805",
+      "notes": "Nasdaq alert Nov 6, 2026. New CUSIP G6421C146."
+    },
+    {
       "symbol": "NCRA",
       "name": "Nocera, Inc.",
       "date": "2026-07-07",
@@ -2527,6 +2657,16 @@
       "notes": "Nasdaq Trader alert ECA2026-223: effective Apr 8, 2026. New CUSIP 80512Q600."
     },
     {
+      "symbol": "NXTS",
+      "name": "Nexentis Technologies Inc.",
+      "date": "2026-11-09",
+      "ratioNew": 1,
+      "ratioOld": 5,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-797",
+      "notes": "Nevada amendment effective 4:15 PM ET Nov 6, 2026; Nasdaq split-adjusted trading Nov 9. New CUSIP 80512Q709. No fractional shares issued."
+    },
+    {
       "symbol": "OCG",
       "name": "Oriental Culture Holding LTD",
       "date": "2026-01-16",
@@ -2545,6 +2685,16 @@
       "exchange": "NASDAQ",
       "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-267",
       "notes": "Nasdaq Trader alert ECA2026-267: effective Apr 27, 2026. New CUSIP G6796W131."
+    },
+    {
+      "symbol": "OFAL",
+      "name": "OFA Group",
+      "date": "2026-11-10",
+      "ratioNew": 1,
+      "ratioOld": 10,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-804",
+      "notes": "Class A ordinary shares. Nasdaq alert Nov 6, 2026. New CUSIP G6713S122."
     },
     {
       "symbol": "OIO",
@@ -2716,6 +2866,16 @@
       "exchange": "NASDAQ",
       "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-243",
       "notes": "Nasdaq Trader alert ECA2026-243: effective Apr 17, 2026. New CUSIP G7200G126."
+    },
+    {
+      "symbol": "PMCB",
+      "name": "PharmaCyte Biotech, Inc.",
+      "date": "2026-11-13",
+      "ratioNew": 1,
+      "ratioOld": 19,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-813",
+      "notes": "Nasdaq alert Nov 11, 2026. New CUSIP 71715X302."
     },
     {
       "symbol": "PN",
@@ -3241,6 +3401,16 @@
       "notes": "Nasdaq Trader alert ECA2026-359: effective May 29, 2026. New CUSIP G1281K148."
     },
     {
+      "symbol": "SLXN",
+      "name": "Silexion Therapeutics Corp.",
+      "date": "2026-11-11",
+      "ratioNew": 1,
+      "ratioOld": 24,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-808",
+      "notes": "Nasdaq alert Nov 9, 2026. Par value change from $0.135 to $3.24. New CUSIP G1281K163."
+    },
+    {
       "symbol": "SMCL",
       "name": "GraniteShares 2x Long SMCI Daily ETF",
       "date": "2026-05-01",
@@ -3309,6 +3479,16 @@
       "exchange": "NASDAQ",
       "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-368",
       "notes": "Nasdaq Trader alert ECA2026-368: effective Jun 1, 2026. Stated ratio 1-for-2.285. New CUSIP G8267K216."
+    },
+    {
+      "symbol": "SMX",
+      "name": "SMX (Security Matters) Public Limited Company",
+      "date": "2026-11-09",
+      "ratioNew": 5,
+      "ratioOld": 14,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-800",
+      "notes": "Reverse split of 1-for-2.8 (5 new for 14 old) per Nasdaq alert Nov 5, 2026. New CUSIP G8267K505."
     },
     {
       "symbol": "SNAL",
@@ -3430,6 +3610,16 @@
       "exchange": "NASDAQ",
       "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-153",
       "notes": "Nasdaq Trader alert ECA2026-153: effective Mar 13, 2026. New CUSIP G8437Q127."
+    },
+    {
+      "symbol": "STKH",
+      "name": "Steakholder Foods Ltd.",
+      "date": "2026-11-09",
+      "ratioNew": 1,
+      "ratioOld": 5,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-799",
+      "notes": "ADS ratio change: 1 ADS from 12,000 to 60,000 ordinary shares (1-for-5 ADS reverse split). Nasdaq alert Nov 5, 2026. New CUSIP 583435607."
     },
     {
       "symbol": "SVC",
@@ -3850,6 +4040,16 @@
       "exchange": "NASDAQ",
       "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-131",
       "notes": "Nasdaq Trader alert ECA2026-131: effective Mar 6, 2026. New CUSIP G9545M123."
+    },
+    {
+      "symbol": "WCT",
+      "name": "Wellchange Holdings Company Limited",
+      "date": "2026-11-09",
+      "ratioNew": 1,
+      "ratioOld": 10,
+      "exchange": "NASDAQ",
+      "source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-798",
+      "notes": "Nasdaq alert Nov 5, 2026. Par value change from $0.000025 to $0.00025. New CUSIP G9545M149."
     },
     {
       "symbol": "WFF",
