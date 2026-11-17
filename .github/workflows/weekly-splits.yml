@@ -50,6 +50,12 @@ jobs:
           git checkout -b "$BRANCH_NAME"
           echo "BRANCH_NAME=$BRANCH_NAME" >> "$GITHUB_ENV"
 
+      # Nasdaq reverse splits, ADS ratio changes and ETF splits are announced in
+      # sequentially numbered Nasdaq Trader alerts. Collect the recent split-related
+      # ones (facts only, into a temp file) so the agent doesn't have to crawl.
+      - name: Fetch Nasdaq corporate action alerts
+        run: node .github/scripts/fetch-eca.mjs "$RUNNER_TEMP/eca-splits.txt" 120
+
       - name: Research and add splits
         id: claude
         uses: anthropics/claude-code-action@c0949c50a78c1ec8ce2647db36629b870e715d0c # v1
@@ -77,10 +83,20 @@ jobs:
 
             1. Parse the time range into start/end dates (today is the run date).
             2. Load the relevant data/YYYY.json file(s); skip SYMBOL:DATE pairs that already exist.
-            3. Discover candidates via SEC EDGAR full-text search (8-K/6-K: "stock split",
-               "reverse stock split", "share consolidation", "stock dividend") and the
-               Nasdaq Trader equity corporate actions alerts. Aggregators may be used for
-               discovery only.
+            3. Discover candidates from two sources. Aggregators may be used for discovery only.
+               a. Nasdaq: read `${{ runner.temp }}/eca-splits.txt` with the Read tool. It holds the
+                  ~120 most recent Nasdaq Trader Equity Corporate Actions alerts that mention a
+                  split, each with its alert URL and the announcement text. Add every split whose
+                  "effective" date falls in the time range and is not in the future; the alert URL
+                  is an acceptable `source` and its effective date is the first split-adjusted
+                  trading day. Use the new symbol when the alert announces a symbol change (note
+                  "Formerly X"). Skip ratio-change alerts that say "There is no split of the ADR",
+                  postponed or withdrawn splits, and multi-fund tables you can't read fully.
+                  Record facts only (ratio, date, CUSIP); never copy alert text into notes.
+               b. Other exchanges and forward splits (not covered by the alerts): SEC EDGAR
+                  full-text search (8-K/6-K: "stock split", "reverse stock split",
+                  "share consolidation", "stock dividend") and WebSearch for NYSE, NYSE American,
+                  NYSE Arca and Cboe listings.
                For every sec.gov request use curl with the declared User-Agent:
                `curl -s --compressed -A "${{ vars.SEC_USER_AGENT }}" "<url>"`
                (type the User-Agent literally as shown). EDGAR full-text search returns JSON:
